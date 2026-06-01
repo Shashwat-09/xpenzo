@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Cache subdirectory used by FileProvider for share-sheet exports -->
+    <cache-path name="xpenzo_exports" path="exports/" />
+    <files-path name="xpenzo_files" path="exports/" />
+</paths>

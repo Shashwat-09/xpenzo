@@ -1,0 +1,208 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helpers ──────────────────────────────────────────────────────────────
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+
+    function isFamilyMember(familyId) {
+      return exists(/databases/$(database)/documents/families/$(familyId)/members/$(request.auth.uid))
+        && get(/databases/$(database)/documents/families/$(familyId)/members/$(request.auth.uid)).data.status == 'ACTIVE';
+    }
+
+    function isFamilyAdmin(familyId) {
+      return exists(/databases/$(database)/documents/families/$(familyId)/members/$(request.auth.uid))
+        && get(/databases/$(database)/documents/families/$(familyId)/members/$(request.auth.uid)).data.role == 'ADMIN';
+    }
+
+    // Phase 10: Groups & Splits
+    function isGroupMember(groupId) {
+      return exists(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid))
+        && get(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid)).data.status == 'ACTIVE';
+    }
+
+    function isGroupAdmin(groupId) {
+      return exists(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid))
+        && get(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid)).data.role == 'ADMIN';
+    }
+
+    // ── Users ─────────────────────────────────────────────────────────────────
+
+    match /users/{userId} {
+      allow read, create, update: if isAuthenticated() && isOwner(userId);
+      allow delete: if false; // Delete via Cloud Function (account deletion flow)
+
+      // Personal transaction sync (offline-first)
+      match /transactions/{transactionId} {
+        allow read, write: if isAuthenticated() && isOwner(userId);
+      }
+
+      match /devices/{deviceId} {
+        allow read, write: if isAuthenticated() && isOwner(userId);
+      }
+
+      match /preferences {
+        allow read, write: if isAuthenticated() && isOwner(userId);
+      }
+
+      // Phase 10: Friends list (one copy per side, Cloud Function creates reciprocal)
+      match /friends/{friendUserId} {
+        allow read, create, update, delete: if isAuthenticated() && isOwner(userId);
+      }
+    }
+
+    // ── Families ──────────────────────────────────────────────────────────────
+
+    match /families/{familyId}/info {
+      allow read: if isAuthenticated() && isFamilyMember(familyId);
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated() && isFamilyAdmin(familyId);
+      allow delete: if isAuthenticated() && isFamilyAdmin(familyId);
+    }
+
+    match /families/{familyId}/members/{memberId} {
+      allow read: if isAuthenticated() && isFamilyMember(familyId);
+      allow create: if isAuthenticated()
+        && (isFamilyAdmin(familyId) || memberId == request.auth.uid);
+      allow update: if isAuthenticated() && isFamilyAdmin(familyId);
+      allow delete: if isAuthenticated()
+        && (isFamilyAdmin(familyId) || memberId == request.auth.uid);
+    }
+
+    match /families/{familyId}/transactions/{transactionId} {
+      // Private transactions visible only to owner; family-scoped visible to all members
+      allow read: if isAuthenticated() && isFamilyMember(familyId)
+        && (resource.data.visibility == 'FAMILY' || resource.data.user_id == request.auth.uid);
+      allow create: if isAuthenticated() && isFamilyMember(familyId)
+        && request.resource.data.user_id == request.auth.uid;
+      // Only owner can edit their own transaction
+      allow update: if isAuthenticated()
+        && resource.data.user_id == request.auth.uid;
+      allow delete: if isAuthenticated()
+        && (resource.data.user_id == request.auth.uid || isFamilyAdmin(familyId));
+    }
+
+    match /families/{familyId}/budgets/{budgetId} {
+      allow read: if isAuthenticated() && isFamilyMember(familyId);
+      allow create: if isAuthenticated() && isFamilyAdmin(familyId);
+      allow update, delete: if isAuthenticated()
+        && (resource.data.created_by == request.auth.uid || isFamilyAdmin(familyId));
+    }
+
+    // Budget progress is computed by Cloud Functions — read-only for clients
+    match /families/{familyId}/budget_progress/{progressId} {
+      allow read: if isAuthenticated() && isFamilyMember(familyId);
+      allow write: if false;
+    }
+
+    // ── Phase 10: Groups & Splits ─────────────────────────────────────────────
+
+    match /groups/{groupId}/info {
+      allow read: if isAuthenticated() && isGroupMember(groupId);
+      allow create: if isAuthenticated(); // Creator becomes admin
+      allow update: if isAuthenticated() && isGroupAdmin(groupId);
+      allow delete: if isAuthenticated() && isGroupAdmin(groupId);
+    }
+
+    match /groups/{groupId}/members/{memberId} {
+      allow read: if isAuthenticated() && isGroupMember(groupId);
+      allow create: if isAuthenticated()
+        && (isGroupAdmin(groupId) || memberId == request.auth.uid);
+      allow update: if isAuthenticated() && isGroupAdmin(groupId);
+      allow delete: if isAuthenticated()
+        && (isGroupAdmin(groupId) || memberId == request.auth.uid);
+    }
+
+    match /groups/{groupId}/expenses/{expenseId} {
+      allow read: if isAuthenticated() && isGroupMember(groupId);
+      allow create: if isAuthenticated() && isGroupMember(groupId)
+        && request.resource.data.created_by == request.auth.uid;
+      allow update, delete: if isAuthenticated()
+        && (resource.data.created_by == request.auth.uid || isGroupAdmin(groupId));
+    }
+
+    match /groups/{groupId}/settlements/{settlementId} {
+      allow read: if isAuthenticated() && isGroupMember(groupId);
+      // Payer records the settlement
+      allow create: if isAuthenticated() && isGroupMember(groupId)
+        && request.resource.data.from_user == request.auth.uid;
+      // Only payee can confirm (status + confirmed_at fields only)
+      allow update: if isAuthenticated()
+        && resource.data.to_user == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(['status', 'confirmed_at']);
+      // Payer can cancel only while still PENDING
+      allow delete: if isAuthenticated()
+        && resource.data.from_user == request.auth.uid
+        && resource.data.status == 'PENDING';
+    }
+
+    // Balances recomputed by Cloud Function — read-only for clients
+    match /groups/{groupId}/balances/{uid} {
+      allow read: if isAuthenticated() && isGroupMember(groupId);
+      allow write: if false;
+    }
+
+    // ── ML / Self-improving loop ───────────────────────────────────────────────
+
+    // Anonymized correction samples from opted-in users
+    match /ml_corrections/{correctionId} {
+      allow read: if false; // Server-side only
+      allow create: if isAuthenticated()
+        && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // DataCollectionManager uses this collection for opted-in samples
+    match /transaction_corrections/{correctionId} {
+      allow read: if false;
+      allow create: if isAuthenticated();
+      allow update, delete: if false;
+    }
+
+    match /model_feedback/{docId} {
+      allow read: if false;
+      allow create: if isAuthenticated();
+      allow update, delete: if false;
+    }
+
+    // ── Invitations ───────────────────────────────────────────────────────────
+
+    match /invitations/{invitationCode} {
+      allow read: if isAuthenticated(); // Joining flow reads the doc
+      allow write: if false; // Cloud Function only
+    }
+
+    // ── Notifications ─────────────────────────────────────────────────────────
+
+    match /notifications/{notificationId} {
+      allow read, delete: if isAuthenticated()
+        && resource.data.user_id == request.auth.uid;
+      allow create: if false; // Cloud Function only
+      // Recipient can mark as read
+      allow update: if isAuthenticated()
+        && resource.data.user_id == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(['is_read', 'read_at']);
+    }
+
+    // ── System (read-only for clients, admin console / Cloud Functions write) ──
+
+    match /system/config {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    match /system/ml_models/{modelVersion} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+  }
+}

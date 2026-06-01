@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Family Spending Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b3fc0",
+                        "background-light": "#f8f9fc",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style id="xpenz-dark-mode">
+/* ===== XPENZ DARK MODE - Design System Tokens ===== */
+/* BG Dark: #111521 | Card Dark: #1a1f30 | Sidebar Dark: #0d1117 */
+
+html.dark body {
+  background-color: #111521 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Main container overrides */
+html.dark .bg-white { background-color: #1a1f30 !important; }
+html.dark .bg-slate-50, html.dark .bg-gray-50 { background-color: #111521 !important; }
+html.dark .bg-slate-100, html.dark .bg-gray-100 { background-color: #1e2536 !important; }
+html.dark .bg-slate-200, html.dark .bg-gray-200 { background-color: #252d3f !important; }
+html.dark .bg-background-light { background-color: #111521 !important; }
+html.dark .bg-surface-light { background-color: #1a1f30 !important; }
+html.dark .bg-card-light { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#ffffff\], html.dark .bg-\[\#FFFFFF\] { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#f8f6f6\], html.dark .bg-\[\#F7F6F3\], html.dark .bg-\[\#f6f6f8\] { background-color: #111521 !important; }
+html.dark .bg-\[\#f5f5f5\], html.dark .bg-\[\#f9fafb\] { background-color: #111521 !important; }
+
+/* White/near-white backgrounds on inner cards */
+html.dark .bg-white\/80 { background-color: rgba(26, 31, 48, 0.9) !important; }
+html.dark .bg-white\/90 { background-color: rgba(26, 31, 48, 0.95) !important; }
+
+/* Text color overrides */
+html.dark .text-black, html.dark .text-text-main, html.dark .text-\[\#000000\], html.dark .text-\[\#111\] {
+  color: #f1f5f9 !important;
+}
+html.dark .text-slate-900, html.dark .text-gray-900 { color: #f1f5f9 !important; }
+html.dark .text-slate-800, html.dark .text-gray-800 { color: #e2e8f0 !important; }
+html.dark .text-slate-700, html.dark .text-gray-700 { color: #cbd5e1 !important; }
+html.dark .text-slate-600, html.dark .text-gray-600, html.dark .text-text-muted { color: #94a3b8 !important; }
+html.dark .text-slate-500, html.dark .text-gray-500 { color: #64748b !important; }
+html.dark .text-slate-400, html.dark .text-gray-400 { color: #94a3b8 !important; }
+
+/* Border overrides */
+html.dark .border-slate-100, html.dark .border-gray-100 { border-color: #1e293b !important; }
+html.dark .border-slate-200, html.dark .border-gray-200 { border-color: #334155 !important; }
+html.dark .border-slate-300, html.dark .border-gray-300 { border-color: #475569 !important; }
+html.dark .border-white { border-color: #1e293b !important; }
+
+/* Divide overrides */
+html.dark .divide-slate-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-slate-200 > :not(:first-child) { border-color: #334155 !important; }
+html.dark .divide-gray-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-gray-200 > :not(:first-child) { border-color: #334155 !important; }
+
+/* Shadow adjustments */
+html.dark .shadow-sm, html.dark .shadow, html.dark .shadow-md, html.dark .shadow-lg, html.dark .shadow-xl, html.dark .shadow-2xl {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .shadow-none { box-shadow: none !important; }
+
+/* Input/form overrides */
+html.dark input, html.dark textarea, html.dark select {
+  background-color: #1e2536 !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+html.dark input::placeholder, html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+html.dark input:focus, html.dark textarea:focus, html.dark select:focus {
+  border-color: #1b3fc0 !important;
+  box-shadow: 0 0 0 2px rgba(27, 63, 192, 0.25) !important;
+}
+
+/* Backdrop blur */
+html.dark .backdrop-blur-md { background-color: rgba(17, 21, 33, 0.85) !important; }
+html.dark .backdrop-blur-lg { background-color: rgba(17, 21, 33, 0.9) !important; }
+
+/* Ring overrides */
+html.dark .ring-slate-100, html.dark .ring-gray-100 { --tw-ring-color: #1e293b !important; }
+html.dark .ring-white { --tw-ring-color: #1a1f30 !important; }
+
+/* Emerald/green accents preserved */
+html.dark .bg-emerald-50, html.dark .bg-green-50 { background-color: rgba(16, 185, 129, 0.1) !important; }
+html.dark .border-emerald-100, html.dark .border-green-100 { border-color: rgba(16, 185, 129, 0.2) !important; }
+html.dark .bg-emerald-100, html.dark .bg-green-100 { background-color: rgba(16, 185, 129, 0.15) !important; }
+
+/* Red/danger accents */
+html.dark .bg-red-50 { background-color: rgba(239, 68, 68, 0.1) !important; }
+html.dark .border-red-100 { border-color: rgba(239, 68, 68, 0.2) !important; }
+html.dark .bg-red-100 { background-color: rgba(239, 68, 68, 0.15) !important; }
+
+/* Amber/warning accents */
+html.dark .bg-amber-50, html.dark .bg-yellow-50 { background-color: rgba(245, 158, 11, 0.1) !important; }
+html.dark .border-amber-100 { border-color: rgba(245, 158, 11, 0.2) !important; }
+html.dark .bg-amber-100, html.dark .bg-yellow-100 { background-color: rgba(245, 158, 11, 0.15) !important; }
+
+/* Blue accents */
+html.dark .bg-blue-50 { background-color: rgba(59, 130, 246, 0.1) !important; }
+html.dark .border-blue-100 { border-color: rgba(59, 130, 246, 0.2) !important; }
+html.dark .bg-blue-100 { background-color: rgba(59, 130, 246, 0.15) !important; }
+
+/* Purple accents */
+html.dark .bg-purple-50, html.dark .bg-violet-50 { background-color: rgba(139, 92, 246, 0.1) !important; }
+html.dark .bg-purple-100, html.dark .bg-violet-100 { background-color: rgba(139, 92, 246, 0.15) !important; }
+
+/* Indigo accents (used as primary in some screens) */
+html.dark .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.1) !important; }
+html.dark .bg-indigo-100 { background-color: rgba(99, 102, 241, 0.15) !important; }
+
+/* Primary-tinted backgrounds */
+html.dark .bg-primary\/5, html.dark .bg-primary\/10 { background-color: rgba(27, 63, 192, 0.15) !important; }
+html.dark .bg-primary { background-color: #1b3fc0 !important; }
+
+/* Bottom nav / fixed bars */
+html.dark nav, html.dark nav.fixed {
+  background-color: #0d1117 !important;
+  border-color: #1e293b !important;
+}
+
+/* Card/panel specific */
+html.dark [class*="rounded"][class*="bg-white"],
+html.dark [class*="rounded"][class*="bg-slate-50"],
+html.dark [class*="rounded"][class*="bg-gray-50"] {
+  background-color: #1a1f30 !important;
+}
+
+/* Modal / overlay */
+html.dark .bg-black\/50, html.dark .bg-black\/40, html.dark .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Gradient overrides */
+html.dark .from-white { --tw-gradient-from: #1a1f30 !important; }
+html.dark .to-white { --tw-gradient-to: #1a1f30 !important; }
+html.dark .from-slate-50 { --tw-gradient-from: #111521 !important; }
+
+/* Scrollbar styling */
+html.dark ::-webkit-scrollbar-track { background: #111521; }
+html.dark ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+
+/* Hover states */
+html.dark .hover\:bg-slate-100:hover, html.dark .hover\:bg-gray-100:hover { background-color: #252d3f !important; }
+html.dark .hover\:bg-slate-50:hover, html.dark .hover\:bg-gray-50:hover { background-color: #1e2536 !important; }
+html.dark .hover\:bg-white:hover { background-color: #1a1f30 !important; }
+
+/* Active states */
+html.dark .active\:bg-slate-100:active, html.dark .active\:bg-gray-100:active { background-color: #252d3f !important; }
+
+/* Toggle / Switch backgrounds */
+html.dark .bg-slate-300, html.dark .bg-gray-300 { background-color: #475569 !important; }
+
+/* Status bar area */
+html.dark .bg-\[\#1D40C0\], html.dark .bg-\[\#1d40bf\], html.dark .bg-\[\#4f46e5\] {
+  background-color: #1b3fc0 !important;
+}
+
+/* Smooth transition for all color changes */
+html.dark * {
+  transition: background-color 0.2s ease, color 0.15s ease, border-color 0.2s ease;
+}
+</style>
+</head>
+<body class="bg-background-light text-slate-900 font-display antialiased overflow-x-hidden">
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto bg-background-light shadow-xl overflow-hidden">
+<header class="flex items-center justify-between px-4 py-3 pt-6 sticky top-0 z-10 bg-background-light/90 backdrop-blur-md">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="size-10 rounded-full bg-slate-200 bg-cover bg-center border-2 border-primary" data-alt="User profile picture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdtFArHrbAL1J4ZGWvFQApve4h7kQxdYltkJpLsCyYpKOkwuosyz8ruDd7iAxgr6N7x1JD0_WDCdLnpbT4zajC5p1pyDBlmCFrhAGxM88cnKOTyHI0Bmo_9rX03IKfMS36k3Ivth25DDFkbw8w4kRk8LkVNDCbqJ3TpHn0JWEZZKlnNmQk0MYrsIoFH1QPtPQjDw6qJ8Cxu3M0-qy4xyX8PJo0z3PNTrhf8GdBwXP2vmw2g6x9pOFHfcxoR0MuCJM2Hiy5S-uEx1PB');"></div>
+<div class="absolute bottom-0 right-0 size-3 bg-green-500 rounded-full border-2 border-background-light"></div>
+</div>
+<div>
+<p class="text-xs text-slate-500 font-medium">Welcome back,</p>
+<p class="text-sm font-bold leading-tight">Dad's Wallet</p>
+</div>
+</div>
+<button class="flex size-10 items-center justify-center rounded-full bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 transition-colors shadow-sm">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col gap-6 p-4 pb-24">
+<section>
+<div class="w-full rounded-2xl bg-gradient-to-br from-primary to-blue-800 p-6 text-white shadow-lg relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-indigo-500/20 rounded-full blur-xl"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="text-blue-100/80 text-sm font-medium mb-1">Total Family Spending</p>
+<h1 class="text-4xl font-extrabold tracking-tight">₹87,450</h1>
+</div>
+<div class="bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full border border-white/20">
+<span class="text-xs font-semibold">Oct 2023</span>
+</div>
+</div>
+<div class="flex items-center gap-4 mt-6">
+<div class="flex items-center gap-2 bg-black/10 px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-blue-200 text-[20px]">receipt_long</span>
+<div>
+<p class="text-[10px] text-blue-100/70 uppercase tracking-wider font-bold">Transactions</p>
+<p class="text-sm font-bold">42</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-black/10 px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-blue-200 text-[20px]">calendar_today</span>
+<div>
+<p class="text-[10px] text-blue-100/70 uppercase tracking-wider font-bold">Daily Avg</p>
+<p class="text-sm font-bold">₹2,800</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="flex items-center justify-between mb-3">
+<h2 class="text-lg font-bold">Members</h2>
+<button class="text-xs font-semibold text-primary">View All</button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="size-10 rounded-full bg-orange-50 flex items-center justify-center text-orange-600 font-bold border border-orange-100">
+<span class="material-symbols-outlined">face</span>
+</div>
+<span class="text-xs font-bold bg-slate-50 px-2 py-0.5 rounded text-slate-500">36%</span>
+</div>
+<div>
+<p class="text-2xl font-bold leading-tight">₹32k</p>
+<p class="text-xs text-slate-500">Rohan</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 36%"></div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="size-10 rounded-full bg-pink-50 flex items-center justify-center text-pink-600 font-bold border border-pink-100">
+<span class="material-symbols-outlined">face_3</span>
+</div>
+<span class="text-xs font-bold bg-slate-50 px-2 py-0.5 rounded text-slate-500">32%</span>
+</div>
+<div>
+<p class="text-2xl font-bold leading-tight">₹28.5k</p>
+<p class="text-xs text-slate-500">Priya</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+<div class="bg-purple-500 h-1.5 rounded-full" style="width: 32%"></div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="size-10 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 font-bold border border-teal-100">
+<span class="material-symbols-outlined">face_6</span>
+</div>
+<span class="text-xs font-bold bg-slate-50 px-2 py-0.5 rounded text-slate-500">17%</span>
+</div>
+<div>
+<p class="text-2xl font-bold leading-tight">₹15k</p>
+<p class="text-xs text-slate-500">Arjun</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+<div class="bg-teal-500 h-1.5 rounded-full" style="width: 17%"></div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="size-10 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600 font-bold border border-indigo-100">
+<span class="material-symbols-outlined">face_4</span>
+</div>
+<span class="text-xs font-bold bg-slate-50 px-2 py-0.5 rounded text-slate-500">13%</span>
+</div>
+<div>
+<p class="text-2xl font-bold leading-tight">₹11.9k</p>
+<p class="text-xs text-slate-500">Diya</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+<div class="bg-indigo-500 h-1.5 rounded-full" style="width: 13%"></div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="flex items-center justify-between mb-3">
+<h2 class="text-lg font-bold">Where it goes</h2>
+</div>
+<div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+<div class="p-4 border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+<div class="flex items-center gap-4 mb-2">
+<div class="size-10 rounded-full bg-green-50 flex items-center justify-center text-green-600 shrink-0">
+<span class="material-symbols-outlined">shopping_cart</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<p class="font-bold truncate">Groceries</p>
+<p class="font-bold">₹25,000</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+<div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+<div class="flex items-center gap-4 mb-2">
+<div class="size-10 rounded-full bg-orange-50 flex items-center justify-center text-orange-600 shrink-0">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<p class="font-bold truncate">Food &amp; Dining</p>
+<p class="font-bold">₹18,400</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+<div class="bg-orange-500 h-2 rounded-full" style="width: 55%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+<div class="flex items-center gap-4 mb-2">
+<div class="size-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<p class="font-bold truncate">Transport</p>
+<p class="font-bold">₹12,000</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+<div class="bg-blue-500 h-2 rounded-full" style="width: 40%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 hover:bg-slate-50/50 transition-colors">
+<div class="flex items-center gap-4 mb-2">
+<div class="size-10 rounded-full bg-yellow-50 flex items-center justify-center text-yellow-600 shrink-0">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-center mb-1">
+<p class="font-bold truncate">Utilities</p>
+<p class="font-bold">₹8,500</p>
+</div>
+<div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+<div class="bg-yellow-500 h-2 rounded-full" style="width: 25%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto z-50">
+<div class="flex gap-2 border-t border-slate-200 bg-white/95 backdrop-blur-md px-4 pb-safe pt-2 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-slate-600 transition-colors pb-3" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">home</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary pb-3" href="#">
+<div class="flex h-6 items-center justify-center relative">
+<span class="material-symbols-outlined text-[24px] font-variation-settings-'FILL'1">group</span>
+<span class="absolute -top-1 -right-2 size-2 bg-red-500 rounded-full"></span>
+</div>
+<p class="text-[10px] font-bold leading-normal">Family</p>
+</a>
+<div class="flex flex-1 flex-col items-center justify-end -mt-6">
+<button class="flex size-14 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/30 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">qr_code_scanner</span>
+</button>
+<p class="text-[10px] font-medium leading-normal text-slate-400 mt-1 pb-2">Scan</p>
+</div>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-slate-600 transition-colors pb-3" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">bar_chart</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Analytics</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-slate-600 transition-colors pb-3" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Profile</p>
+</a>
+</div>
+</div>
+</div>
+
+<!-- Xpenz Dark Mode Toggle -->
+<button onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('xpenz-dark', document.documentElement.classList.contains('dark')); updateDMToggle();"
+  id="dm-toggle-btn"
+  style="position:fixed;top:12px;right:12px;z-index:9999;width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(148,163,184,0.3);cursor:pointer;transition:all 0.2s;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);">
+  <span class="material-symbols-outlined" style="font-size:18px;color:#64748b;" id="dm-icon">dark_mode</span>
+</button>
+<script>
+  // Persist dark mode preference
+  if (localStorage.getItem('xpenz-dark') === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+  function updateDMToggle() {
+    var isDark = document.documentElement.classList.contains('dark');
+    var btn = document.getElementById('dm-toggle-btn');
+    var icon = document.getElementById('dm-icon');
+    if (icon) icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+    if (btn) {
+      btn.style.background = isDark ? 'rgba(26,31,48,0.9)' : 'rgba(255,255,255,0.9)';
+      btn.style.borderColor = isDark ? 'rgba(51,65,85,0.5)' : 'rgba(148,163,184,0.3)';
+    }
+    if (icon) icon.style.color = isDark ? '#94a3b8' : '#64748b';
+  }
+  // Apply on load
+  updateDMToggle();
+</script>
+</body></html>

@@ -1,0 +1,1210 @@
+{
+  "version": "1.0.0",
+  "description": "Xpenzo 520-category hierarchical taxonomy for Indian UPI expense classification",
+  "total_l1": 15,
+  "total_l2": 80,
+  "total_l3": 520,
+  "last_updated": "2025-01-20",
+  "categories": [
+    {
+      "l1_id": 1,
+      "l1_code": "FD",
+      "l1_name": "Food & Dining",
+      "l1_icon": "restaurant",
+      "subcategories": [
+        {
+          "l2_id": 1,
+          "l2_code": "FD_REST",
+          "l2_name": "Restaurants",
+          "micro_categories": [
+            { "l3_id": 1, "l3_code": "FD_REST_NI", "l3_name": "North Indian Restaurant", "keywords": ["dhaba", "punjabi", "tandoor", "butter chicken", "dal makhani", "naan", "paratha"], "example_merchants": ["Haldiram", "Bikanervala", "Sagar Ratna", "Moti Mahal"] },
+            { "l3_id": 2, "l3_code": "FD_REST_SI", "l3_name": "South Indian Restaurant", "keywords": ["dosa", "idli", "uttapam", "sambhar", "rasam", "udupi", "tiffin"], "example_merchants": ["Saravana Bhavan", "A2B", "Vasudev Adigas", "Murugan Idli"] },
+            { "l3_id": 3, "l3_code": "FD_REST_CH", "l3_name": "Chinese / Indo-Chinese", "keywords": ["chinese", "noodles", "manchurian", "schezwan", "hakka", "momos", "wok"], "example_merchants": ["Mainland China", "Chung Wah", "Wow China"] },
+            { "l3_id": 4, "l3_code": "FD_REST_CT", "l3_name": "Continental / European", "keywords": ["continental", "pasta", "steak", "european", "french", "grill"], "example_merchants": ["The Table", "Olive Bar"] },
+            { "l3_id": 5, "l3_code": "FD_REST_IT", "l3_name": "Italian / Pizza Parlor", "keywords": ["pizza", "pasta", "italian", "risotto", "lasagna", "wood fire"], "example_merchants": ["Little Italy", "Jamie's Pizzeria", "1441 Pizzeria"] },
+            { "l3_id": 6, "l3_code": "FD_REST_JK", "l3_name": "Japanese / Korean / Thai", "keywords": ["sushi", "ramen", "korean", "thai", "japanese", "bento", "kimchi"], "example_merchants": ["Guppy", "Yauatcha", "Hakkasan"] },
+            { "l3_id": 7, "l3_code": "FD_REST_MG", "l3_name": "Mughlai / Biryani House", "keywords": ["biryani", "mughlai", "kebab", "korma", "nihari", "lucknowi", "hyderabadi"], "example_merchants": ["Paradise Biryani", "Behrouz", "Pista House"] },
+            { "l3_id": 8, "l3_code": "FD_REST_BN", "l3_name": "Bengali Restaurant", "keywords": ["bengali", "mishti", "fish curry", "rosogolla", "kosha mangsho", "machher jhol"], "example_merchants": ["Oh Calcutta", "6 Ballygunge Place"] },
+            { "l3_id": 9, "l3_code": "FD_REST_GJ", "l3_name": "Gujarati / Rajasthani Thali", "keywords": ["gujarati", "rajasthani", "thali", "dal baati", "undhiyu", "fafda", "dhokla"], "example_merchants": ["Gordhan Thal", "Rajdhani"] },
+            { "l3_id": 10, "l3_code": "FD_REST_KR", "l3_name": "Kerala / Coastal", "keywords": ["kerala", "appam", "puttu", "malabar", "fish fry", "stew", "coastal"], "example_merchants": ["Paragon", "Kayees", "Thalassery"] },
+            { "l3_id": 11, "l3_code": "FD_REST_MC", "l3_name": "Multi-Cuisine Restaurant", "keywords": ["multi-cuisine", "family restaurant", "multi cuisine", "all day dining"], "example_merchants": ["Barbeque Nation", "Absolute Barbecue"] },
+            { "l3_id": 12, "l3_code": "FD_REST_FD", "l3_name": "Fine Dining", "keywords": ["fine dining", "premium", "luxury", "tasting menu", "michelin", "gourmet"], "example_merchants": ["Indian Accent", "Bukhara", "Dum Pukht"] },
+            { "l3_id": 13, "l3_code": "FD_REST_TH", "l3_name": "Themed / Rooftop Restaurant", "keywords": ["rooftop", "themed", "lounge dining", "sky lounge", "revolving"], "example_merchants": ["Farzi Cafe", "Byg Brewski"] },
+            { "l3_id": 14, "l3_code": "FD_REST_BF", "l3_name": "Buffet Restaurant", "keywords": ["buffet", "all you can eat", "unlimited", "spread"], "example_merchants": ["Pirates of Grill", "AB's"] },
+            { "l3_id": 15, "l3_code": "FD_REST_OTH", "l3_name": "Other Restaurant", "keywords": ["restaurant", "hotel", "bhojanalaya", "mess", "eatery"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 2,
+          "l2_code": "FD_FAST",
+          "l2_name": "Fast Food",
+          "micro_categories": [
+            { "l3_id": 16, "l3_code": "FD_FAST_BG", "l3_name": "Burger Chain", "keywords": ["burger", "mcdonalds", "burger king", "whopper", "big mac"], "example_merchants": ["McDonald's", "Burger King", "Wendy's"] },
+            { "l3_id": 17, "l3_code": "FD_FAST_PZ", "l3_name": "Pizza Chain", "keywords": ["dominos", "pizza hut", "pizza", "cheesy", "stuffed crust"], "example_merchants": ["Domino's", "Pizza Hut", "La Pino'z"] },
+            { "l3_id": 18, "l3_code": "FD_FAST_FC", "l3_name": "Fried Chicken Chain", "keywords": ["kfc", "fried chicken", "chicken bucket", "popcorn chicken", "crispy"], "example_merchants": ["KFC", "Chick King"] },
+            { "l3_id": 19, "l3_code": "FD_FAST_SW", "l3_name": "Submarine / Sandwich", "keywords": ["subway", "sandwich", "sub", "wrap", "panini"], "example_merchants": ["Subway", "Quiznos"] },
+            { "l3_id": 20, "l3_code": "FD_FAST_IN", "l3_name": "Indian Fast Food Chain", "keywords": ["haldiram", "bikanervala", "chaat", "namkeen", "mithai"], "example_merchants": ["Haldiram's", "Bikanervala", "Chatar Patar"] },
+            { "l3_id": 21, "l3_code": "FD_FAST_WR", "l3_name": "Wrap / Roll / Shawarma", "keywords": ["shawarma", "roll", "kathi roll", "wrap", "frankie"], "example_merchants": ["Faasos", "Tibbs Frankie"] },
+            { "l3_id": 22, "l3_code": "FD_FAST_MO", "l3_name": "Momos", "keywords": ["momos", "dumpling", "steamed", "fried momos", "tandoori momos"], "example_merchants": ["Wow Momo", "Momo King"] },
+            { "l3_id": 23, "l3_code": "FD_FAST_PB", "l3_name": "Pav Bhaji / Misal", "keywords": ["pav bhaji", "misal", "bhaji", "pav", "maharashtrian"], "example_merchants": ["Sardar Pav Bhaji", "Ashok Pav Bhaji"] },
+            { "l3_id": 24, "l3_code": "FD_FAST_DS", "l3_name": "Dosa / Idli Stand", "keywords": ["dosa", "idli", "medu vada", "masala dosa", "rava dosa"], "example_merchants": ["Dosa Plaza", "Vaango"] },
+            { "l3_id": 25, "l3_code": "FD_FAST_CT", "l3_name": "Chaat Counter", "keywords": ["chaat", "golgappa", "sev puri", "bhel puri", "pani puri", "tikki"], "example_merchants": ["Bittoo Tikki Wala", "Prince Chaat"] },
+            { "l3_id": 26, "l3_code": "FD_FAST_QS", "l3_name": "Quick Service Restaurant", "keywords": ["qsr", "quick service", "takeaway", "grab and go", "counter service"], "example_merchants": ["Chai Point", "Box8"] },
+            { "l3_id": 27, "l3_code": "FD_FAST_OTH", "l3_name": "Other Fast Food", "keywords": ["fast food", "snack bar", "food court", "stall"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 3,
+          "l2_code": "FD_CAFE",
+          "l2_name": "Cafes & Coffee",
+          "micro_categories": [
+            { "l3_id": 28, "l3_code": "FD_CAFE_CC", "l3_name": "Coffee Chain", "keywords": ["starbucks", "ccd", "cafe coffee day", "third wave", "blue tokai", "coffee"], "example_merchants": ["Starbucks", "Cafe Coffee Day", "Third Wave Coffee", "Blue Tokai"] },
+            { "l3_id": 29, "l3_code": "FD_CAFE_TH", "l3_name": "Tea House / Chai", "keywords": ["chaayos", "chai point", "tea", "chai", "kullad", "cutting"], "example_merchants": ["Chaayos", "Chai Point", "MBA Chai Wala"] },
+            { "l3_id": 30, "l3_code": "FD_CAFE_JC", "l3_name": "Juice Bar / Smoothie", "keywords": ["juice", "smoothie", "fresh juice", "cold pressed", "shake"], "example_merchants": ["Huber & Holly", "Raw Pressery"] },
+            { "l3_id": 31, "l3_code": "FD_CAFE_DS", "l3_name": "Dessert Cafe", "keywords": ["dessert", "waffle", "pancake", "brownie", "ice cream cafe"], "example_merchants": ["Theobroma", "The Chocolate Room"] },
+            { "l3_id": 32, "l3_code": "FD_CAFE_BK", "l3_name": "Bakery Cafe", "keywords": ["bakery", "cafe", "pastry", "croissant", "artisan bread"], "example_merchants": ["The Baker's Dozen", "Karachi Bakery"] },
+            { "l3_id": 33, "l3_code": "FD_CAFE_CW", "l3_name": "Co-Working Cafe", "keywords": ["co-working", "work cafe", "laptop friendly", "wifi cafe"], "example_merchants": ["Social", "Dialogues Cafe"] },
+            { "l3_id": 34, "l3_code": "FD_CAFE_LC", "l3_name": "Local Cafe / Canteen", "keywords": ["canteen", "local cafe", "tapri", "irani cafe", "udipi"], "example_merchants": ["Leopold Cafe", "Indian Coffee House"] },
+            { "l3_id": 35, "l3_code": "FD_CAFE_OTH", "l3_name": "Other Cafe", "keywords": ["cafe", "coffee shop", "espresso", "latte"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 4,
+          "l2_code": "FD_GROC",
+          "l2_name": "Groceries",
+          "micro_categories": [
+            { "l3_id": 36, "l3_code": "FD_GROC_KR", "l3_name": "Kirana Store", "keywords": ["kirana", "general store", "provision", "grocery", "neighbourhood"], "example_merchants": [] },
+            { "l3_id": 37, "l3_code": "FD_GROC_SM", "l3_name": "Supermarket Chain", "keywords": ["dmart", "reliance fresh", "big bazaar", "more", "supermarket", "star bazaar"], "example_merchants": ["DMart", "Reliance Fresh", "Big Bazaar", "More Supermarket", "Star Bazaar"] },
+            { "l3_id": 38, "l3_code": "FD_GROC_ON", "l3_name": "Online Grocery", "keywords": ["bigbasket", "blinkit", "zepto", "jiomart", "instamart", "dunzo", "swiggy instamart"], "example_merchants": ["BigBasket", "Blinkit", "Zepto", "JioMart", "Swiggy Instamart"] },
+            { "l3_id": 39, "l3_code": "FD_GROC_VF", "l3_name": "Vegetable / Fruit Vendor", "keywords": ["sabzi", "vegetable", "fruit", "mandi", "phool mandi", "sabzi mandi"], "example_merchants": [] },
+            { "l3_id": 40, "l3_code": "FD_GROC_MF", "l3_name": "Meat / Fish Shop", "keywords": ["meat", "chicken", "mutton", "fish", "seafood", "butcher", "machhi"], "example_merchants": ["Licious", "FreshToHome", "ZappFresh"] },
+            { "l3_id": 41, "l3_code": "FD_GROC_DR", "l3_name": "Dairy Shop", "keywords": ["dairy", "milk", "curd", "paneer", "cheese", "doodh", "amul"], "example_merchants": ["Amul", "Mother Dairy", "Country Delight"] },
+            { "l3_id": 42, "l3_code": "FD_GROC_DF", "l3_name": "Dry Fruits / Nuts", "keywords": ["dry fruit", "nuts", "almonds", "cashew", "raisin", "kaju", "badam"], "example_merchants": ["Nutraj", "Happilo"] },
+            { "l3_id": 43, "l3_code": "FD_GROC_SP", "l3_name": "Spices / Masala", "keywords": ["spice", "masala", "haldi", "mirchi", "jeera", "dhania"], "example_merchants": ["MDH", "Everest", "Catch"] },
+            { "l3_id": 44, "l3_code": "FD_GROC_OR", "l3_name": "Organic / Health Store", "keywords": ["organic", "health food", "gluten free", "vegan", "natural"], "example_merchants": ["Organic India", "24 Mantra", "Nature's Basket"] },
+            { "l3_id": 45, "l3_code": "FD_GROC_WH", "l3_name": "Wholesale / Cash-and-Carry", "keywords": ["wholesale", "cash and carry", "bulk", "metro cash", "bestprice"], "example_merchants": ["Metro Cash & Carry", "Walmart BestPrice"] },
+            { "l3_id": 46, "l3_code": "FD_GROC_FZ", "l3_name": "Frozen Food", "keywords": ["frozen", "ready to eat", "instant", "freezer", "ITC masterchef"], "example_merchants": ["McCain", "ITC Master Chef", "Godrej Yummiez"] },
+            { "l3_id": 47, "l3_code": "FD_GROC_IM", "l3_name": "Imported / Gourmet", "keywords": ["imported", "gourmet", "international", "speciality", "foreign"], "example_merchants": ["Foodhall", "Nature's Basket"] },
+            { "l3_id": 48, "l3_code": "FD_GROC_OG", "l3_name": "Oil / Ghee", "keywords": ["oil", "ghee", "cooking oil", "mustard oil", "refined oil", "desi ghee"], "example_merchants": ["Fortune", "Saffola", "Patanjali"] },
+            { "l3_id": 49, "l3_code": "FD_GROC_GR", "l3_name": "Grain / Flour / Rice", "keywords": ["atta", "rice", "flour", "grain", "maida", "chawal", "dal"], "example_merchants": ["Aashirvaad", "India Gate", "Tata Sampann"] },
+            { "l3_id": 50, "l3_code": "FD_GROC_OTH", "l3_name": "Other Grocery", "keywords": ["grocery", "provisions", "household", "daily needs"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 5,
+          "l2_code": "FD_DLVR",
+          "l2_name": "Food Delivery",
+          "micro_categories": [
+            { "l3_id": 51, "l3_code": "FD_DLVR_SW", "l3_name": "Swiggy", "keywords": ["swiggy", "swiggy order", "swiggy delivery"], "example_merchants": ["Swiggy"] },
+            { "l3_id": 52, "l3_code": "FD_DLVR_ZM", "l3_name": "Zomato", "keywords": ["zomato", "zomato order", "zomato delivery", "zomato gold"], "example_merchants": ["Zomato"] },
+            { "l3_id": 53, "l3_code": "FD_DLVR_DN", "l3_name": "Dunzo", "keywords": ["dunzo", "dunzo daily", "dunzo delivery"], "example_merchants": ["Dunzo"] },
+            { "l3_id": 54, "l3_code": "FD_DLVR_ES", "l3_name": "EatSure / Rebel Foods", "keywords": ["eatsure", "rebel foods", "faasos", "behrouz", "ovenstory"], "example_merchants": ["EatSure", "Faasos", "Behrouz Biryani"] },
+            { "l3_id": 55, "l3_code": "FD_DLVR_CK", "l3_name": "Cloud Kitchen", "keywords": ["cloud kitchen", "virtual kitchen", "delivery only", "ghost kitchen"], "example_merchants": ["Box8", "FreshMenu", "Eatfit"] },
+            { "l3_id": 56, "l3_code": "FD_DLVR_OTH", "l3_name": "Other Food Delivery", "keywords": ["food delivery", "online food", "order online"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 6,
+          "l2_code": "FD_STRT",
+          "l2_name": "Street Food",
+          "micro_categories": [
+            { "l3_id": 57, "l3_code": "FD_STRT_CH", "l3_name": "Chai / Tea Stall", "keywords": ["chai", "tea stall", "tapri", "cutting chai", "bun maska"], "example_merchants": [] },
+            { "l3_id": 58, "l3_code": "FD_STRT_CT", "l3_name": "Chaat / Golgappa", "keywords": ["chaat", "golgappa", "pani puri", "bhel", "sev puri", "dahi puri"], "example_merchants": [] },
+            { "l3_id": 59, "l3_code": "FD_STRT_VP", "l3_name": "Vada Pav", "keywords": ["vada pav", "vadapav", "batata vada", "mumbai street"], "example_merchants": ["Goli Vada Pav", "Jumbo King"] },
+            { "l3_id": 60, "l3_code": "FD_STRT_SK", "l3_name": "Samosa / Kachori", "keywords": ["samosa", "kachori", "aloo tikki", "pakora", "bhajiya"], "example_merchants": [] },
+            { "l3_id": 61, "l3_code": "FD_STRT_KB", "l3_name": "Kebab / Tikka Stall", "keywords": ["kebab", "seekh", "tikka", "tandoori", "grill stall"], "example_merchants": ["Khan Chacha", "Tunday Kebabi"] },
+            { "l3_id": 62, "l3_code": "FD_STRT_ER", "l3_name": "Egg Roll / Frankie", "keywords": ["egg roll", "frankie", "kathi roll", "egg bhurji", "anda"], "example_merchants": [] },
+            { "l3_id": 63, "l3_code": "FD_STRT_CN", "l3_name": "Corn / Bhutta", "keywords": ["bhutta", "corn", "makka", "roasted corn", "baby corn"], "example_merchants": [] },
+            { "l3_id": 64, "l3_code": "FD_STRT_IC", "l3_name": "Ice Cream Cart", "keywords": ["ice cream", "kulfi", "ice gola", "softy", "matka kulfi"], "example_merchants": [] },
+            { "l3_id": 65, "l3_code": "FD_STRT_KG", "l3_name": "Kulfi / Gola", "keywords": ["kulfi", "gola", "chuski", "baraf ka gola", "shaved ice"], "example_merchants": [] },
+            { "l3_id": 66, "l3_code": "FD_STRT_JC", "l3_name": "Juice / Sugarcane", "keywords": ["juice", "sugarcane", "ganne ka ras", "nimbu pani", "lassi"], "example_merchants": [] },
+            { "l3_id": 67, "l3_code": "FD_STRT_PP", "l3_name": "Pan / Betel Shop", "keywords": ["pan", "paan", "betel", "supari", "mukhwas", "pan masala"], "example_merchants": [] },
+            { "l3_id": 68, "l3_code": "FD_STRT_OTH", "l3_name": "Other Street Food", "keywords": ["street food", "thela", "stall", "hawker", "footpath"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 7,
+          "l2_code": "FD_BAKE",
+          "l2_name": "Bakery & Sweets",
+          "micro_categories": [
+            { "l3_id": 69, "l3_code": "FD_BAKE_MT", "l3_name": "Indian Sweets / Mithai", "keywords": ["mithai", "sweets", "laddu", "barfi", "rasgulla", "gulab jamun", "jalebi"], "example_merchants": ["Bengali Sweet House", "Aggarwal Sweets", "K.C. Das"] },
+            { "l3_id": 70, "l3_code": "FD_BAKE_WB", "l3_name": "Western Bakery", "keywords": ["bakery", "bread", "croissant", "baguette", "sourdough"], "example_merchants": ["Theobroma", "Le15 Patisserie"] },
+            { "l3_id": 71, "l3_code": "FD_BAKE_CK", "l3_name": "Cake Shop", "keywords": ["cake", "birthday cake", "custom cake", "cupcake", "pastry"], "example_merchants": ["Monginis", "Just Bake", "Mio Amore"] },
+            { "l3_id": 72, "l3_code": "FD_BAKE_CH", "l3_name": "Chocolate Shop", "keywords": ["chocolate", "truffle", "cocoa", "praline", "handmade chocolate"], "example_merchants": ["Cadbury", "Fabelle", "Smoor"] },
+            { "l3_id": 73, "l3_code": "FD_BAKE_NK", "l3_name": "Namkeen / Snacks", "keywords": ["namkeen", "mixture", "sev", "bhujia", "chips", "snacks"], "example_merchants": ["Haldiram's", "Bikano", "Balaji Wafers"] },
+            { "l3_id": 74, "l3_code": "FD_BAKE_IP", "l3_name": "Ice Cream Parlor", "keywords": ["ice cream", "gelato", "sundae", "parlour", "parlor"], "example_merchants": ["Baskin Robbins", "Naturals", "Amul Parlour"] },
+            { "l3_id": 75, "l3_code": "FD_BAKE_FY", "l3_name": "Frozen Yogurt", "keywords": ["frozen yogurt", "froyo", "yogurt bar", "toppings"], "example_merchants": ["Cocoberry", "Red Mango"] },
+            { "l3_id": 76, "l3_code": "FD_BAKE_CK2", "l3_name": "Cookie / Biscuit", "keywords": ["cookie", "biscuit", "rusk", "toast", "cookies"], "example_merchants": ["Karachi Bakery", "Pune Bakery"] },
+            { "l3_id": 77, "l3_code": "FD_BAKE_DT", "l3_name": "Dry Fruits & Dates", "keywords": ["dates", "khajoor", "energy balls", "fruit", "dry fruit box"], "example_merchants": [] },
+            { "l3_id": 78, "l3_code": "FD_BAKE_OTH", "l3_name": "Other Bakery / Sweets", "keywords": ["bakery", "sweet shop", "confectionery", "mithai shop"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 8,
+          "l2_code": "FD_ALCL",
+          "l2_name": "Alcohol & Bars",
+          "micro_categories": [
+            { "l3_id": 79, "l3_code": "FD_ALCL_BP", "l3_name": "Bar / Pub", "keywords": ["bar", "pub", "drinks", "cocktail", "happy hour"], "example_merchants": ["Toit", "The Irish House"] },
+            { "l3_id": 80, "l3_code": "FD_ALCL_MB", "l3_name": "Microbrewery / Brewery", "keywords": ["microbrewery", "brewery", "craft beer", "tap house", "brew pub"], "example_merchants": ["Byg Brewski", "Toit Brewery", "Arbor Brewing"] },
+            { "l3_id": 81, "l3_code": "FD_ALCL_WS", "l3_name": "Wine Shop / Theka", "keywords": ["wine shop", "theka", "ahata", "liquor shop", "desi sharab"], "example_merchants": [] },
+            { "l3_id": 82, "l3_code": "FD_ALCL_LS", "l3_name": "Liquor Store / Premium", "keywords": ["liquor store", "premium spirits", "whisky", "wine store", "imported liquor"], "example_merchants": ["Living Liquidz", "The Liquor Store"] },
+            { "l3_id": 83, "l3_code": "FD_ALCL_LG", "l3_name": "Lounge / Nightclub", "keywords": ["lounge", "nightclub", "club", "disco", "dj night"], "example_merchants": ["Kitty Su", "Aer Lounge"] },
+            { "l3_id": 84, "l3_code": "FD_ALCL_RB", "l3_name": "Restaurant Bar", "keywords": ["restro bar", "restobar", "bar and grill", "gastropub"], "example_merchants": ["Social", "Boteco"] },
+            { "l3_id": 85, "l3_code": "FD_ALCL_OTH", "l3_name": "Other Alcohol", "keywords": ["alcohol", "beer", "wine", "spirits", "drinks"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 2,
+      "l1_code": "TR",
+      "l1_name": "Transportation",
+      "l1_icon": "directions_car",
+      "subcategories": [
+        {
+          "l2_id": 9,
+          "l2_code": "TR_PUB",
+          "l2_name": "Public Transit",
+          "micro_categories": [
+            { "l3_id": 86, "l3_code": "TR_PUB_MT", "l3_name": "Metro / Subway", "keywords": ["metro", "subway", "dmrc", "namma metro", "metro card"], "example_merchants": ["Delhi Metro", "Mumbai Metro", "Bangalore Metro"] },
+            { "l3_id": 87, "l3_code": "TR_PUB_CB", "l3_name": "City Bus", "keywords": ["bus", "dtc", "best bus", "bmtc", "city bus", "public bus"], "example_merchants": ["DTC", "BEST", "BMTC", "TSRTC"] },
+            { "l3_id": 88, "l3_code": "TR_PUB_AR", "l3_name": "Auto Rickshaw", "keywords": ["auto", "auto rickshaw", "autorickshaw", "three wheeler", "tuk tuk"], "example_merchants": [] },
+            { "l3_id": 89, "l3_code": "TR_PUB_ER", "l3_name": "E-Rickshaw", "keywords": ["e-rickshaw", "electric rickshaw", "toto", "battery rickshaw"], "example_merchants": [] },
+            { "l3_id": 90, "l3_code": "TR_PUB_LT", "l3_name": "Local Train / Suburban", "keywords": ["local train", "suburban", "mumbai local", "emu"], "example_merchants": ["Mumbai Local", "Kolkata Suburban"] },
+            { "l3_id": 91, "l3_code": "TR_PUB_SB", "l3_name": "State Bus / Volvo", "keywords": ["state bus", "volvo", "ksrtc", "rsrtc", "upsrtc", "apsrtc"], "example_merchants": ["KSRTC", "RSRTC", "UPSRTC", "MSRTC"] },
+            { "l3_id": 92, "l3_code": "TR_PUB_OTH", "l3_name": "Other Public Transit", "keywords": ["ferry", "boat", "tram", "monorail", "water metro"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 10,
+          "l2_code": "TR_RIDE",
+          "l2_name": "Ride Hailing",
+          "micro_categories": [
+            { "l3_id": 93, "l3_code": "TR_RIDE_UB", "l3_name": "Uber", "keywords": ["uber", "uber go", "uber auto", "uber moto", "uber xl"], "example_merchants": ["Uber"] },
+            { "l3_id": 94, "l3_code": "TR_RIDE_OL", "l3_name": "Ola", "keywords": ["ola", "ola mini", "ola prime", "ola auto", "ola bike"], "example_merchants": ["Ola"] },
+            { "l3_id": 95, "l3_code": "TR_RIDE_RP", "l3_name": "Rapido", "keywords": ["rapido", "rapido bike", "rapido auto"], "example_merchants": ["Rapido"] },
+            { "l3_id": 96, "l3_code": "TR_RIDE_ID", "l3_name": "InDriver", "keywords": ["indriver", "indrive", "bid ride", "negotiate fare"], "example_merchants": ["InDriver"] },
+            { "l3_id": 97, "l3_code": "TR_RIDE_BS", "l3_name": "BluSmart", "keywords": ["blusmart", "electric cab", "ev taxi"], "example_merchants": ["BluSmart"] },
+            { "l3_id": 98, "l3_code": "TR_RIDE_OTH", "l3_name": "Other Ride Hailing", "keywords": ["ride", "taxi", "cab", "booking", "namma yatri"], "example_merchants": ["Namma Yatri", "Meru Cab"] }
+          ]
+        },
+        {
+          "l2_id": 11,
+          "l2_code": "TR_FUEL",
+          "l2_name": "Fuel & Charging",
+          "micro_categories": [
+            { "l3_id": 99, "l3_code": "TR_FUEL_PT", "l3_name": "Petrol / Gasoline", "keywords": ["petrol", "petrol pump", "gasoline", "fuel station"], "example_merchants": ["Indian Oil", "HP", "Bharat Petroleum"] },
+            { "l3_id": 100, "l3_code": "TR_FUEL_DL", "l3_name": "Diesel", "keywords": ["diesel", "hsd", "diesel pump"], "example_merchants": ["Indian Oil", "HP", "BP"] },
+            { "l3_id": 101, "l3_code": "TR_FUEL_CG", "l3_name": "CNG / LPG Auto", "keywords": ["cng", "lpg", "compressed natural gas", "adani gas", "igl"], "example_merchants": ["IGL", "Mahanagar Gas", "Adani Gas"] },
+            { "l3_id": 102, "l3_code": "TR_FUEL_EV", "l3_name": "EV Charging", "keywords": ["ev charging", "electric vehicle", "charging station", "tata power ez"], "example_merchants": ["Tata Power EZ Charge", "Ather Grid", "ChargeZone"] },
+            { "l3_id": 103, "l3_code": "TR_FUEL_FC", "l3_name": "Fuel Card / Prepaid", "keywords": ["fuel card", "fleet card", "prepaid fuel", "smartfleet"], "example_merchants": ["HPCL PayMart", "IOC SmartFleet"] },
+            { "l3_id": 104, "l3_code": "TR_FUEL_OTH", "l3_name": "Other Fuel", "keywords": ["fuel", "energy", "refueling"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 12,
+          "l2_code": "TR_PARK",
+          "l2_name": "Parking & Tolls",
+          "micro_categories": [
+            { "l3_id": 105, "l3_code": "TR_PARK_LT", "l3_name": "Parking Lot / Garage", "keywords": ["parking", "parking lot", "garage", "multi level parking", "basement parking"], "example_merchants": ["Get My Parking", "Park+"] },
+            { "l3_id": 106, "l3_code": "TR_PARK_ST", "l3_name": "Street Parking", "keywords": ["street parking", "metered parking", "pay and park", "parking meter"], "example_merchants": [] },
+            { "l3_id": 107, "l3_code": "TR_PARK_FT", "l3_name": "FASTag / Highway Toll", "keywords": ["fastag", "highway toll", "toll plaza", "nhai", "toll booth"], "example_merchants": ["NHAI", "FASTag", "Paytm FASTag"] },
+            { "l3_id": 108, "l3_code": "TR_PARK_BT", "l3_name": "Bridge / Tunnel Toll", "keywords": ["bridge toll", "tunnel toll", "sea link", "bandra worli"], "example_merchants": ["Bandra Worli Sea Link"] },
+            { "l3_id": 109, "l3_code": "TR_PARK_OTH", "l3_name": "Other Parking / Toll", "keywords": ["parking fee", "toll", "valet", "valet parking"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 13,
+          "l2_code": "TR_MAINT",
+          "l2_name": "Vehicle Maintenance",
+          "micro_categories": [
+            { "l3_id": 110, "l3_code": "TR_MAINT_CS", "l3_name": "Car Service / Repair", "keywords": ["car service", "car repair", "garage", "mechanic", "car workshop"], "example_merchants": ["GoMechanic", "myTVS", "Pitstop"] },
+            { "l3_id": 111, "l3_code": "TR_MAINT_TW", "l3_name": "Two-Wheeler Service", "keywords": ["bike service", "scooter repair", "two wheeler", "activa service"], "example_merchants": ["BikeWo", "Ola Service"] },
+            { "l3_id": 112, "l3_code": "TR_MAINT_TY", "l3_name": "Tyre / Puncture", "keywords": ["tyre", "tire", "puncture", "wheel alignment", "balancing"], "example_merchants": ["MRF", "CEAT", "Apollo Tyres"] },
+            { "l3_id": 113, "l3_code": "TR_MAINT_CW", "l3_name": "Car Wash / Detailing", "keywords": ["car wash", "detailing", "polish", "ceramic coating", "interior cleaning"], "example_merchants": ["3M Car Care", "ExpressWash"] },
+            { "l3_id": 114, "l3_code": "TR_MAINT_SP", "l3_name": "Spare Parts / Accessories", "keywords": ["spare parts", "auto parts", "car accessories", "blinker", "wiper"], "example_merchants": ["Boodmo", "myTVS Parts"] },
+            { "l3_id": 115, "l3_code": "TR_MAINT_OTH", "l3_name": "Other Vehicle Maintenance", "keywords": ["vehicle service", "rta", "puc", "emission test", "vehicle insurance renewal"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 3,
+      "l1_code": "SH",
+      "l1_name": "Shopping",
+      "l1_icon": "shopping_bag",
+      "subcategories": [
+        {
+          "l2_id": 14,
+          "l2_code": "SH_ONLN",
+          "l2_name": "Online Shopping",
+          "micro_categories": [
+            { "l3_id": 116, "l3_code": "SH_ONLN_AM", "l3_name": "Amazon India", "keywords": ["amazon", "amazon india", "amazon pay", "prime"], "example_merchants": ["Amazon"] },
+            { "l3_id": 117, "l3_code": "SH_ONLN_FK", "l3_name": "Flipkart", "keywords": ["flipkart", "flipkart order", "supercoins"], "example_merchants": ["Flipkart"] },
+            { "l3_id": 118, "l3_code": "SH_ONLN_MY", "l3_name": "Myntra", "keywords": ["myntra", "fashion", "ethnic wear"], "example_merchants": ["Myntra"] },
+            { "l3_id": 119, "l3_code": "SH_ONLN_ME", "l3_name": "Meesho", "keywords": ["meesho", "reseller", "wholesale online"], "example_merchants": ["Meesho"] },
+            { "l3_id": 120, "l3_code": "SH_ONLN_AJ", "l3_name": "Ajio / Tata CLiQ", "keywords": ["ajio", "tata cliq", "tata", "luxury fashion"], "example_merchants": ["Ajio", "Tata CLiQ"] },
+            { "l3_id": 121, "l3_code": "SH_ONLN_NY", "l3_name": "Nykaa", "keywords": ["nykaa", "nykaa fashion", "beauty", "cosmetics online"], "example_merchants": ["Nykaa"] },
+            { "l3_id": 122, "l3_code": "SH_ONLN_FC", "l3_name": "FirstCry / Kids", "keywords": ["firstcry", "baby", "kids", "hopscotch"], "example_merchants": ["FirstCry", "Hopscotch"] },
+            { "l3_id": 123, "l3_code": "SH_ONLN_SD", "l3_name": "Snapdeal / Others", "keywords": ["snapdeal", "shopclues", "paytm mall", "indiamart"], "example_merchants": ["Snapdeal", "ShopClues"] },
+            { "l3_id": 124, "l3_code": "SH_ONLN_IG", "l3_name": "Instagram / Social Commerce", "keywords": ["instagram shop", "social commerce", "whatsapp order", "d2c"], "example_merchants": [] },
+            { "l3_id": 125, "l3_code": "SH_ONLN_OTH", "l3_name": "Other Online Shopping", "keywords": ["online shopping", "ecommerce", "online order", "cod"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 15,
+          "l2_code": "SH_CLTH",
+          "l2_name": "Clothing & Apparel",
+          "micro_categories": [
+            { "l3_id": 126, "l3_code": "SH_CLTH_MN", "l3_name": "Men's Clothing", "keywords": ["mens wear", "shirt", "trouser", "jeans", "formal", "casual"], "example_merchants": ["Peter England", "Allen Solly", "Van Heusen"] },
+            { "l3_id": 127, "l3_code": "SH_CLTH_WM", "l3_name": "Women's Clothing", "keywords": ["womens wear", "kurti", "saree", "dress", "lehenga", "salwar"], "example_merchants": ["W", "Biba", "Global Desi", "FabIndia"] },
+            { "l3_id": 128, "l3_code": "SH_CLTH_KD", "l3_name": "Kids' Clothing", "keywords": ["kids clothing", "children wear", "baby clothes", "junior"], "example_merchants": ["Gini & Jony", "Lilliput"] },
+            { "l3_id": 129, "l3_code": "SH_CLTH_ET", "l3_name": "Traditional / Ethnic Wear", "keywords": ["ethnic", "traditional", "kurta", "sherwani", "dhoti", "lungi"], "example_merchants": ["Manyavar", "FabIndia", "Taneira"] },
+            { "l3_id": 130, "l3_code": "SH_CLTH_SP", "l3_name": "Sports / Activewear", "keywords": ["sportswear", "activewear", "tracksuit", "gym wear", "yoga wear"], "example_merchants": ["Nike", "Adidas", "Puma", "HRX"] },
+            { "l3_id": 131, "l3_code": "SH_CLTH_FW", "l3_name": "Footwear", "keywords": ["shoes", "sandals", "chappal", "sneakers", "boots", "jootis"], "example_merchants": ["Bata", "Metro Shoes", "Liberty", "Crocs"] },
+            { "l3_id": 132, "l3_code": "SH_CLTH_AC", "l3_name": "Accessories / Bags", "keywords": ["bag", "wallet", "belt", "sunglasses", "watch", "handbag"], "example_merchants": ["Titan", "Fastrack", "Hidesign", "Wildcraft"] },
+            { "l3_id": 133, "l3_code": "SH_CLTH_OTH", "l3_name": "Other Clothing", "keywords": ["clothing", "garment", "apparel", "fashion", "boutique"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 16,
+          "l2_code": "SH_ELEC",
+          "l2_name": "Electronics & Gadgets",
+          "micro_categories": [
+            { "l3_id": 134, "l3_code": "SH_ELEC_MP", "l3_name": "Mobile Phone", "keywords": ["mobile", "smartphone", "phone", "iphone", "samsung", "xiaomi"], "example_merchants": ["Samsung", "Apple", "Xiaomi", "OnePlus", "Croma"] },
+            { "l3_id": 135, "l3_code": "SH_ELEC_LP", "l3_name": "Laptop / Computer", "keywords": ["laptop", "computer", "desktop", "macbook", "hp laptop", "dell"], "example_merchants": ["HP", "Dell", "Lenovo", "Apple"] },
+            { "l3_id": 136, "l3_code": "SH_ELEC_TV", "l3_name": "TV / Display", "keywords": ["tv", "television", "smart tv", "oled", "led tv", "monitor"], "example_merchants": ["Samsung", "LG", "Sony", "Mi TV"] },
+            { "l3_id": 137, "l3_code": "SH_ELEC_AU", "l3_name": "Audio / Headphones", "keywords": ["headphones", "earbuds", "speaker", "soundbar", "tws", "bluetooth"], "example_merchants": ["boAt", "JBL", "Sony", "Bose"] },
+            { "l3_id": 138, "l3_code": "SH_ELEC_CM", "l3_name": "Camera / Photography", "keywords": ["camera", "dslr", "mirrorless", "gopro", "lens", "photography"], "example_merchants": ["Canon", "Nikon", "Sony"] },
+            { "l3_id": 139, "l3_code": "SH_ELEC_SH", "l3_name": "Smart Home / IoT", "keywords": ["smart home", "alexa", "google home", "smart plug", "iot", "smart light"], "example_merchants": ["Amazon Echo", "Google Nest", "Philips Hue"] },
+            { "l3_id": 140, "l3_code": "SH_ELEC_GM", "l3_name": "Gaming Console / Accessories", "keywords": ["playstation", "xbox", "nintendo", "gaming", "controller", "ps5"], "example_merchants": ["Sony PS", "Microsoft Xbox"] },
+            { "l3_id": 141, "l3_code": "SH_ELEC_OTH", "l3_name": "Other Electronics", "keywords": ["electronics", "gadget", "printer", "projector", "powerbank"], "example_merchants": ["Vijay Sales", "Croma", "Reliance Digital"] }
+          ]
+        },
+        {
+          "l2_id": 17,
+          "l2_code": "SH_HOME",
+          "l2_name": "Home & Kitchen",
+          "micro_categories": [
+            { "l3_id": 142, "l3_code": "SH_HOME_FN", "l3_name": "Furniture", "keywords": ["furniture", "sofa", "table", "chair", "bed", "wardrobe", "almirah"], "example_merchants": ["IKEA", "Pepperfry", "Urban Ladder", "Godrej Interio"] },
+            { "l3_id": 143, "l3_code": "SH_HOME_KA", "l3_name": "Kitchen Appliances", "keywords": ["mixer", "grinder", "microwave", "oven", "blender", "toaster", "air fryer"], "example_merchants": ["Prestige", "Pigeon", "Philips", "Bajaj"] },
+            { "l3_id": 144, "l3_code": "SH_HOME_DC", "l3_name": "Home Decor", "keywords": ["decor", "curtains", "vase", "painting", "showpiece", "wall art"], "example_merchants": ["Home Centre", "FabIndia", "Chumbak"] },
+            { "l3_id": 145, "l3_code": "SH_HOME_MB", "l3_name": "Mattress / Bedding", "keywords": ["mattress", "pillow", "bedsheet", "comforter", "duvet", "blanket"], "example_merchants": ["Sleepwell", "Wakefit", "Duroflex", "Sunday"] },
+            { "l3_id": 146, "l3_code": "SH_HOME_SO", "l3_name": "Storage / Organization", "keywords": ["storage", "organizer", "rack", "shelf", "cabinet", "box"], "example_merchants": ["IKEA", "Solimo"] },
+            { "l3_id": 147, "l3_code": "SH_HOME_CW", "l3_name": "Cookware / Utensils", "keywords": ["cookware", "utensils", "kadhai", "tawa", "pressure cooker", "bartan"], "example_merchants": ["Prestige", "Hawkins", "Vinod"] },
+            { "l3_id": 148, "l3_code": "SH_HOME_LT", "l3_name": "Lighting", "keywords": ["light", "bulb", "lamp", "led", "chandelier", "tube light"], "example_merchants": ["Philips", "Havells", "Wipro", "Syska"] },
+            { "l3_id": 149, "l3_code": "SH_HOME_OTH", "l3_name": "Other Home", "keywords": ["home", "household", "cleaning", "mop", "broom", "dustbin"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 18,
+          "l2_code": "SH_BOOK",
+          "l2_name": "Books & Stationery",
+          "micro_categories": [
+            { "l3_id": 150, "l3_code": "SH_BOOK_PB", "l3_name": "Physical Books", "keywords": ["book", "novel", "bookstore", "kitab", "pustak"], "example_merchants": ["Crossword", "Om Book Shop", "Landmark"] },
+            { "l3_id": 151, "l3_code": "SH_BOOK_EB", "l3_name": "E-Books / Kindle", "keywords": ["ebook", "kindle", "audible", "audiobook", "digital book"], "example_merchants": ["Amazon Kindle", "Google Books"] },
+            { "l3_id": 152, "l3_code": "SH_BOOK_ST", "l3_name": "Stationery / Office Supplies", "keywords": ["stationery", "pen", "notebook", "stapler", "file", "folder"], "example_merchants": ["Classmate", "Camlin", "Nataraj"] },
+            { "l3_id": 153, "l3_code": "SH_BOOK_AR", "l3_name": "Art Supplies", "keywords": ["art supplies", "canvas", "paint", "brush", "sketch", "colour"], "example_merchants": ["Faber Castell", "Camlin", "Winsor Newton"] },
+            { "l3_id": 154, "l3_code": "SH_BOOK_NP", "l3_name": "Newspaper / Magazine", "keywords": ["newspaper", "magazine", "subscription", "akhbar", "patrika"], "example_merchants": ["TOI", "Hindu", "India Today"] },
+            { "l3_id": 155, "l3_code": "SH_BOOK_OTH", "l3_name": "Other Books / Stationery", "keywords": ["stationery shop", "bookshop", "paper", "printing paper"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 19,
+          "l2_code": "SH_GENR",
+          "l2_name": "General Retail",
+          "micro_categories": [
+            { "l3_id": 156, "l3_code": "SH_GENR_ML", "l3_name": "Shopping Mall", "keywords": ["mall", "shopping mall", "shopping center", "complex"], "example_merchants": ["Phoenix Marketcity", "Select Citywalk", "VR Mall"] },
+            { "l3_id": 157, "l3_code": "SH_GENR_DS", "l3_name": "Department Store", "keywords": ["department store", "shoppers stop", "lifestyle", "spencer"], "example_merchants": ["Shoppers Stop", "Lifestyle", "Central"] },
+            { "l3_id": 158, "l3_code": "SH_GENR_WM", "l3_name": "Wholesale Market", "keywords": ["wholesale", "market", "mandi", "sadar bazaar", "bulk"], "example_merchants": [] },
+            { "l3_id": 159, "l3_code": "SH_GENR_GF", "l3_name": "Gift Shop", "keywords": ["gift", "gift shop", "souvenir", "memento", "return gift"], "example_merchants": ["Archies", "IGP"] },
+            { "l3_id": 160, "l3_code": "SH_GENR_TY", "l3_name": "Toy Store", "keywords": ["toy", "toy store", "games", "kids toys", "lego"], "example_merchants": ["Hamley's", "Toyzone"] },
+            { "l3_id": 161, "l3_code": "SH_GENR_SP", "l3_name": "Sports / Outdoor Shop", "keywords": ["sports shop", "cricket", "badminton", "outdoor gear", "trekking"], "example_merchants": ["Decathlon", "Sports Station"] },
+            { "l3_id": 162, "l3_code": "SH_GENR_MS", "l3_name": "Music / Instrument Store", "keywords": ["music store", "guitar", "keyboard", "instrument", "musical"], "example_merchants": ["Furtados"] },
+            { "l3_id": 163, "l3_code": "SH_GENR_AA", "l3_name": "Auto Accessories Shop", "keywords": ["auto accessories", "car cover", "seat cover", "perfume", "car mat"], "example_merchants": [] },
+            { "l3_id": 164, "l3_code": "SH_GENR_HW", "l3_name": "Hardware / Tools", "keywords": ["hardware", "tools", "screws", "drill", "paint", "cemented"], "example_merchants": ["Asian Paints", "Bosch"] },
+            { "l3_id": 165, "l3_code": "SH_GENR_OTH", "l3_name": "Other Retail", "keywords": ["retail", "shop", "store", "dukan", "general store"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 76,
+          "l2_code": "SH_JWLR",
+          "l2_name": "Jewelry & Watches",
+          "micro_categories": [
+            { "l3_id": 501, "l3_code": "SH_JWLR_GL", "l3_name": "Gold Jewelry", "keywords": ["gold", "sona", "gold chain", "gold ring", "mangalsutra", "gold bangle"], "example_merchants": ["Tanishq", "Kalyan Jewellers", "Malabar Gold", "PC Jeweller"] },
+            { "l3_id": 502, "l3_code": "SH_JWLR_DM", "l3_name": "Diamond / Precious Stones", "keywords": ["diamond", "precious stone", "ruby", "emerald", "sapphire", "solitaire"], "example_merchants": ["CaratLane", "BlueStone", "Tanishq"] },
+            { "l3_id": 503, "l3_code": "SH_JWLR_IM", "l3_name": "Silver / Imitation Jewelry", "keywords": ["silver", "imitation", "artificial", "fashion jewelry", "oxidized", "chandi"], "example_merchants": ["Voylla", "Zaveri Bazaar"] },
+            { "l3_id": 504, "l3_code": "SH_JWLR_WT", "l3_name": "Watch / Smartwatch", "keywords": ["watch", "smartwatch", "wristwatch", "fitness band", "analog", "digital watch"], "example_merchants": ["Titan", "Fastrack", "Casio", "Noise", "boAt Watch"] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 4,
+      "l1_code": "HC",
+      "l1_name": "Healthcare",
+      "l1_icon": "local_hospital",
+      "subcategories": [
+        {
+          "l2_id": 20,
+          "l2_code": "HC_HOSP",
+          "l2_name": "Hospitals & Clinics",
+          "micro_categories": [
+            { "l3_id": 166, "l3_code": "HC_HOSP_MS", "l3_name": "Multi-Specialty Hospital", "keywords": ["hospital", "multi specialty", "super speciality", "medical center"], "example_merchants": ["Apollo Hospital", "Fortis", "Max Healthcare", "Medanta"] },
+            { "l3_id": 167, "l3_code": "HC_HOSP_GV", "l3_name": "Government Hospital", "keywords": ["government hospital", "sarkari hospital", "pgi", "aiims"], "example_merchants": ["AIIMS", "PGI Chandigarh", "Safdarjung"] },
+            { "l3_id": 168, "l3_code": "HC_HOSP_PC", "l3_name": "Private Clinic", "keywords": ["clinic", "private clinic", "doctor clinic", "polyclinic"], "example_merchants": [] },
+            { "l3_id": 169, "l3_code": "HC_HOSP_NH", "l3_name": "Nursing Home", "keywords": ["nursing home", "care home", "small hospital"], "example_merchants": [] },
+            { "l3_id": 170, "l3_code": "HC_HOSP_MT", "l3_name": "Maternity Hospital", "keywords": ["maternity", "delivery", "pregnancy", "obgyn", "labour"], "example_merchants": ["Cloudnine", "Motherhood Hospital"] },
+            { "l3_id": 171, "l3_code": "HC_HOSP_OR", "l3_name": "Orthopedic Center", "keywords": ["orthopedic", "bone", "joint", "spine", "fracture", "knee"], "example_merchants": ["Shalby Hospital"] },
+            { "l3_id": 172, "l3_code": "HC_HOSP_ON", "l3_name": "Cancer Center / Oncology", "keywords": ["cancer", "oncology", "chemotherapy", "radiation", "tumor"], "example_merchants": ["Tata Memorial", "HCG Oncology"] },
+            { "l3_id": 173, "l3_code": "HC_HOSP_OTH", "l3_name": "Other Hospital", "keywords": ["hospital", "medical", "treatment", "inpatient"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 21,
+          "l2_code": "HC_PHRM",
+          "l2_name": "Pharmacy & Medicine",
+          "micro_categories": [
+            { "l3_id": 174, "l3_code": "HC_PHRM_RT", "l3_name": "Retail Pharmacy", "keywords": ["pharmacy", "chemist", "medical store", "dawai", "aushadhi"], "example_merchants": ["Apollo Pharmacy", "MedPlus", "Wellness Forever"] },
+            { "l3_id": 175, "l3_code": "HC_PHRM_ON", "l3_name": "Online Pharmacy", "keywords": ["1mg", "pharmeasy", "netmeds", "online medicine", "tata health"], "example_merchants": ["1mg", "PharmEasy", "Netmeds", "Tata 1mg"] },
+            { "l3_id": 176, "l3_code": "HC_PHRM_AY", "l3_name": "Ayurvedic / Herbal", "keywords": ["ayurvedic", "herbal", "patanjali", "himalaya", "baidyanath", "dabur"], "example_merchants": ["Patanjali", "Himalaya", "Dabur", "Baidyanath"] },
+            { "l3_id": 177, "l3_code": "HC_PHRM_HM", "l3_name": "Homeopathy", "keywords": ["homeopathy", "homeopathic", "sbl", "reckeweg", "schwabe"], "example_merchants": ["Dr. Batra's"] },
+            { "l3_id": 178, "l3_code": "HC_PHRM_ME", "l3_name": "Medical Equipment", "keywords": ["medical equipment", "bp monitor", "thermometer", "oximeter", "wheelchair"], "example_merchants": ["Omron", "Dr Morepen"] },
+            { "l3_id": 179, "l3_code": "HC_PHRM_SU", "l3_name": "Surgical Supplies", "keywords": ["surgical", "syringe", "bandage", "gauze", "mask", "gloves"], "example_merchants": [] },
+            { "l3_id": 180, "l3_code": "HC_PHRM_OTH", "l3_name": "Other Pharmacy", "keywords": ["medicine", "tablet", "capsule", "syrup", "prescription"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 22,
+          "l2_code": "HC_DIAG",
+          "l2_name": "Diagnostics & Labs",
+          "micro_categories": [
+            { "l3_id": 181, "l3_code": "HC_DIAG_PL", "l3_name": "Pathology Lab", "keywords": ["pathology", "lab", "blood test", "urine test", "srl"], "example_merchants": ["Dr Lal PathLabs", "SRL Diagnostics", "Thyrocare"] },
+            { "l3_id": 182, "l3_code": "HC_DIAG_RD", "l3_name": "Radiology / Imaging", "keywords": ["xray", "mri", "ct scan", "ultrasound", "sonography", "radiology"], "example_merchants": ["Vijaya Diagnostic", "Star Imaging"] },
+            { "l3_id": 183, "l3_code": "HC_DIAG_BT", "l3_name": "Blood Test", "keywords": ["cbc", "blood sugar", "hba1c", "lipid profile", "thyroid test"], "example_merchants": [] },
+            { "l3_id": 184, "l3_code": "HC_DIAG_FB", "l3_name": "Full Body Checkup", "keywords": ["full body checkup", "health package", "annual checkup", "master health"], "example_merchants": ["Indus Health Plus"] },
+            { "l3_id": 185, "l3_code": "HC_DIAG_CV", "l3_name": "COVID / Viral Test", "keywords": ["covid test", "rtpcr", "rapid test", "antigen", "viral panel"], "example_merchants": [] },
+            { "l3_id": 186, "l3_code": "HC_DIAG_HC", "l3_name": "Home Sample Collection", "keywords": ["home collection", "sample pickup", "home visit lab", "phlebotomy"], "example_merchants": ["Orange Health", "Healthians"] },
+            { "l3_id": 187, "l3_code": "HC_DIAG_OTH", "l3_name": "Other Diagnostics", "keywords": ["diagnostic", "test", "screening", "scan"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 23,
+          "l2_code": "HC_DCTR",
+          "l2_name": "Doctor Consultation",
+          "micro_categories": [
+            { "l3_id": 188, "l3_code": "HC_DCTR_GP", "l3_name": "General Physician", "keywords": ["general physician", "gp", "family doctor", "mbbs"], "example_merchants": ["Practo", "mFine"] },
+            { "l3_id": 189, "l3_code": "HC_DCTR_SP", "l3_name": "Specialist Consultation", "keywords": ["specialist", "consultant", "senior doctor", "md"], "example_merchants": [] },
+            { "l3_id": 190, "l3_code": "HC_DCTR_PD", "l3_name": "Pediatrician", "keywords": ["pediatrician", "child specialist", "baby doctor", "neonatal"], "example_merchants": [] },
+            { "l3_id": 191, "l3_code": "HC_DCTR_GY", "l3_name": "Gynecologist / OBGYN", "keywords": ["gynecologist", "obgyn", "womens health", "pregnancy", "fertility"], "example_merchants": [] },
+            { "l3_id": 192, "l3_code": "HC_DCTR_DM", "l3_name": "Dermatologist", "keywords": ["dermatologist", "skin doctor", "skin specialist", "acne", "hair fall"], "example_merchants": ["Kaya Clinic", "Oliva Clinic"] },
+            { "l3_id": 193, "l3_code": "HC_DCTR_PS", "l3_name": "Psychiatrist / Psychologist", "keywords": ["psychiatrist", "psychologist", "mental health", "therapy", "counseling"], "example_merchants": ["Amaha", "YourDOST"] },
+            { "l3_id": 194, "l3_code": "HC_DCTR_OTH", "l3_name": "Other Doctor", "keywords": ["doctor", "consultation", "opd", "checkup", "follow up"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 24,
+          "l2_code": "HC_DNTL",
+          "l2_name": "Dental & Vision",
+          "micro_categories": [
+            { "l3_id": 195, "l3_code": "HC_DNTL_DC", "l3_name": "Dental Clinic", "keywords": ["dental", "dentist", "tooth", "cavity", "root canal"], "example_merchants": ["Clove Dental", "Sabka Dentist", "MyDentist"] },
+            { "l3_id": 196, "l3_code": "HC_DNTL_OT", "l3_name": "Orthodontics / Braces", "keywords": ["braces", "orthodontic", "aligners", "invisalign", "teeth straightening"], "example_merchants": ["toothsi"] },
+            { "l3_id": 197, "l3_code": "HC_DNTL_OP", "l3_name": "Optical Store", "keywords": ["optical", "eyeglasses", "glasses", "spectacles", "frames", "lenskart"], "example_merchants": ["Lenskart", "Titan Eye Plus", "GKB Opticals"] },
+            { "l3_id": 198, "l3_code": "HC_DNTL_EH", "l3_name": "Eye Hospital", "keywords": ["eye hospital", "ophthalmology", "lasik", "cataract", "vision center"], "example_merchants": ["Dr. Agarwal's Eye Hospital", "Shankar Netralaya"] },
+            { "l3_id": 199, "l3_code": "HC_DNTL_CL", "l3_name": "Contact Lens", "keywords": ["contact lens", "colored lens", "disposable lens", "daily lens"], "example_merchants": ["Lenskart", "Bausch & Lomb"] },
+            { "l3_id": 200, "l3_code": "HC_DNTL_OTH", "l3_name": "Other Dental / Vision", "keywords": ["dental care", "eye care", "oral health", "vision"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 5,
+      "l1_code": "FI",
+      "l1_name": "Finance & Insurance",
+      "l1_icon": "account_balance",
+      "subcategories": [
+        {
+          "l2_id": 25,
+          "l2_code": "FI_BANK",
+          "l2_name": "Banking",
+          "micro_categories": [
+            { "l3_id": 201, "l3_code": "FI_BANK_FT", "l3_name": "Fund Transfer / NEFT / IMPS", "keywords": ["neft", "imps", "rtgs", "fund transfer", "bank transfer"], "example_merchants": [] },
+            { "l3_id": 202, "l3_code": "FI_BANK_AF", "l3_name": "Bank Account Fee", "keywords": ["account fee", "annual fee", "maintenance charge", "minimum balance"], "example_merchants": [] },
+            { "l3_id": 203, "l3_code": "FI_BANK_LK", "l3_name": "Locker Charges", "keywords": ["locker", "safe deposit", "locker rent", "bank locker"], "example_merchants": [] },
+            { "l3_id": 204, "l3_code": "FI_BANK_CB", "l3_name": "Cheque / DD / Pay Order", "keywords": ["cheque", "demand draft", "pay order", "banker cheque", "dd charges"], "example_merchants": [] },
+            { "l3_id": 205, "l3_code": "FI_BANK_FX", "l3_name": "Foreign Exchange", "keywords": ["forex", "foreign exchange", "currency exchange", "remittance"], "example_merchants": ["BookMyForex", "Thomas Cook", "Wise"] },
+            { "l3_id": 206, "l3_code": "FI_BANK_NR", "l3_name": "NRI Banking", "keywords": ["nri", "nre", "nro", "overseas transfer", "remittance"], "example_merchants": [] },
+            { "l3_id": 207, "l3_code": "FI_BANK_OTH", "l3_name": "Other Banking", "keywords": ["bank", "banking", "branch", "bank charges"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 26,
+          "l2_code": "FI_INSR",
+          "l2_name": "Insurance",
+          "micro_categories": [
+            { "l3_id": 208, "l3_code": "FI_INSR_HI", "l3_name": "Health Insurance", "keywords": ["health insurance", "mediclaim", "medical insurance", "hospitalization"], "example_merchants": ["Star Health", "ICICI Lombard", "New India Assurance"] },
+            { "l3_id": 209, "l3_code": "FI_INSR_LI", "l3_name": "Life Insurance", "keywords": ["life insurance", "lic", "term plan", "endowment", "ulip"], "example_merchants": ["LIC", "HDFC Life", "SBI Life", "Max Life"] },
+            { "l3_id": 210, "l3_code": "FI_INSR_VI", "l3_name": "Vehicle Insurance", "keywords": ["motor insurance", "car insurance", "bike insurance", "third party"], "example_merchants": ["Bajaj Allianz", "ICICI Lombard", "HDFC Ergo"] },
+            { "l3_id": 211, "l3_code": "FI_INSR_HO", "l3_name": "Home Insurance", "keywords": ["home insurance", "property insurance", "fire insurance", "burglary"], "example_merchants": [] },
+            { "l3_id": 212, "l3_code": "FI_INSR_TI", "l3_name": "Travel Insurance", "keywords": ["travel insurance", "trip insurance", "flight insurance", "overseas medical"], "example_merchants": ["Care Insurance", "Digit Insurance"] },
+            { "l3_id": 213, "l3_code": "FI_INSR_OTH", "l3_name": "Other Insurance", "keywords": ["insurance", "premium", "policy", "coverage", "claim"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 27,
+          "l2_code": "FI_INVST",
+          "l2_name": "Investments",
+          "micro_categories": [
+            { "l3_id": 214, "l3_code": "FI_INVST_MF", "l3_name": "Mutual Fund / SIP", "keywords": ["mutual fund", "sip", "elss", "fund", "nav", "amc"], "example_merchants": ["Groww", "Zerodha Coin", "Kuvera", "ET Money"] },
+            { "l3_id": 215, "l3_code": "FI_INVST_ST", "l3_name": "Stock Trading", "keywords": ["stock", "share", "equity", "nse", "bse", "demat"], "example_merchants": ["Zerodha", "Upstox", "Groww", "Angel One"] },
+            { "l3_id": 216, "l3_code": "FI_INVST_FD", "l3_name": "Fixed Deposit", "keywords": ["fixed deposit", "fd", "rd", "recurring deposit", "term deposit"], "example_merchants": [] },
+            { "l3_id": 217, "l3_code": "FI_INVST_PP", "l3_name": "PPF / NPS / EPF", "keywords": ["ppf", "nps", "epf", "provident fund", "pension"], "example_merchants": [] },
+            { "l3_id": 218, "l3_code": "FI_INVST_GL", "l3_name": "Gold / Silver / Crypto", "keywords": ["gold", "silver", "digital gold", "sovereign gold bond", "crypto", "bitcoin"], "example_merchants": ["SafeGold", "Augmont", "WazirX", "CoinDCX"] },
+            { "l3_id": 219, "l3_code": "FI_INVST_OTH", "l3_name": "Other Investment", "keywords": ["investment", "returns", "portfolio", "wealth", "bonds"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 28,
+          "l2_code": "FI_LOAN",
+          "l2_name": "Loans & Credit",
+          "micro_categories": [
+            { "l3_id": 220, "l3_code": "FI_LOAN_HL", "l3_name": "Home Loan EMI", "keywords": ["home loan", "housing loan", "mortgage", "home emi"], "example_merchants": ["SBI", "HDFC", "LIC Housing", "ICICI Bank"] },
+            { "l3_id": 221, "l3_code": "FI_LOAN_PL", "l3_name": "Personal Loan EMI", "keywords": ["personal loan", "personal emi", "instant loan"], "example_merchants": ["Bajaj Finserv", "MoneyTap"] },
+            { "l3_id": 222, "l3_code": "FI_LOAN_VL", "l3_name": "Vehicle Loan EMI", "keywords": ["car loan", "bike loan", "vehicle loan", "auto emi"], "example_merchants": [] },
+            { "l3_id": 223, "l3_code": "FI_LOAN_EL", "l3_name": "Education Loan EMI", "keywords": ["education loan", "student loan", "study loan"], "example_merchants": ["Avanse", "Credila"] },
+            { "l3_id": 224, "l3_code": "FI_LOAN_CC", "l3_name": "Credit Card Payment", "keywords": ["credit card", "card payment", "card bill", "outstanding", "credit limit"], "example_merchants": [] },
+            { "l3_id": 225, "l3_code": "FI_LOAN_OTH", "l3_name": "Other Loan", "keywords": ["loan", "emi", "installment", "borrowing", "interest"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 29,
+          "l2_code": "FI_DGTL",
+          "l2_name": "Digital Payments",
+          "micro_categories": [
+            { "l3_id": 226, "l3_code": "FI_DGTL_WT", "l3_name": "Wallet Top-up", "keywords": ["wallet", "top up", "paytm wallet", "phonepe wallet", "load money"], "example_merchants": ["Paytm", "PhonePe", "Freecharge"] },
+            { "l3_id": 227, "l3_code": "FI_DGTL_UC", "l3_name": "UPI Collect Request", "keywords": ["collect", "upi collect", "payment request", "mandate"], "example_merchants": [] },
+            { "l3_id": 228, "l3_code": "FI_DGTL_PG", "l3_name": "Payment Gateway", "keywords": ["razorpay", "payu", "ccavenue", "payment gateway", "checkout"], "example_merchants": ["Razorpay", "PayU", "CCAvenue"] },
+            { "l3_id": 229, "l3_code": "FI_DGTL_BN", "l3_name": "BNPL / Pay Later", "keywords": ["buy now pay later", "bnpl", "lazypay", "simpl", "pay later"], "example_merchants": ["LazyPay", "Simpl", "Amazon Pay Later"] },
+            { "l3_id": 230, "l3_code": "FI_DGTL_OTH", "l3_name": "Other Digital Payment", "keywords": ["digital payment", "online payment", "upi", "qr code"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 6,
+      "l1_code": "ED",
+      "l1_name": "Education",
+      "l1_icon": "school",
+      "subcategories": [
+        {
+          "l2_id": 30,
+          "l2_code": "ED_SCHL",
+          "l2_name": "School",
+          "micro_categories": [
+            { "l3_id": 231, "l3_code": "ED_SCHL_TF", "l3_name": "School Tuition Fee", "keywords": ["school fee", "tuition", "admission", "school charges"], "example_merchants": ["DPS", "DAV", "KV", "Ryan International"] },
+            { "l3_id": 232, "l3_code": "ED_SCHL_BS", "l3_name": "School Bus / Transport", "keywords": ["school bus", "van", "school transport", "bus fee"], "example_merchants": [] },
+            { "l3_id": 233, "l3_code": "ED_SCHL_UF", "l3_name": "School Uniform", "keywords": ["uniform", "school uniform", "blazer", "tie", "school dress"], "example_merchants": [] },
+            { "l3_id": 234, "l3_code": "ED_SCHL_BK", "l3_name": "School Books / Supplies", "keywords": ["textbook", "school book", "ncert", "cbse book", "icse"], "example_merchants": ["NCERT", "S Chand"] },
+            { "l3_id": 235, "l3_code": "ED_SCHL_EV", "l3_name": "School Events / Trips", "keywords": ["school trip", "excursion", "annual day", "sports day", "picnic"], "example_merchants": [] },
+            { "l3_id": 236, "l3_code": "ED_SCHL_OTH", "l3_name": "Other School", "keywords": ["school", "vidyalaya", "pathshala", "academy"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 31,
+          "l2_code": "ED_HIGH",
+          "l2_name": "Higher Education",
+          "micro_categories": [
+            { "l3_id": 237, "l3_code": "ED_HIGH_CF", "l3_name": "College / University Fee", "keywords": ["college fee", "university fee", "semester fee", "admission fee"], "example_merchants": ["DU", "IIT", "NIT", "BITS"] },
+            { "l3_id": 238, "l3_code": "ED_HIGH_HF", "l3_name": "Hostel Fee", "keywords": ["hostel", "pg", "mess fee", "accommodation", "dormitory"], "example_merchants": [] },
+            { "l3_id": 239, "l3_code": "ED_HIGH_EX", "l3_name": "Exam / Application Fee", "keywords": ["exam fee", "application fee", "entrance fee", "jee", "neet", "gate"], "example_merchants": ["NTA", "UGC"] },
+            { "l3_id": 240, "l3_code": "ED_HIGH_CV", "l3_name": "Convocation / Certificate", "keywords": ["convocation", "degree", "certificate", "transcript", "marksheet"], "example_merchants": [] },
+            { "l3_id": 241, "l3_code": "ED_HIGH_SA", "l3_name": "Study Abroad Counseling", "keywords": ["study abroad", "ielts", "toefl", "gre", "gmat", "visa counseling"], "example_merchants": ["IDP", "Leverage Edu", "Yocket"] },
+            { "l3_id": 242, "l3_code": "ED_HIGH_OTH", "l3_name": "Other Higher Education", "keywords": ["higher education", "post graduation", "phd", "research"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 32,
+          "l2_code": "ED_COACH",
+          "l2_name": "Coaching & Tuition",
+          "micro_categories": [
+            { "l3_id": 243, "l3_code": "ED_COACH_JN", "l3_name": "IIT/JEE/NEET Coaching", "keywords": ["iit coaching", "jee", "neet", "kota", "allen", "fiitjee", "akash"], "example_merchants": ["Allen", "FIITJEE", "Aakash Institute", "Resonance"] },
+            { "l3_id": 244, "l3_code": "ED_COACH_UP", "l3_name": "UPSC / SSC Coaching", "keywords": ["upsc", "ias", "ssc", "civil services", "competitive exam"], "example_merchants": ["Vajiram", "Drishti IAS", "Unacademy"] },
+            { "l3_id": 245, "l3_code": "ED_COACH_PT", "l3_name": "Private Tutor", "keywords": ["tutor", "tuition", "home tuition", "private class", "personal coaching"], "example_merchants": [] },
+            { "l3_id": 246, "l3_code": "ED_COACH_LN", "l3_name": "Language Classes", "keywords": ["english", "hindi", "spanish", "french", "german", "language course"], "example_merchants": ["British Council", "Duolingo"] },
+            { "l3_id": 247, "l3_code": "ED_COACH_MA", "l3_name": "Music / Art / Dance", "keywords": ["music class", "dance class", "art class", "drawing", "singing", "kathak"], "example_merchants": [] },
+            { "l3_id": 248, "l3_code": "ED_COACH_OTH", "l3_name": "Other Coaching", "keywords": ["coaching", "classes", "tuition center", "institute"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 33,
+          "l2_code": "ED_ONLN",
+          "l2_name": "Online Learning",
+          "micro_categories": [
+            { "l3_id": 249, "l3_code": "ED_ONLN_MC", "l3_name": "MOOC Platform", "keywords": ["udemy", "coursera", "edx", "khan academy", "mooc", "nptel"], "example_merchants": ["Udemy", "Coursera", "edX", "NPTEL"] },
+            { "l3_id": 250, "l3_code": "ED_ONLN_IN", "l3_name": "Indian EdTech", "keywords": ["byjus", "unacademy", "vedantu", "physics wallah", "toppr"], "example_merchants": ["BYJU'S", "Unacademy", "Vedantu", "Physics Wallah"] },
+            { "l3_id": 251, "l3_code": "ED_ONLN_SK", "l3_name": "Skill Development", "keywords": ["coding", "design", "data science", "devops", "upskill", "bootcamp"], "example_merchants": ["Scaler", "Coding Ninjas", "upGrad"] },
+            { "l3_id": 252, "l3_code": "ED_ONLN_PR", "l3_name": "Professional Certification", "keywords": ["certification", "aws", "google cert", "pmp", "cfa", "professional"], "example_merchants": ["Google", "AWS", "Microsoft", "Simplilearn"] },
+            { "l3_id": 253, "l3_code": "ED_ONLN_WS", "l3_name": "Workshop / Masterclass", "keywords": ["workshop", "masterclass", "webinar", "seminar", "live class"], "example_merchants": [] },
+            { "l3_id": 254, "l3_code": "ED_ONLN_OTH", "l3_name": "Other Online Learning", "keywords": ["online course", "e-learning", "distance learning", "digital education"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 34,
+          "l2_code": "ED_SUPL",
+          "l2_name": "Educational Supplies",
+          "micro_categories": [
+            { "l3_id": 255, "l3_code": "ED_SUPL_TX", "l3_name": "Textbooks", "keywords": ["textbook", "reference book", "guide", "study material"], "example_merchants": [] },
+            { "l3_id": 256, "l3_code": "ED_SUPL_RF", "l3_name": "Reference Books", "keywords": ["reference", "encyclopedia", "dictionary", "competitive book"], "example_merchants": ["Arihant", "RS Aggarwal"] },
+            { "l3_id": 257, "l3_code": "ED_SUPL_EL", "l3_name": "E-Learning Material", "keywords": ["e-learning", "pdf", "study notes", "digital content", "video lectures"], "example_merchants": [] },
+            { "l3_id": 258, "l3_code": "ED_SUPL_LB", "l3_name": "Lab Equipment", "keywords": ["lab", "microscope", "beaker", "test tube", "chemistry kit"], "example_merchants": [] },
+            { "l3_id": 259, "l3_code": "ED_SUPL_PM", "l3_name": "Project Materials", "keywords": ["project", "chart", "model", "science project", "material"], "example_merchants": [] },
+            { "l3_id": 260, "l3_code": "ED_SUPL_OTH", "l3_name": "Other Educational Supply", "keywords": ["educational", "school supply", "student supplies"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 7,
+      "l1_code": "EN",
+      "l1_name": "Entertainment",
+      "l1_icon": "movie",
+      "subcategories": [
+        {
+          "l2_id": 35,
+          "l2_code": "EN_MOVR",
+          "l2_name": "Movies & Cinema",
+          "micro_categories": [
+            { "l3_id": 261, "l3_code": "EN_MOVR_TK", "l3_name": "Movie Ticket", "keywords": ["movie ticket", "bookmyshow", "cinema ticket", "film ticket"], "example_merchants": ["BookMyShow", "Paytm Movies"] },
+            { "l3_id": 262, "l3_code": "EN_MOVR_IX", "l3_name": "IMAX / Premium Screen", "keywords": ["imax", "4dx", "premium", "gold class", "recliner"], "example_merchants": ["PVR IMAX", "INOX INSIGNIA"] },
+            { "l3_id": 263, "l3_code": "EN_MOVR_DI", "l3_name": "Drive-In Cinema", "keywords": ["drive-in", "open air", "outdoor cinema"], "example_merchants": [] },
+            { "l3_id": 264, "l3_code": "EN_MOVR_FF", "l3_name": "Film Festival", "keywords": ["film festival", "mami", "iffi", "screening", "premiere"], "example_merchants": [] },
+            { "l3_id": 265, "l3_code": "EN_MOVR_SN", "l3_name": "Cinema Snacks / F&B", "keywords": ["popcorn", "cinema food", "nachos", "movie snacks"], "example_merchants": ["PVR", "INOX"] },
+            { "l3_id": 266, "l3_code": "EN_MOVR_MP", "l3_name": "Multiplex Chain", "keywords": ["pvr", "inox", "cinepolis", "miraj", "multiplex", "cinema hall"], "example_merchants": ["PVR INOX", "Cinepolis", "Miraj Cinemas"] },
+            { "l3_id": 267, "l3_code": "EN_MOVR_OTH", "l3_name": "Other Cinema", "keywords": ["cinema", "movie", "theatre", "film"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 36,
+          "l2_code": "EN_STRM",
+          "l2_name": "Streaming & OTT",
+          "micro_categories": [
+            { "l3_id": 268, "l3_code": "EN_STRM_NF", "l3_name": "Netflix", "keywords": ["netflix", "netflix subscription", "netflix premium"], "example_merchants": ["Netflix"] },
+            { "l3_id": 269, "l3_code": "EN_STRM_AP", "l3_name": "Amazon Prime Video", "keywords": ["amazon prime", "prime video", "prime membership"], "example_merchants": ["Amazon Prime"] },
+            { "l3_id": 270, "l3_code": "EN_STRM_DH", "l3_name": "Disney+ Hotstar", "keywords": ["hotstar", "disney+", "disney hotstar", "star sports"], "example_merchants": ["Disney+ Hotstar"] },
+            { "l3_id": 271, "l3_code": "EN_STRM_JC", "l3_name": "JioCinema", "keywords": ["jiocinema", "jio cinema", "jio tv"], "example_merchants": ["JioCinema"] },
+            { "l3_id": 272, "l3_code": "EN_STRM_YT", "l3_name": "YouTube Premium", "keywords": ["youtube", "youtube premium", "youtube music", "yt premium"], "example_merchants": ["YouTube"] },
+            { "l3_id": 273, "l3_code": "EN_STRM_MS", "l3_name": "Music Streaming", "keywords": ["spotify", "gaana", "jiosaavn", "apple music", "wynk"], "example_merchants": ["Spotify", "Gaana", "JioSaavn", "Apple Music"] },
+            { "l3_id": 274, "l3_code": "EN_STRM_OTH", "l3_name": "Other OTT / Streaming", "keywords": ["ott", "streaming", "sonyliv", "zee5", "voot", "mxplayer"], "example_merchants": ["SonyLIV", "ZEE5", "Voot"] }
+          ]
+        },
+        {
+          "l2_id": 37,
+          "l2_code": "EN_GAME",
+          "l2_name": "Gaming",
+          "micro_categories": [
+            { "l3_id": 275, "l3_code": "EN_GAME_MG", "l3_name": "Mobile Game Purchase", "keywords": ["mobile game", "play store", "app store", "game purchase"], "example_merchants": ["Google Play", "Apple App Store"] },
+            { "l3_id": 276, "l3_code": "EN_GAME_PC", "l3_name": "PC / Console Game", "keywords": ["steam", "playstation store", "xbox store", "pc game", "console game"], "example_merchants": ["Steam", "PlayStation", "Xbox"] },
+            { "l3_id": 277, "l3_code": "EN_GAME_GC", "l3_name": "Gaming Cafe / Lounge", "keywords": ["gaming cafe", "cyber cafe", "lan party", "esports lounge"], "example_merchants": [] },
+            { "l3_id": 278, "l3_code": "EN_GAME_IA", "l3_name": "In-App Purchase", "keywords": ["in-app", "gems", "coins", "game currency", "battlepass", "skin"], "example_merchants": ["BGMI", "Free Fire", "Clash Royale"] },
+            { "l3_id": 279, "l3_code": "EN_GAME_GS", "l3_name": "Game Subscription", "keywords": ["game pass", "ps plus", "xbox game pass", "apple arcade"], "example_merchants": ["Xbox Game Pass", "PS Plus"] },
+            { "l3_id": 280, "l3_code": "EN_GAME_OTH", "l3_name": "Other Gaming", "keywords": ["gaming", "game", "esports", "fantasy sports", "dream11"], "example_merchants": ["Dream11", "MPL"] }
+          ]
+        },
+        {
+          "l2_id": 38,
+          "l2_code": "EN_EVNT",
+          "l2_name": "Events & Experiences",
+          "micro_categories": [
+            { "l3_id": 281, "l3_code": "EN_EVNT_CN", "l3_name": "Concert / Live Music", "keywords": ["concert", "live music", "gig", "music festival", "sunburn", "nh7"], "example_merchants": ["BookMyShow", "Insider.in"] },
+            { "l3_id": 282, "l3_code": "EN_EVNT_SC", "l3_name": "Stand-up Comedy", "keywords": ["stand-up", "comedy show", "open mic", "comedian", "laugh"], "example_merchants": ["Canvas Laugh Club", "Comedy Store"] },
+            { "l3_id": 283, "l3_code": "EN_EVNT_TP", "l3_name": "Theme Park / Water Park", "keywords": ["theme park", "water park", "amusement park", "rides", "adventure"], "example_merchants": ["Imagicaa", "Wonderla", "EsselWorld"] },
+            { "l3_id": 284, "l3_code": "EN_EVNT_EX", "l3_name": "Exhibition / Fair / Mela", "keywords": ["exhibition", "fair", "mela", "expo", "trade fair", "book fair"], "example_merchants": [] },
+            { "l3_id": 285, "l3_code": "EN_EVNT_VR", "l3_name": "Escape Room / VR", "keywords": ["escape room", "virtual reality", "vr", "mystery room", "puzzle room"], "example_merchants": ["Mystery Rooms", "Breakout"] },
+            { "l3_id": 286, "l3_code": "EN_EVNT_OTH", "l3_name": "Other Event", "keywords": ["event", "ticket", "show", "experience", "activity"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 39,
+          "l2_code": "EN_SPRT",
+          "l2_name": "Sports",
+          "micro_categories": [
+            { "l3_id": 287, "l3_code": "EN_SPRT_TK", "l3_name": "Sports Ticket (IPL/ISL)", "keywords": ["ipl", "isl", "cricket match", "football match", "sports ticket"], "example_merchants": ["BookMyShow", "Paytm Insider"] },
+            { "l3_id": 288, "l3_code": "EN_SPRT_EQ", "l3_name": "Sports Equipment", "keywords": ["cricket bat", "football", "badminton", "racquet", "sports gear"], "example_merchants": ["Decathlon", "Sports Station", "SG Cricket"] },
+            { "l3_id": 289, "l3_code": "EN_SPRT_GF", "l3_name": "Gym / Fitness Center", "keywords": ["gym", "fitness", "cult fit", "gold gym", "anytime fitness"], "example_merchants": ["Cult.fit", "Gold's Gym", "Anytime Fitness"] },
+            { "l3_id": 290, "l3_code": "EN_SPRT_SW", "l3_name": "Swimming Pool", "keywords": ["swimming", "pool", "swim class", "aqua fitness"], "example_merchants": [] },
+            { "l3_id": 291, "l3_code": "EN_SPRT_AC", "l3_name": "Sports Academy", "keywords": ["cricket academy", "football academy", "tennis coaching", "sports training"], "example_merchants": [] },
+            { "l3_id": 292, "l3_code": "EN_SPRT_OTH", "l3_name": "Other Sports", "keywords": ["sports", "athletic", "marathon", "run", "cycling"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 40,
+          "l2_code": "EN_HBBY",
+          "l2_name": "Hobbies & Leisure",
+          "micro_categories": [
+            { "l3_id": 293, "l3_code": "EN_HBBY_PH", "l3_name": "Photography", "keywords": ["photography", "photo studio", "portrait", "camera rental"], "example_merchants": [] },
+            { "l3_id": 294, "l3_code": "EN_HBBY_CR", "l3_name": "Crafts / DIY", "keywords": ["crafts", "diy", "handmade", "knitting", "crochet", "pottery"], "example_merchants": [] },
+            { "l3_id": 295, "l3_code": "EN_HBBY_GD", "l3_name": "Gardening", "keywords": ["gardening", "plants", "nursery", "seeds", "pot", "fertilizer"], "example_merchants": ["Nurserylive", "Ugaoo"] },
+            { "l3_id": 296, "l3_code": "EN_HBBY_RD", "l3_name": "Reading / Book Club", "keywords": ["reading", "book club", "library", "kindle unlimited"], "example_merchants": [] },
+            { "l3_id": 297, "l3_code": "EN_HBBY_BG", "l3_name": "Board Games / Puzzles", "keywords": ["board game", "puzzle", "chess", "ludo", "monopoly", "carrom"], "example_merchants": [] },
+            { "l3_id": 298, "l3_code": "EN_HBBY_OTH", "l3_name": "Other Hobby", "keywords": ["hobby", "leisure", "pastime", "recreation", "collection"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 8,
+      "l1_code": "UT",
+      "l1_name": "Utilities & Bills",
+      "l1_icon": "power",
+      "subcategories": [
+        {
+          "l2_id": 41,
+          "l2_code": "UT_ELEC",
+          "l2_name": "Electricity",
+          "micro_categories": [
+            { "l3_id": 299, "l3_code": "UT_ELEC_SB", "l3_name": "State Electricity Board", "keywords": ["electricity bill", "light bill", "bijli", "discom", "bses", "tata power"], "example_merchants": ["BSES", "Tata Power", "MSEDCL", "BESCOM"] },
+            { "l3_id": 300, "l3_code": "UT_ELEC_PM", "l3_name": "Prepaid Meter", "keywords": ["prepaid meter", "prepaid electricity", "recharge meter"], "example_merchants": [] },
+            { "l3_id": 301, "l3_code": "UT_ELEC_SL", "l3_name": "Solar / Renewable", "keywords": ["solar", "solar panel", "renewable", "rooftop solar", "solar emi"], "example_merchants": ["Tata Solar", "Loom Solar"] },
+            { "l3_id": 302, "l3_code": "UT_ELEC_GI", "l3_name": "Generator / Inverter", "keywords": ["generator", "inverter", "ups", "battery", "genset"], "example_merchants": ["Luminous", "Microtek", "Su-Kam"] },
+            { "l3_id": 303, "l3_code": "UT_ELEC_OTH", "l3_name": "Other Electricity", "keywords": ["power", "current", "unit", "kwh", "meter reading"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 42,
+          "l2_code": "UT_WATR",
+          "l2_name": "Water & Gas",
+          "micro_categories": [
+            { "l3_id": 304, "l3_code": "UT_WATR_WB", "l3_name": "Water Bill", "keywords": ["water bill", "jal board", "water supply", "paani bill"], "example_merchants": ["Delhi Jal Board", "MCGM Water"] },
+            { "l3_id": 305, "l3_code": "UT_WATR_LP", "l3_name": "LPG / Cooking Gas", "keywords": ["lpg", "gas cylinder", "cooking gas", "indane", "hp gas", "bharat gas"], "example_merchants": ["Indane Gas", "HP Gas", "Bharat Gas"] },
+            { "l3_id": 306, "l3_code": "UT_WATR_PG", "l3_name": "Piped Natural Gas", "keywords": ["piped gas", "png", "natural gas", "igl", "mahanagar gas"], "example_merchants": ["IGL", "Mahanagar Gas", "Gujarat Gas"] },
+            { "l3_id": 307, "l3_code": "UT_WATR_WP", "l3_name": "Water Purifier Service", "keywords": ["water purifier", "ro", "uv", "kent", "aquaguard", "filter"], "example_merchants": ["Kent", "Aquaguard", "Pureit", "Livpure"] },
+            { "l3_id": 308, "l3_code": "UT_WATR_OTH", "l3_name": "Other Water / Gas", "keywords": ["utility", "gas", "water", "tanker", "borewell"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 43,
+          "l2_code": "UT_NET",
+          "l2_name": "Internet & Cable",
+          "micro_categories": [
+            { "l3_id": 309, "l3_code": "UT_NET_BB", "l3_name": "Broadband Bill", "keywords": ["broadband", "internet bill", "wifi bill", "monthly plan"], "example_merchants": ["Airtel", "BSNL", "JioFiber"] },
+            { "l3_id": 310, "l3_code": "UT_NET_FB", "l3_name": "Fiber Internet", "keywords": ["fiber", "ftth", "fibre", "optical", "gigabit"], "example_merchants": ["JioFiber", "Airtel Xstream Fiber", "ACT Fibernet"] },
+            { "l3_id": 311, "l3_code": "UT_NET_CT", "l3_name": "Cable TV", "keywords": ["cable tv", "cable operator", "local cable", "set top box"], "example_merchants": ["Hathway", "DEN Networks"] },
+            { "l3_id": 312, "l3_code": "UT_NET_ST", "l3_name": "Set-Top Box / Smart TV", "keywords": ["set top box", "stb", "smart stick", "fire stick", "chromecast"], "example_merchants": ["Amazon Fire", "Google Chromecast"] },
+            { "l3_id": 313, "l3_code": "UT_NET_WH", "l3_name": "WiFi Hotspot", "keywords": ["wifi", "hotspot", "public wifi", "pocket wifi"], "example_merchants": [] },
+            { "l3_id": 314, "l3_code": "UT_NET_OTH", "l3_name": "Other Internet / Cable", "keywords": ["internet", "cable", "data", "bandwidth"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 44,
+          "l2_code": "UT_RENT",
+          "l2_name": "Rent & Housing",
+          "micro_categories": [
+            { "l3_id": 315, "l3_code": "UT_RENT_HR", "l3_name": "House Rent", "keywords": ["rent", "house rent", "flat rent", "monthly rent", "kiraya"], "example_merchants": [] },
+            { "l3_id": 316, "l3_code": "UT_RENT_SM", "l3_name": "Society Maintenance", "keywords": ["maintenance", "society charges", "apartment maintenance", "common area"], "example_merchants": ["MyGate", "NoBroker Hood"] },
+            { "l3_id": 317, "l3_code": "UT_RENT_PT", "l3_name": "Property Tax", "keywords": ["property tax", "house tax", "municipal tax", "griha kar"], "example_merchants": [] },
+            { "l3_id": 318, "l3_code": "UT_RENT_BK", "l3_name": "Brokerage / Commission", "keywords": ["broker", "brokerage", "agent", "commission", "dalal"], "example_merchants": ["NoBroker", "MagicBricks", "99acres"] },
+            { "l3_id": 319, "l3_code": "UT_RENT_SD", "l3_name": "Security Deposit", "keywords": ["security deposit", "caution money", "advance", "refundable deposit"], "example_merchants": [] },
+            { "l3_id": 320, "l3_code": "UT_RENT_OTH", "l3_name": "Other Housing", "keywords": ["housing", "accommodation", "shelter", "living expense"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 45,
+          "l2_code": "UT_HSVC",
+          "l2_name": "Home Services",
+          "micro_categories": [
+            { "l3_id": 321, "l3_code": "UT_HSVC_PL", "l3_name": "Plumber", "keywords": ["plumber", "plumbing", "pipe", "tap", "leak", "drain", "nalkaa"], "example_merchants": ["Urban Company", "Housejoy"] },
+            { "l3_id": 322, "l3_code": "UT_HSVC_EL", "l3_name": "Electrician", "keywords": ["electrician", "wiring", "switch", "circuit", "mcb", "bijli mistri"], "example_merchants": ["Urban Company"] },
+            { "l3_id": 323, "l3_code": "UT_HSVC_CP", "l3_name": "Carpenter", "keywords": ["carpenter", "woodwork", "furniture repair", "cabinet", "mistri"], "example_merchants": [] },
+            { "l3_id": 324, "l3_code": "UT_HSVC_PC", "l3_name": "Pest Control", "keywords": ["pest control", "cockroach", "termite", "rat", "fumigation"], "example_merchants": ["Urban Company", "HiCare"] },
+            { "l3_id": 325, "l3_code": "UT_HSVC_OTH", "l3_name": "Other Home Service", "keywords": ["home service", "handyman", "painter", "mason", "repair"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 77,
+          "l2_code": "UT_CLEN",
+          "l2_name": "Cleaning & Laundry",
+          "micro_categories": [
+            { "l3_id": 505, "l3_code": "UT_CLEN_LN", "l3_name": "Laundry / Ironing", "keywords": ["laundry", "ironing", "dhobi", "washing", "press", "istri"], "example_merchants": ["UClean", "Laundrokart"] },
+            { "l3_id": 506, "l3_code": "UT_CLEN_DC", "l3_name": "Dry Cleaning", "keywords": ["dry clean", "dry cleaning", "suit cleaning", "wedding dress clean"], "example_merchants": ["Pressto", "White Tiger"] },
+            { "l3_id": 507, "l3_code": "UT_CLEN_DH", "l3_name": "Domestic Helper / Maid", "keywords": ["maid", "domestic help", "bai", "house help", "kaam wali", "servant"], "example_merchants": ["Helper4U", "BookMyBai"] },
+            { "l3_id": 508, "l3_code": "UT_CLEN_HC", "l3_name": "Home Deep Cleaning", "keywords": ["deep cleaning", "home cleaning", "sofa cleaning", "carpet cleaning", "ac cleaning"], "example_merchants": ["Urban Company", "HouseJoy"] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 9,
+      "l1_code": "TC",
+      "l1_name": "Telecom",
+      "l1_icon": "phone_android",
+      "subcategories": [
+        {
+          "l2_id": 46,
+          "l2_code": "TC_MOB",
+          "l2_name": "Mobile Recharge",
+          "micro_categories": [
+            { "l3_id": 326, "l3_code": "TC_MOB_PR", "l3_name": "Prepaid Recharge", "keywords": ["recharge", "prepaid", "talktime", "data pack", "validity"], "example_merchants": ["Airtel", "Jio", "Vi", "BSNL"] },
+            { "l3_id": 327, "l3_code": "TC_MOB_PO", "l3_name": "Postpaid Bill", "keywords": ["postpaid", "monthly bill", "plan", "itemised bill"], "example_merchants": ["Airtel", "Jio", "Vi"] },
+            { "l3_id": 328, "l3_code": "TC_MOB_IR", "l3_name": "International Roaming", "keywords": ["roaming", "international pack", "country pack", "ir"], "example_merchants": [] },
+            { "l3_id": 329, "l3_code": "TC_MOB_VA", "l3_name": "Value Added Services", "keywords": ["vas", "caller tune", "hello tune", "premium sms", "content"], "example_merchants": [] },
+            { "l3_id": 330, "l3_code": "TC_MOB_OTH", "l3_name": "Other Mobile", "keywords": ["mobile", "telecom", "sim", "mnp", "port"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 47,
+          "l2_code": "TC_DTH",
+          "l2_name": "DTH & TV",
+          "micro_categories": [
+            { "l3_id": 331, "l3_code": "TC_DTH_TP", "l3_name": "Tata Play / Airtel Xstream", "keywords": ["tata play", "tata sky", "airtel xstream", "dth recharge"], "example_merchants": ["Tata Play", "Airtel Xstream"] },
+            { "l3_id": 332, "l3_code": "TC_DTH_DT", "l3_name": "Dish TV / D2H", "keywords": ["dish tv", "d2h", "videocon d2h", "dish recharge"], "example_merchants": ["Dish TV", "D2H"] },
+            { "l3_id": 333, "l3_code": "TC_DTH_SD", "l3_name": "Sun Direct / Regional", "keywords": ["sun direct", "sun dth", "regional dth"], "example_merchants": ["Sun Direct"] },
+            { "l3_id": 334, "l3_code": "TC_DTH_OTH", "l3_name": "Other DTH", "keywords": ["dth", "satellite tv", "dish", "set top box recharge"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 48,
+          "l2_code": "TC_BRDB",
+          "l2_name": "Broadband & WiFi",
+          "micro_categories": [
+            { "l3_id": 335, "l3_code": "TC_BRDB_AF", "l3_name": "Airtel Xstream Fiber", "keywords": ["airtel fiber", "airtel xstream", "airtel broadband"], "example_merchants": ["Airtel"] },
+            { "l3_id": 336, "l3_code": "TC_BRDB_JF", "l3_name": "JioFiber", "keywords": ["jio fiber", "jiofiber", "jio broadband"], "example_merchants": ["Jio"] },
+            { "l3_id": 337, "l3_code": "TC_BRDB_BS", "l3_name": "BSNL Broadband", "keywords": ["bsnl", "bsnl broadband", "bsnl fiber", "bharat fiber"], "example_merchants": ["BSNL"] },
+            { "l3_id": 338, "l3_code": "TC_BRDB_AC", "l3_name": "ACT Fibernet", "keywords": ["act fibernet", "act", "beam fiber"], "example_merchants": ["ACT Fibernet"] },
+            { "l3_id": 339, "l3_code": "TC_BRDB_OTH", "l3_name": "Other Broadband", "keywords": ["broadband", "fiber", "isp", "internet provider"], "example_merchants": ["Excitel", "Hathway"] }
+          ]
+        },
+        {
+          "l2_id": 49,
+          "l2_code": "TC_LAND",
+          "l2_name": "Landline & Enterprise",
+          "micro_categories": [
+            { "l3_id": 340, "l3_code": "TC_LAND_LL", "l3_name": "Landline Bill", "keywords": ["landline", "telephone", "phone bill", "std", "isd"], "example_merchants": ["BSNL", "MTNL", "Airtel Landline"] },
+            { "l3_id": 341, "l3_code": "TC_LAND_PX", "l3_name": "Intercom / PBX", "keywords": ["intercom", "pbx", "epabx", "office phone", "extension"], "example_merchants": [] },
+            { "l3_id": 342, "l3_code": "TC_LAND_ED", "l3_name": "Enterprise Data Plan", "keywords": ["enterprise", "leased line", "mpls", "corporate data", "business internet"], "example_merchants": [] },
+            { "l3_id": 343, "l3_code": "TC_LAND_OTH", "l3_name": "Other Landline / Enterprise", "keywords": ["communication", "telephone", "voice", "sip trunk"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 10,
+      "l1_code": "TV",
+      "l1_name": "Travel & Accommodation",
+      "l1_icon": "flight",
+      "subcategories": [
+        {
+          "l2_id": 50,
+          "l2_code": "TV_HOTL",
+          "l2_name": "Hotels & Stays",
+          "micro_categories": [
+            { "l3_id": 344, "l3_code": "TV_HOTL_LX", "l3_name": "Luxury Hotel (5-Star)", "keywords": ["5 star", "luxury hotel", "taj", "oberoi", "itc hotels", "marriott"], "example_merchants": ["Taj Hotels", "The Oberoi", "ITC Hotels", "Marriott"] },
+            { "l3_id": 345, "l3_code": "TV_HOTL_BZ", "l3_name": "Business Hotel (3-4 Star)", "keywords": ["business hotel", "3 star", "4 star", "lemon tree", "fortune"], "example_merchants": ["Lemon Tree", "Fortune Hotels", "Radisson"] },
+            { "l3_id": 346, "l3_code": "TV_HOTL_BG", "l3_name": "Budget Hotel / OYO", "keywords": ["budget hotel", "oyo", "treebo", "fabhotel", "cheap hotel"], "example_merchants": ["OYO", "Treebo", "FabHotels"] },
+            { "l3_id": 347, "l3_code": "TV_HOTL_HM", "l3_name": "Homestay / Airbnb", "keywords": ["homestay", "airbnb", "vrbo", "guest house", "bed and breakfast"], "example_merchants": ["Airbnb", "StayVista"] },
+            { "l3_id": 348, "l3_code": "TV_HOTL_RS", "l3_name": "Resort", "keywords": ["resort", "beach resort", "hill resort", "spa resort", "wellness resort"], "example_merchants": ["Club Mahindra", "Sterling Resorts"] },
+            { "l3_id": 349, "l3_code": "TV_HOTL_HS", "l3_name": "Hostel / Dormitory", "keywords": ["hostel", "dorm", "backpacker", "zostel", "goStops"], "example_merchants": ["Zostel", "goStops", "Backpacker Panda"] },
+            { "l3_id": 350, "l3_code": "TV_HOTL_DH", "l3_name": "Dharamshala / Guest House", "keywords": ["dharamshala", "dharamsala", "choultry", "govt guest house", "circuit house"], "example_merchants": [] },
+            { "l3_id": 351, "l3_code": "TV_HOTL_OTH", "l3_name": "Other Accommodation", "keywords": ["hotel", "stay", "accommodation", "lodge", "motel"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 51,
+          "l2_code": "TV_FLT",
+          "l2_name": "Flights",
+          "micro_categories": [
+            { "l3_id": 352, "l3_code": "TV_FLT_DM", "l3_name": "Domestic Flight", "keywords": ["domestic flight", "indigo", "spicejet", "air india", "vistara"], "example_merchants": ["IndiGo", "SpiceJet", "Air India", "Vistara", "Akasa Air"] },
+            { "l3_id": 353, "l3_code": "TV_FLT_IN", "l3_name": "International Flight", "keywords": ["international flight", "overseas", "foreign", "emirates", "singapore airlines"], "example_merchants": ["Emirates", "Singapore Airlines", "Qatar Airways"] },
+            { "l3_id": 354, "l3_code": "TV_FLT_BK", "l3_name": "Flight Booking Platform", "keywords": ["makemytrip", "goibibo", "cleartrip", "ixigo", "flight booking"], "example_merchants": ["MakeMyTrip", "Goibibo", "Cleartrip", "ixigo", "EaseMyTrip"] },
+            { "l3_id": 355, "l3_code": "TV_FLT_UG", "l3_name": "Airline Upgrade / Add-on", "keywords": ["seat upgrade", "extra baggage", "meal pre-order", "priority boarding"], "example_merchants": [] },
+            { "l3_id": 356, "l3_code": "TV_FLT_LG", "l3_name": "Airport Lounge", "keywords": ["airport lounge", "priority pass", "dreamfolks", "lounge access"], "example_merchants": ["Priority Pass", "DreamFolks"] },
+            { "l3_id": 357, "l3_code": "TV_FLT_AT", "l3_name": "Airport Transfer", "keywords": ["airport taxi", "airport drop", "airport pickup", "shuttle"], "example_merchants": [] },
+            { "l3_id": 358, "l3_code": "TV_FLT_OTH", "l3_name": "Other Flight", "keywords": ["flight", "airline", "air travel", "aviation", "boarding pass"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 52,
+          "l2_code": "TV_RAIL",
+          "l2_name": "Train & Bus",
+          "micro_categories": [
+            { "l3_id": 359, "l3_code": "TV_RAIL_IR", "l3_name": "IRCTC Railway Ticket", "keywords": ["irctc", "railway ticket", "train booking", "indian railways"], "example_merchants": ["IRCTC"] },
+            { "l3_id": 360, "l3_code": "TV_RAIL_TK", "l3_name": "Tatkal / Premium Tatkal", "keywords": ["tatkal", "premium tatkal", "urgent train", "last minute"], "example_merchants": ["IRCTC"] },
+            { "l3_id": 361, "l3_code": "TV_RAIL_RS", "l3_name": "Rajdhani / Shatabdi / Vande Bharat", "keywords": ["rajdhani", "shatabdi", "vande bharat", "duronto", "premium train"], "example_merchants": [] },
+            { "l3_id": 362, "l3_code": "TV_RAIL_BT", "l3_name": "Bus Ticket Platform", "keywords": ["redbus", "abhibus", "bus booking", "online bus"], "example_merchants": ["RedBus", "AbhiBus", "Paytm Bus"] },
+            { "l3_id": 363, "l3_code": "TV_RAIL_SB", "l3_name": "Sleeper / AC Bus", "keywords": ["sleeper bus", "ac bus", "semi sleeper", "overnight bus"], "example_merchants": ["Orange Travels", "SRS Travels"] },
+            { "l3_id": 364, "l3_code": "TV_RAIL_VB", "l3_name": "Volvo / Luxury Bus", "keywords": ["volvo", "luxury bus", "multi axle", "mercedes bus", "scania"], "example_merchants": ["KPN Travels", "VRL Travels"] },
+            { "l3_id": 365, "l3_code": "TV_RAIL_OTH", "l3_name": "Other Rail / Bus", "keywords": ["train", "rail", "bus", "ticket", "reservation", "berth"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 53,
+          "l2_code": "TV_CAB",
+          "l2_name": "Cab & Self-Drive",
+          "micro_categories": [
+            { "l3_id": 366, "l3_code": "TV_CAB_OS", "l3_name": "Outstation Cab", "keywords": ["outstation", "intercity", "one way", "round trip", "cab booking"], "example_merchants": ["Savaari", "Gozo Cabs"] },
+            { "l3_id": 367, "l3_code": "TV_CAB_AT", "l3_name": "Airport Taxi", "keywords": ["airport taxi", "airport cab", "airport drop", "meru"], "example_merchants": ["Meru Cab", "Uber Airport"] },
+            { "l3_id": 368, "l3_code": "TV_CAB_SD", "l3_name": "Self-Drive Rental", "keywords": ["self drive", "zoomcar", "drivezy", "revv", "car rental"], "example_merchants": ["Zoomcar", "Drivezy", "Revv"] },
+            { "l3_id": 369, "l3_code": "TV_CAB_LC", "l3_name": "Local Cab / Savaari", "keywords": ["local cab", "full day", "half day", "savaari", "local rental"], "example_merchants": ["Savaari", "Ola Outstation"] },
+            { "l3_id": 370, "l3_code": "TV_CAB_TT", "l3_name": "Tempo Traveller / Van", "keywords": ["tempo traveller", "van", "minibus", "group travel", "12 seater"], "example_merchants": [] },
+            { "l3_id": 371, "l3_code": "TV_CAB_OTH", "l3_name": "Other Cab / Rental", "keywords": ["cab", "rental", "hire", "chauffeur", "driver"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 54,
+          "l2_code": "TV_TOUR",
+          "l2_name": "Tours & Activities",
+          "micro_categories": [
+            { "l3_id": 372, "l3_code": "TV_TOUR_PK", "l3_name": "Tour Package", "keywords": ["tour package", "holiday package", "makemytrip package", "group tour"], "example_merchants": ["MakeMyTrip", "Thomas Cook", "SOTC"] },
+            { "l3_id": 373, "l3_code": "TV_TOUR_AD", "l3_name": "Adventure Activity", "keywords": ["adventure", "trekking", "paragliding", "rafting", "bungee", "scuba"], "example_merchants": ["Thrillophilia", "Zostel Experiences"] },
+            { "l3_id": 374, "l3_code": "TV_TOUR_SS", "l3_name": "Sightseeing / Entry Fee", "keywords": ["sightseeing", "entry fee", "monument", "museum ticket", "heritage"], "example_merchants": ["ASI", "State Tourism"] },
+            { "l3_id": 375, "l3_code": "TV_TOUR_PL", "l3_name": "Pilgrimage Tour", "keywords": ["pilgrimage", "yatra", "tirtha", "chardham", "vaishno devi", "amarnath"], "example_merchants": ["IRCTC Tourism", "Yatra.com"] },
+            { "l3_id": 376, "l3_code": "TV_TOUR_WL", "l3_name": "Wildlife Safari", "keywords": ["safari", "jungle", "wildlife", "national park", "tiger", "jeep safari"], "example_merchants": [] },
+            { "l3_id": 377, "l3_code": "TV_TOUR_CR", "l3_name": "Cruise", "keywords": ["cruise", "ship", "river cruise", "luxury cruise", "cordelia"], "example_merchants": ["Cordelia Cruises", "Jalesh"] },
+            { "l3_id": 378, "l3_code": "TV_TOUR_OTH", "l3_name": "Other Tour / Activity", "keywords": ["tour", "trip", "excursion", "travel activity", "local experience"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 11,
+      "l1_code": "GV",
+      "l1_name": "Government & Taxes",
+      "l1_icon": "account_balance_wallet",
+      "subcategories": [
+        {
+          "l2_id": 55,
+          "l2_code": "GV_ITAX",
+          "l2_name": "Income Tax",
+          "micro_categories": [
+            { "l3_id": 379, "l3_code": "GV_ITAX_AD", "l3_name": "Advance Tax", "keywords": ["advance tax", "quarterly tax", "tax installment"], "example_merchants": [] },
+            { "l3_id": 380, "l3_code": "GV_ITAX_SA", "l3_name": "Self-Assessment Tax", "keywords": ["self assessment", "itr", "tax return", "balance tax"], "example_merchants": [] },
+            { "l3_id": 381, "l3_code": "GV_ITAX_TD", "l3_name": "TDS / TCS", "keywords": ["tds", "tcs", "tax deducted", "tax collected", "withholding"], "example_merchants": [] },
+            { "l3_id": 382, "l3_code": "GV_ITAX_CF", "l3_name": "Tax Filing Fee (CA)", "keywords": ["tax filing", "ca fee", "itr filing", "e-filing"], "example_merchants": ["ClearTax", "TaxBuddy"] },
+            { "l3_id": 383, "l3_code": "GV_ITAX_PN", "l3_name": "Income Tax Penalty", "keywords": ["tax penalty", "late fee", "interest 234", "default"], "example_merchants": [] },
+            { "l3_id": 384, "l3_code": "GV_ITAX_OTH", "l3_name": "Other Income Tax", "keywords": ["income tax", "it department", "pan", "aadhaar link"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 56,
+          "l2_code": "GV_GST",
+          "l2_name": "GST & Business Tax",
+          "micro_categories": [
+            { "l3_id": 385, "l3_code": "GV_GST_GP", "l3_name": "GST Payment", "keywords": ["gst", "cgst", "sgst", "igst", "gst challan"], "example_merchants": [] },
+            { "l3_id": 386, "l3_code": "GV_GST_GF", "l3_name": "GST Filing / Return", "keywords": ["gstr", "gst return", "gst filing", "gstr1", "gstr3b"], "example_merchants": ["ClearTax GST", "TallyPrime"] },
+            { "l3_id": 387, "l3_code": "GV_GST_PT", "l3_name": "Professional Tax", "keywords": ["professional tax", "pt", "profession tax", "employment tax"], "example_merchants": [] },
+            { "l3_id": 388, "l3_code": "GV_GST_CD", "l3_name": "Custom Duty / Excise", "keywords": ["custom duty", "import duty", "excise", "customs"], "example_merchants": ["Indian Customs"] },
+            { "l3_id": 389, "l3_code": "GV_GST_OTH", "l3_name": "Other Business Tax", "keywords": ["business tax", "corporate tax", "cess", "surcharge"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 57,
+          "l2_code": "GV_FEES",
+          "l2_name": "Government Fees",
+          "micro_categories": [
+            { "l3_id": 390, "l3_code": "GV_FEES_PP", "l3_name": "Passport / Visa Fee", "keywords": ["passport", "visa", "passport seva", "visa fee", "oci"], "example_merchants": ["Passport Seva", "VFS Global", "BLS International"] },
+            { "l3_id": 391, "l3_code": "GV_FEES_DL", "l3_name": "Driving License / RTO", "keywords": ["driving license", "dl", "rto", "learner license", "vehicle registration"], "example_merchants": ["Parivahan"] },
+            { "l3_id": 392, "l3_code": "GV_FEES_AP", "l3_name": "Aadhaar / PAN Card", "keywords": ["aadhaar", "pan card", "uid", "uidai", "nsdl", "pan update"], "example_merchants": ["UIDAI", "NSDL", "UTIITSL"] },
+            { "l3_id": 393, "l3_code": "GV_FEES_CF", "l3_name": "Court Fee / Stamp Paper", "keywords": ["court fee", "stamp paper", "judicial stamp", "court stamp", "e-stamp"], "example_merchants": [] },
+            { "l3_id": 394, "l3_code": "GV_FEES_RG", "l3_name": "Registration / Stamp Duty", "keywords": ["stamp duty", "registration", "property registration", "sub registrar"], "example_merchants": [] },
+            { "l3_id": 395, "l3_code": "GV_FEES_OTH", "l3_name": "Other Government Fee", "keywords": ["government fee", "service fee", "certificate", "attestation"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 58,
+          "l2_code": "GV_FINE",
+          "l2_name": "Fines & Challans",
+          "micro_categories": [
+            { "l3_id": 396, "l3_code": "GV_FINE_TC", "l3_name": "Traffic Challan / E-Challan", "keywords": ["challan", "traffic fine", "e-challan", "speeding", "red light"], "example_merchants": ["Parivahan", "State Traffic Police"] },
+            { "l3_id": 397, "l3_code": "GV_FINE_PK", "l3_name": "Parking Fine", "keywords": ["parking fine", "no parking", "towing", "parking violation"], "example_merchants": [] },
+            { "l3_id": 398, "l3_code": "GV_FINE_CT", "l3_name": "Court Fine", "keywords": ["court fine", "penalty", "contempt", "legal fine"], "example_merchants": [] },
+            { "l3_id": 399, "l3_code": "GV_FINE_MN", "l3_name": "Municipal Fine / Penalty", "keywords": ["municipal", "corporation fine", "civic fine", "nagar nigam"], "example_merchants": [] },
+            { "l3_id": 400, "l3_code": "GV_FINE_OTH", "l3_name": "Other Fine", "keywords": ["fine", "penalty", "violation", "infraction"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 78,
+          "l2_code": "GV_DGOV",
+          "l2_name": "Digital Government Services",
+          "micro_categories": [
+            { "l3_id": 509, "l3_code": "GV_DGOV_DG", "l3_name": "DigiLocker / Digital Cert", "keywords": ["digilocker", "digital certificate", "e-certificate", "nad"], "example_merchants": ["DigiLocker"] },
+            { "l3_id": 510, "l3_code": "GV_DGOV_UM", "l3_name": "UMANG / e-Governance", "keywords": ["umang", "e-governance", "common service", "csc", "e-district"], "example_merchants": ["UMANG", "CSC"] },
+            { "l3_id": 511, "l3_code": "GV_DGOV_RC", "l3_name": "Ration Card / PDS", "keywords": ["ration card", "pds", "fair price", "antyodaya", "bpl card"], "example_merchants": [] },
+            { "l3_id": 512, "l3_code": "GV_DGOV_OTH", "l3_name": "Other e-Gov Service", "keywords": ["e-government", "online government", "digital india", "jan seva"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 12,
+      "l1_code": "PC",
+      "l1_name": "Personal Care & Wellness",
+      "l1_icon": "spa",
+      "subcategories": [
+        {
+          "l2_id": 59,
+          "l2_code": "PC_SALN",
+          "l2_name": "Salon & Grooming",
+          "micro_categories": [
+            { "l3_id": 401, "l3_code": "PC_SALN_MS", "l3_name": "Men's Salon / Barber", "keywords": ["barber", "haircut", "shave", "men salon", "nai"], "example_merchants": ["Truefitt & Hill", "Enrich"] },
+            { "l3_id": 402, "l3_code": "PC_SALN_WS", "l3_name": "Women's Salon", "keywords": ["women salon", "ladies salon", "beauty parlour", "facial", "waxing"], "example_merchants": ["Lakme Salon", "Jawed Habib", "Green Trends"] },
+            { "l3_id": 403, "l3_code": "PC_SALN_UX", "l3_name": "Unisex Salon", "keywords": ["unisex salon", "salon", "hair spa", "hair color", "keratin"], "example_merchants": ["Naturals", "Toni&Guy", "Jean-Claude Biguine"] },
+            { "l3_id": 404, "l3_code": "PC_SALN_HG", "l3_name": "Home Grooming Service", "keywords": ["home salon", "urban company", "doorstep", "at home beauty"], "example_merchants": ["Urban Company", "Yes Madam"] },
+            { "l3_id": 405, "l3_code": "PC_SALN_MH", "l3_name": "Mehndi / Bridal", "keywords": ["mehndi", "bridal makeup", "wedding makeup", "henna", "dulhan"], "example_merchants": [] },
+            { "l3_id": 406, "l3_code": "PC_SALN_OTH", "l3_name": "Other Salon", "keywords": ["salon", "parlour", "grooming", "beauty"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 60,
+          "l2_code": "PC_SPA",
+          "l2_name": "Spa & Massage",
+          "micro_categories": [
+            { "l3_id": 407, "l3_code": "PC_SPA_ST", "l3_name": "Spa Treatment", "keywords": ["spa", "spa treatment", "body wrap", "facial spa", "luxury spa"], "example_merchants": ["O2 Spa", "Tattva Spa"] },
+            { "l3_id": 408, "l3_code": "PC_SPA_AY", "l3_name": "Ayurvedic Massage", "keywords": ["ayurvedic", "abhyangam", "shirodhara", "panchakarma", "kottakkal"], "example_merchants": ["Kottakkal", "Kerala Ayurveda"] },
+            { "l3_id": 409, "l3_code": "PC_SPA_TH", "l3_name": "Thai / Balinese Massage", "keywords": ["thai massage", "balinese", "hot stone", "aroma massage"], "example_merchants": [] },
+            { "l3_id": 410, "l3_code": "PC_SPA_SS", "l3_name": "Steam / Sauna", "keywords": ["steam", "sauna", "steam bath", "hammam", "turkish bath"], "example_merchants": [] },
+            { "l3_id": 411, "l3_code": "PC_SPA_OTH", "l3_name": "Other Spa", "keywords": ["massage", "relaxation", "wellness spa", "body therapy"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 61,
+          "l2_code": "PC_FIT",
+          "l2_name": "Fitness & Yoga",
+          "micro_categories": [
+            { "l3_id": 412, "l3_code": "PC_FIT_GM", "l3_name": "Gym Membership", "keywords": ["gym", "gym membership", "fitness center", "gold gym", "anytime"], "example_merchants": ["Gold's Gym", "Anytime Fitness", "Talwalkars"] },
+            { "l3_id": 413, "l3_code": "PC_FIT_YG", "l3_name": "Yoga Studio", "keywords": ["yoga", "yoga studio", "yoga class", "isha yoga", "art of living"], "example_merchants": ["Cult.fit", "Isha Yoga"] },
+            { "l3_id": 414, "l3_code": "PC_FIT_PZ", "l3_name": "Pilates / Zumba / Dance", "keywords": ["pilates", "zumba", "dance fitness", "aerobics", "group class"], "example_merchants": ["Cult.fit", "The Pilates Studio"] },
+            { "l3_id": 415, "l3_code": "PC_FIT_PT", "l3_name": "Personal Trainer", "keywords": ["personal trainer", "pt", "fitness coach", "home trainer"], "example_merchants": ["HealthifyMe"] },
+            { "l3_id": 416, "l3_code": "PC_FIT_CF", "l3_name": "CrossFit / Functional", "keywords": ["crossfit", "functional training", "hiit", "bootcamp", "calisthenics"], "example_merchants": [] },
+            { "l3_id": 417, "l3_code": "PC_FIT_OTH", "l3_name": "Other Fitness", "keywords": ["fitness", "workout", "exercise", "training"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 62,
+          "l2_code": "PC_BEAU",
+          "l2_name": "Beauty & Cosmetics",
+          "micro_categories": [
+            { "l3_id": 418, "l3_code": "PC_BEAU_MK", "l3_name": "Cosmetics / Makeup", "keywords": ["makeup", "cosmetics", "lipstick", "foundation", "mascara", "kajal"], "example_merchants": ["Nykaa", "Lakme", "Maybelline", "MAC"] },
+            { "l3_id": 419, "l3_code": "PC_BEAU_SK", "l3_name": "Skincare", "keywords": ["skincare", "moisturizer", "serum", "sunscreen", "face wash", "cream"], "example_merchants": ["Minimalist", "Plum", "Mamaearth", "Cetaphil"] },
+            { "l3_id": 420, "l3_code": "PC_BEAU_HC", "l3_name": "Haircare Products", "keywords": ["shampoo", "conditioner", "hair oil", "hair serum", "anti dandruff"], "example_merchants": ["L'Oreal", "Tresemme", "Dove", "Pantene"] },
+            { "l3_id": 421, "l3_code": "PC_BEAU_PF", "l3_name": "Perfume / Fragrance", "keywords": ["perfume", "deodorant", "fragrance", "cologne", "attar", "itra"], "example_merchants": ["Forest Essentials", "Wild Stone", "Denver"] },
+            { "l3_id": 422, "l3_code": "PC_BEAU_GA", "l3_name": "Grooming Appliances", "keywords": ["trimmer", "hair dryer", "straightener", "shaver", "epilator"], "example_merchants": ["Philips", "Braun", "Dyson"] },
+            { "l3_id": 423, "l3_code": "PC_BEAU_OTH", "l3_name": "Other Beauty", "keywords": ["beauty", "personal care", "hygiene", "toiletry"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 63,
+          "l2_code": "PC_WELL",
+          "l2_name": "Wellness & Nutrition",
+          "micro_categories": [
+            { "l3_id": 424, "l3_code": "PC_WELL_VS", "l3_name": "Vitamins / Supplements", "keywords": ["vitamin", "supplement", "multivitamin", "omega", "calcium", "iron"], "example_merchants": ["HealthKart", "TrueBasics", "Swisse"] },
+            { "l3_id": 425, "l3_code": "PC_WELL_PR", "l3_name": "Protein / Health Drink", "keywords": ["protein", "whey", "health drink", "horlicks", "bournvita", "ensure"], "example_merchants": ["MuscleBlaze", "Optimum Nutrition", "MyProtein"] },
+            { "l3_id": 426, "l3_code": "PC_WELL_OR", "l3_name": "Organic / Natural Products", "keywords": ["organic", "natural", "chemical free", "herbal", "ayurvedic product"], "example_merchants": ["Forest Essentials", "Kama Ayurveda", "Khadi Natural"] },
+            { "l3_id": 427, "l3_code": "PC_WELL_DT", "l3_name": "Diet / Meal Plan", "keywords": ["diet plan", "meal plan", "calorie", "keto", "intermittent fasting"], "example_merchants": ["HealthifyMe", "Cult.fit Eat"] },
+            { "l3_id": 428, "l3_code": "PC_WELL_OTH", "l3_name": "Other Wellness", "keywords": ["wellness", "health", "nutrition", "detox", "immunity"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 13,
+      "l1_code": "FS",
+      "l1_name": "Family & Social",
+      "l1_icon": "family_restroom",
+      "subcategories": [
+        {
+          "l2_id": 64,
+          "l2_code": "FS_GIFT",
+          "l2_name": "Gifts & Celebrations",
+          "micro_categories": [
+            { "l3_id": 429, "l3_code": "FS_GIFT_BD", "l3_name": "Birthday Gift", "keywords": ["birthday", "birthday gift", "birthday party", "b'day"], "example_merchants": [] },
+            { "l3_id": 430, "l3_code": "FS_GIFT_WD", "l3_name": "Wedding Gift / Shagun", "keywords": ["wedding", "shagun", "marriage gift", "shadi", "vivah"], "example_merchants": [] },
+            { "l3_id": 431, "l3_code": "FS_GIFT_FT", "l3_name": "Festival Gift", "keywords": ["diwali", "eid", "christmas", "holi", "rakhi", "festival gift"], "example_merchants": [] },
+            { "l3_id": 432, "l3_code": "FS_GIFT_AN", "l3_name": "Anniversary Gift", "keywords": ["anniversary", "wedding anniversary", "celebration", "couple"], "example_merchants": [] },
+            { "l3_id": 433, "l3_code": "FS_GIFT_GC", "l3_name": "Gift Card / Voucher", "keywords": ["gift card", "voucher", "gift voucher", "amazon gift card", "e-gift"], "example_merchants": ["Amazon", "Flipkart", "Myntra", "Sodexo"] },
+            { "l3_id": 434, "l3_code": "FS_GIFT_FL", "l3_name": "Flowers / Bouquet", "keywords": ["flowers", "bouquet", "floral", "rose", "phool"], "example_merchants": ["Ferns N Petals", "FlowerAura", "IGP"] },
+            { "l3_id": 435, "l3_code": "FS_GIFT_OTH", "l3_name": "Other Gift", "keywords": ["gift", "present", "surprise", "token", "memento"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 65,
+          "l2_code": "FS_DONA",
+          "l2_name": "Donations & Charity",
+          "micro_categories": [
+            { "l3_id": 436, "l3_code": "FS_DONA_RD", "l3_name": "Religious Donation / Dakshina", "keywords": ["donation", "dakshina", "daan", "chanda", "religious offering"], "example_merchants": [] },
+            { "l3_id": 437, "l3_code": "FS_DONA_NG", "l3_name": "NGO / Charity", "keywords": ["ngo", "charity", "ngo donation", "give india", "milaap", "ketto"], "example_merchants": ["GiveIndia", "Milaap", "Ketto"] },
+            { "l3_id": 438, "l3_code": "FS_DONA_CF", "l3_name": "Crowdfunding", "keywords": ["crowdfunding", "fundraiser", "gofundme", "impact guru"], "example_merchants": ["ImpactGuru", "Ketto", "Milaap"] },
+            { "l3_id": 439, "l3_code": "FS_DONA_TM", "l3_name": "Temple / Mosque / Church", "keywords": ["temple", "mandir", "masjid", "church", "gurudwara", "tirupati"], "example_merchants": ["ISKCON", "Tirupati TTD"] },
+            { "l3_id": 440, "l3_code": "FS_DONA_OTH", "l3_name": "Other Donation", "keywords": ["donation", "philanthropy", "social cause", "contribution"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 66,
+          "l2_code": "FS_RELG",
+          "l2_name": "Religious & Spiritual",
+          "micro_categories": [
+            { "l3_id": 441, "l3_code": "FS_RELG_PJ", "l3_name": "Pooja / Havan", "keywords": ["pooja", "puja", "havan", "yagya", "aarti", "archana"], "example_merchants": ["OnlinePuja.com", "BookMyPooja"] },
+            { "l3_id": 442, "l3_code": "FS_RELG_TV", "l3_name": "Temple / Holy Place Visit", "keywords": ["darshan", "temple visit", "tirtha", "dham", "kshetra"], "example_merchants": [] },
+            { "l3_id": 443, "l3_code": "FS_RELG_RB", "l3_name": "Religious Books / Items", "keywords": ["religious book", "geeta", "quran", "bible", "agarbatti", "dhoop"], "example_merchants": ["Gita Press"] },
+            { "l3_id": 444, "l3_code": "FS_RELG_PG", "l3_name": "Pilgrimage", "keywords": ["pilgrimage", "yatra", "tirth yatra", "char dham", "hajj", "umrah"], "example_merchants": [] },
+            { "l3_id": 445, "l3_code": "FS_RELG_AS", "l3_name": "Astrology / Puja Service", "keywords": ["astrology", "kundali", "horoscope", "pandit", "jyotish", "puja service"], "example_merchants": ["AstroSage", "Astrotalk"] },
+            { "l3_id": 446, "l3_code": "FS_RELG_OTH", "l3_name": "Other Religious", "keywords": ["religious", "spiritual", "devotion", "faith", "blessing"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 67,
+          "l2_code": "FS_BABY",
+          "l2_name": "Childcare & Baby",
+          "micro_categories": [
+            { "l3_id": 447, "l3_code": "FS_BABY_PR", "l3_name": "Baby Products / Diapers", "keywords": ["diaper", "baby", "pampers", "huggies", "baby lotion", "baby oil"], "example_merchants": ["FirstCry", "Pampers", "Huggies", "MamaEarth"] },
+            { "l3_id": 448, "l3_code": "FS_BABY_DC", "l3_name": "Daycare / Creche", "keywords": ["daycare", "creche", "playschool", "nursery school", "preschool"], "example_merchants": ["EuroKids", "Kidzee", "Oi Playschool"] },
+            { "l3_id": 449, "l3_code": "FS_BABY_BF", "l3_name": "Baby Food / Formula", "keywords": ["baby food", "formula", "cerelac", "nestum", "breast pump"], "example_merchants": ["Nestle Cerelac", "Aptamil"] },
+            { "l3_id": 450, "l3_code": "FS_BABY_KE", "l3_name": "Kids' Entertainment", "keywords": ["kids zone", "play area", "fun zone", "kidz land", "trampoline park"], "example_merchants": ["KidZania", "Fun City"] },
+            { "l3_id": 451, "l3_code": "FS_BABY_OTH", "l3_name": "Other Childcare", "keywords": ["childcare", "parenting", "nanny", "babysitter", "aaya"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 68,
+          "l2_code": "FS_PET",
+          "l2_name": "Pet Care",
+          "micro_categories": [
+            { "l3_id": 452, "l3_code": "FS_PET_FD", "l3_name": "Pet Food", "keywords": ["pet food", "dog food", "cat food", "pedigree", "whiskas"], "example_merchants": ["Pedigree", "Whiskas", "Royal Canin", "Drools"] },
+            { "l3_id": 453, "l3_code": "FS_PET_VT", "l3_name": "Veterinary / Vet Visit", "keywords": ["vet", "veterinary", "animal hospital", "dog doctor", "vaccination"], "example_merchants": [] },
+            { "l3_id": 454, "l3_code": "FS_PET_GR", "l3_name": "Pet Grooming", "keywords": ["pet grooming", "dog bath", "pet spa", "dog haircut"], "example_merchants": ["Heads Up For Tails"] },
+            { "l3_id": 455, "l3_code": "FS_PET_AC", "l3_name": "Pet Accessories", "keywords": ["pet accessories", "leash", "collar", "pet bed", "pet toy", "aquarium"], "example_merchants": ["Heads Up For Tails", "Supertails"] },
+            { "l3_id": 456, "l3_code": "FS_PET_OTH", "l3_name": "Other Pet Care", "keywords": ["pet", "animal", "pet boarding", "pet adoption", "kennel"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 14,
+      "l1_code": "PS",
+      "l1_name": "Professional Services",
+      "l1_icon": "work",
+      "subcategories": [
+        {
+          "l2_id": 69,
+          "l2_code": "PS_LEGL",
+          "l2_name": "Legal Services",
+          "micro_categories": [
+            { "l3_id": 457, "l3_code": "PS_LEGL_LF", "l3_name": "Lawyer Fee", "keywords": ["lawyer", "advocate", "vakil", "legal fee", "attorney"], "example_merchants": [] },
+            { "l3_id": 458, "l3_code": "PS_LEGL_LD", "l3_name": "Legal Documentation", "keywords": ["legal document", "agreement", "contract", "deed", "affidavit"], "example_merchants": [] },
+            { "l3_id": 459, "l3_code": "PS_LEGL_NT", "l3_name": "Notary", "keywords": ["notary", "notarize", "attestation", "notary public"], "example_merchants": [] },
+            { "l3_id": 460, "l3_code": "PS_LEGL_CF", "l3_name": "Court Filing", "keywords": ["court filing", "case filing", "petition", "court fee"], "example_merchants": [] },
+            { "l3_id": 461, "l3_code": "PS_LEGL_LC", "l3_name": "Legal Consultation", "keywords": ["legal consultation", "legal advice", "case consultation"], "example_merchants": ["LegalKart", "Vakilsearch"] },
+            { "l3_id": 462, "l3_code": "PS_LEGL_OTH", "l3_name": "Other Legal", "keywords": ["legal", "law", "court", "judiciary"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 70,
+          "l2_code": "PS_FNSV",
+          "l2_name": "Financial Services",
+          "micro_categories": [
+            { "l3_id": 463, "l3_code": "PS_FNSV_CA", "l3_name": "CA / Auditor Fee", "keywords": ["ca", "chartered accountant", "auditor", "audit fee"], "example_merchants": [] },
+            { "l3_id": 464, "l3_code": "PS_FNSV_TC", "l3_name": "Tax Consultant", "keywords": ["tax consultant", "tax advisor", "tax planning", "tax expert"], "example_merchants": ["ClearTax", "TaxBuddy"] },
+            { "l3_id": 465, "l3_code": "PS_FNSV_FA", "l3_name": "Financial Advisor", "keywords": ["financial advisor", "wealth manager", "investment advisor", "planner"], "example_merchants": [] },
+            { "l3_id": 466, "l3_code": "PS_FNSV_BK", "l3_name": "Bookkeeping / Accounting", "keywords": ["bookkeeping", "accounting", "tally", "zoho books", "quickbooks"], "example_merchants": ["Tally", "Zoho Books"] },
+            { "l3_id": 467, "l3_code": "PS_FNSV_CR", "l3_name": "Company Registration", "keywords": ["company registration", "incorporation", "gst registration", "msme registration"], "example_merchants": ["Vakilsearch", "IndiaFilings", "ClearTax"] },
+            { "l3_id": 468, "l3_code": "PS_FNSV_OTH", "l3_name": "Other Financial Service", "keywords": ["financial service", "consulting", "advisory"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 71,
+          "l2_code": "PS_COUR",
+          "l2_name": "Courier & Logistics",
+          "micro_categories": [
+            { "l3_id": 469, "l3_code": "PS_COUR_DM", "l3_name": "Domestic Courier", "keywords": ["courier", "dtdc", "bluedart", "delhivery", "ecom express"], "example_merchants": ["DTDC", "BlueDart", "Delhivery", "Ecom Express"] },
+            { "l3_id": 470, "l3_code": "PS_COUR_IN", "l3_name": "International Courier", "keywords": ["international courier", "dhl", "fedex", "ups", "overseas shipping"], "example_merchants": ["DHL", "FedEx", "UPS", "Aramex"] },
+            { "l3_id": 471, "l3_code": "PS_COUR_SP", "l3_name": "Speed Post / India Post", "keywords": ["speed post", "india post", "registered post", "postal", "parcel"], "example_merchants": ["India Post"] },
+            { "l3_id": 472, "l3_code": "PS_COUR_PM", "l3_name": "Packers & Movers", "keywords": ["packers movers", "relocation", "shifting", "transport", "household goods"], "example_merchants": ["Agarwal Packers", "NoBroker Packers"] },
+            { "l3_id": 473, "l3_code": "PS_COUR_WH", "l3_name": "Warehouse / Storage", "keywords": ["warehouse", "storage", "godown", "self storage", "mini storage"], "example_merchants": ["StoreMore", "JEBS"] },
+            { "l3_id": 474, "l3_code": "PS_COUR_OTH", "l3_name": "Other Logistics", "keywords": ["logistics", "shipping", "delivery", "transport", "freight"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 72,
+          "l2_code": "PS_FRLC",
+          "l2_name": "Freelance & Digital",
+          "micro_categories": [
+            { "l3_id": 475, "l3_code": "PS_FRLC_FP", "l3_name": "Freelancer Payment", "keywords": ["freelancer", "fiverr", "upwork", "freelance fee", "gig work"], "example_merchants": ["Fiverr", "Upwork", "Freelancer.com"] },
+            { "l3_id": 476, "l3_code": "PS_FRLC_SS", "l3_name": "SaaS Subscription", "keywords": ["saas", "subscription", "software", "canva", "notion", "slack", "zoom"], "example_merchants": ["Canva", "Notion", "Slack", "Zoom", "Microsoft 365"] },
+            { "l3_id": 477, "l3_code": "PS_FRLC_DH", "l3_name": "Domain / Hosting", "keywords": ["domain", "hosting", "godaddy", "hostinger", "cloudflare", "aws"], "example_merchants": ["GoDaddy", "Hostinger", "AWS", "DigitalOcean"] },
+            { "l3_id": 478, "l3_code": "PS_FRLC_DM", "l3_name": "Digital Marketing", "keywords": ["google ads", "facebook ads", "seo", "social media marketing", "instagram ads"], "example_merchants": ["Google Ads", "Meta Ads"] },
+            { "l3_id": 479, "l3_code": "PS_FRLC_PD", "l3_name": "Printing / Design", "keywords": ["printing", "visiting card", "banner", "flex", "pamphlet", "graphic design"], "example_merchants": ["Vista Print", "Printo"] },
+            { "l3_id": 480, "l3_code": "PS_FRLC_OTH", "l3_name": "Other Freelance / Digital", "keywords": ["freelance", "digital", "online service", "tech service"], "example_merchants": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "l1_id": 15,
+      "l1_code": "MS",
+      "l1_name": "Miscellaneous",
+      "l1_icon": "more_horiz",
+      "subcategories": [
+        {
+          "l2_id": 73,
+          "l2_code": "MS_TRFR",
+          "l2_name": "Transfers",
+          "micro_categories": [
+            { "l3_id": 481, "l3_code": "MS_TRFR_FM", "l3_name": "P2P Transfer to Family", "keywords": ["family transfer", "send to family", "pocket money", "allowance", "ghar"], "example_merchants": [] },
+            { "l3_id": 482, "l3_code": "MS_TRFR_FR", "l3_name": "P2P Transfer to Friend", "keywords": ["friend transfer", "send to friend", "split", "share expense"], "example_merchants": [] },
+            { "l3_id": 483, "l3_code": "MS_TRFR_RP", "l3_name": "Rent Payment P2P", "keywords": ["rent transfer", "landlord", "pg payment", "room rent"], "example_merchants": [] },
+            { "l3_id": 484, "l3_code": "MS_TRFR_SL", "l3_name": "Salary Credit", "keywords": ["salary", "credit", "payroll", "wages", "tankhwah"], "example_merchants": [] },
+            { "l3_id": 485, "l3_code": "MS_TRFR_RF", "l3_name": "Refund / Cashback", "keywords": ["refund", "cashback", "reversal", "return", "credit back"], "example_merchants": [] },
+            { "l3_id": 486, "l3_code": "MS_TRFR_SB", "l3_name": "Split Bill", "keywords": ["split bill", "splitwise", "share bill", "divide", "settle up"], "example_merchants": ["Splitwise"] },
+            { "l3_id": 487, "l3_code": "MS_TRFR_OTH", "l3_name": "Other Transfer", "keywords": ["transfer", "send money", "p2p", "payment"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 74,
+          "l2_code": "MS_CASH",
+          "l2_name": "Cash Operations",
+          "micro_categories": [
+            { "l3_id": 488, "l3_code": "MS_CASH_AW", "l3_name": "ATM Withdrawal", "keywords": ["atm", "cash withdrawal", "atm machine", "cash out"], "example_merchants": [] },
+            { "l3_id": 489, "l3_code": "MS_CASH_CD", "l3_name": "Cash Deposit", "keywords": ["cash deposit", "cdm", "cash machine", "deposit"], "example_merchants": [] },
+            { "l3_id": 490, "l3_code": "MS_CASH_MO", "l3_name": "Money Order", "keywords": ["money order", "postal order", "demand draft"], "example_merchants": ["India Post"] },
+            { "l3_id": 491, "l3_code": "MS_CASH_DD", "l3_name": "Demand Draft", "keywords": ["demand draft", "dd", "banker cheque", "bank draft"], "example_merchants": [] },
+            { "l3_id": 492, "l3_code": "MS_CASH_FX", "l3_name": "Foreign Currency Exchange", "keywords": ["money exchange", "forex counter", "currency exchange", "bureau de change"], "example_merchants": ["Thomas Cook", "BookMyForex"] },
+            { "l3_id": 493, "l3_code": "MS_CASH_OTH", "l3_name": "Other Cash Operation", "keywords": ["cash", "currency", "notes", "coins"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 75,
+          "l2_code": "MS_UNKN",
+          "l2_name": "Unidentified",
+          "micro_categories": [
+            { "l3_id": 494, "l3_code": "MS_UNKN_UM", "l3_name": "Unknown Merchant", "keywords": ["unknown", "unrecognized", "new merchant", "first time"], "example_merchants": [] },
+            { "l3_id": 495, "l3_code": "MS_UNKN_UD", "l3_name": "Unclear Description", "keywords": ["unclear", "vague", "ambiguous", "generic", "no description"], "example_merchants": [] },
+            { "l3_id": 496, "l3_code": "MS_UNKN_NM", "l3_name": "New / Unseen Merchant", "keywords": ["new merchant", "unseen", "first transaction", "unregistered"], "example_merchants": [] },
+            { "l3_id": 497, "l3_code": "MS_UNKN_TT", "l3_name": "Test Transaction", "keywords": ["test", "dummy", "trial", "sample", "verification"], "example_merchants": [] },
+            { "l3_id": 498, "l3_code": "MS_UNKN_MC", "l3_name": "Micro Transaction (< Rs.10)", "keywords": ["micro", "small", "penny", "tiny", "nominal"], "example_merchants": [] },
+            { "l3_id": 499, "l3_code": "MS_UNKN_PC", "l3_name": "Pending Classification", "keywords": ["pending", "unclassified", "to be categorized", "awaiting"], "example_merchants": [] },
+            { "l3_id": 500, "l3_code": "MS_UNKN_OTH", "l3_name": "Other Unidentified", "keywords": ["other", "miscellaneous", "uncategorized"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 79,
+          "l2_code": "MS_SBSC",
+          "l2_name": "Recurring Subscriptions",
+          "micro_categories": [
+            { "l3_id": 513, "l3_code": "MS_SBSC_AP", "l3_name": "App Store / Play Store", "keywords": ["app store", "play store", "google play", "apple", "in-app", "app purchase"], "example_merchants": ["Google Play", "Apple App Store"] },
+            { "l3_id": 514, "l3_code": "MS_SBSC_NM", "l3_name": "News / Magazine Subscription", "keywords": ["news subscription", "magazine", "digital news", "premium article", "paywall"], "example_merchants": ["The Hindu", "Economic Times", "Mint"] },
+            { "l3_id": 515, "l3_code": "MS_SBSC_BX", "l3_name": "Box / Crate Subscription", "keywords": ["subscription box", "monthly box", "snack box", "beauty box", "crate"], "example_merchants": ["Barkbox India", "FabBag"] },
+            { "l3_id": 516, "l3_code": "MS_SBSC_OTH", "l3_name": "Other Recurring Subscription", "keywords": ["subscription", "recurring", "auto debit", "monthly charge", "annual plan"], "example_merchants": [] }
+          ]
+        },
+        {
+          "l2_id": 80,
+          "l2_code": "MS_POCK",
+          "l2_name": "Pocket Money & Household",
+          "micro_categories": [
+            { "l3_id": 517, "l3_code": "MS_POCK_KD", "l3_name": "Kids Pocket Money", "keywords": ["pocket money", "allowance", "kids money", "bachche ka paisa"], "example_merchants": [] },
+            { "l3_id": 518, "l3_code": "MS_POCK_HH", "l3_name": "Household Staff Salary", "keywords": ["maid salary", "driver salary", "cook salary", "watchman", "guard salary"], "example_merchants": [] },
+            { "l3_id": 519, "l3_code": "MS_POCK_TP", "l3_name": "Tip / Gratuity", "keywords": ["tip", "gratuity", "bakshish", "service tip", "waiter tip"], "example_merchants": [] },
+            { "l3_id": 520, "l3_code": "MS_POCK_OTH", "l3_name": "Other Household Payment", "keywords": ["household", "domestic expense", "daily expense", "routine payment"], "example_merchants": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

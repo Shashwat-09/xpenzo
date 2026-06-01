@@ -1,0 +1,59 @@
+# ───────────────────────── Build outputs ─────────────────────────
+**/build/
+android_app/.gradle/
+android_app/local.properties
+*.apk
+*.aab
+*.keystore
+
+# Stray Gradle distributions accidentally in the tree
+android_app/gradle-*/
+android_app/gradle-*.zip
+
+# ───────────────────────── Python / ML envs ──────────────────────
+.venv-tf/
+.venv/
+__pycache__/
+*.pyc
+
+# ───────────────────────── Heavy ML data & artifacts ─────────────
+# (Datasets and trained artifacts are too large for GitHub — keep them local.)
+ml/data_collection/raw/
+ml/data_collection/processed/
+ml/data_collection/labeled/
+ml/models/
+ml/training/*.csv
+data/
+outputs/
+*.parquet
+*.osm.pbf
+*.pbf
+
+# Large datasets anywhere
+**/combined_dataset.csv
+**/train.csv
+**/val.csv
+**/test.csv
+**/master_dataset.csv
+
+# ───────────────────────── Knowledge graph ───────────────────────
+graphify-out/
+
+# ───────────────────────── Cloud Functions deps ──────────────────
+functions/node_modules/
+functions/lib/
+
+# ───────────────────────── Secrets / config ──────────────────────
+google-services.json
+**/google-services.json
+*serviceaccount*.json
+*-adminsdk-*.json
+
+# ───────────────────────── Logs / misc ───────────────────────────
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE (may contain local secrets/tokens)
+.vscode/
+.idea/

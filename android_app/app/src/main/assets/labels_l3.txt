@@ -1,0 +1,520 @@
+IIT/JEE/NEET Coaching
+Language Classes
+Music / Art / Dance
+Other Coaching
+Private Tutor
+UPSC / SSC Coaching
+College / University Fee
+Convocation / Certificate
+Exam / Application Fee
+Hostel Fee
+Other Higher Education
+Study Abroad Counseling
+Indian EdTech
+MOOC Platform
+Other Online Learning
+Professional Certification
+Skill Development
+Workshop / Masterclass
+School Books / Supplies
+School Bus / Transport
+School Events / Trips
+Other School
+School Tuition Fee
+School Uniform
+E-Learning Material
+Lab Equipment
+Other Educational Supply
+Project Materials
+Reference Books
+Textbooks
+Concert / Live Music
+Exhibition / Fair / Mela
+Other Event
+Stand-up Comedy
+Theme Park / Water Park
+Escape Room / VR
+Gaming Cafe / Lounge
+Game Subscription
+In-App Purchase
+Mobile Game Purchase
+Other Gaming
+PC / Console Game
+Board Games / Puzzles
+Crafts / DIY
+Gardening
+Other Hobby
+Photography
+Reading / Book Club
+Drive-In Cinema
+Film Festival
+IMAX / Premium Screen
+Multiplex Chain
+Other Cinema
+Cinema Snacks / F&B
+Movie Ticket
+Sports Academy
+Sports Equipment
+Gym / Fitness Center
+Other Sports
+Swimming Pool
+Sports Ticket (IPL/ISL)
+Amazon Prime Video
+Disney+ Hotstar
+JioCinema
+Music Streaming
+Netflix
+Other OTT / Streaming
+YouTube Premium
+Bar / Pub
+Lounge / Nightclub
+Liquor Store / Premium
+Microbrewery / Brewery
+Other Alcohol
+Restaurant Bar
+Wine Shop / Theka
+Chocolate Shop
+Cake Shop
+Cookie / Biscuit
+Dry Fruits & Dates
+Frozen Yogurt
+Ice Cream Parlor
+Indian Sweets / Mithai
+Namkeen / Snacks
+Other Bakery / Sweets
+Western Bakery
+Bakery Cafe
+Coffee Chain
+Co-Working Cafe
+Dessert Cafe
+Juice Bar / Smoothie
+Local Cafe / Canteen
+Other Cafe
+Tea House / Chai
+Cloud Kitchen
+Dunzo
+EatSure / Rebel Foods
+Other Food Delivery
+Swiggy
+Zomato
+Burger Chain
+Chaat Counter
+Dosa / Idli Stand
+Fried Chicken Chain
+Indian Fast Food Chain
+Momos
+Other Fast Food
+Pav Bhaji / Misal
+Pizza Chain
+Quick Service Restaurant
+Submarine / Sandwich
+Wrap / Roll / Shawarma
+Dry Fruits / Nuts
+Dairy Shop
+Frozen Food
+Grain / Flour / Rice
+Imported / Gourmet
+Kirana Store
+Meat / Fish Shop
+Oil / Ghee
+Online Grocery
+Organic / Health Store
+Other Grocery
+Supermarket Chain
+Spices / Masala
+Vegetable / Fruit Vendor
+Wholesale / Cash-and-Carry
+Buffet Restaurant
+Bengali Restaurant
+Chinese / Indo-Chinese
+Continental / European
+Fine Dining
+Gujarati / Rajasthani Thali
+Italian / Pizza Parlor
+Japanese / Korean / Thai
+Kerala / Coastal
+Multi-Cuisine Restaurant
+Mughlai / Biryani House
+North Indian Restaurant
+Other Restaurant
+South Indian Restaurant
+Themed / Rooftop Restaurant
+Chai / Tea Stall
+Corn / Bhutta
+Chaat / Golgappa
+Egg Roll / Frankie
+Ice Cream Cart
+Juice / Sugarcane
+Kebab / Tikka Stall
+Kulfi / Gola
+Other Street Food
+Pan / Betel Shop
+Samosa / Kachori
+Vada Pav
+Bank Account Fee
+Cheque / DD / Pay Order
+Fund Transfer / NEFT / IMPS
+Foreign Exchange
+Locker Charges
+NRI Banking
+Other Banking
+BNPL / Pay Later
+Other Digital Payment
+Payment Gateway
+UPI Collect Request
+Wallet Top-up
+Health Insurance
+Home Insurance
+Life Insurance
+Other Insurance
+Travel Insurance
+Vehicle Insurance
+Fixed Deposit
+Gold / Silver / Crypto
+Mutual Fund / SIP
+Other Investment
+PPF / NPS / EPF
+Stock Trading
+Credit Card Payment
+Education Loan EMI
+Home Loan EMI
+Other Loan
+Personal Loan EMI
+Vehicle Loan EMI
+Baby Food / Formula
+Daycare / Creche
+Kids' Entertainment
+Other Childcare
+Baby Products / Diapers
+Crowdfunding
+NGO / Charity
+Other Donation
+Religious Donation / Dakshina
+Temple / Mosque / Church
+Anniversary Gift
+Birthday Gift
+Flowers / Bouquet
+Festival Gift
+Gift Card / Voucher
+Other Gift
+Wedding Gift / Shagun
+Pet Accessories
+Pet Food
+Pet Grooming
+Other Pet Care
+Veterinary / Vet Visit
+Astrology / Puja Service
+Other Religious
+Pilgrimage
+Pooja / Havan
+Religious Books / Items
+Temple / Holy Place Visit
+DigiLocker / Digital Cert
+Other e-Gov Service
+Ration Card / PDS
+UMANG / e-Governance
+Aadhaar / PAN Card
+Court Fee / Stamp Paper
+Driving License / RTO
+Other Government Fee
+Passport / Visa Fee
+Registration / Stamp Duty
+Court Fine
+Municipal Fine / Penalty
+Other Fine
+Parking Fine
+Traffic Challan / E-Challan
+Custom Duty / Excise
+GST Filing / Return
+GST Payment
+Other Business Tax
+Professional Tax
+Advance Tax
+Tax Filing Fee (CA)
+Other Income Tax
+Income Tax Penalty
+Self-Assessment Tax
+TDS / TCS
+Dermatologist
+General Physician
+Gynecologist / OBGYN
+Other Doctor
+Pediatrician
+Psychiatrist / Psychologist
+Specialist Consultation
+Blood Test
+COVID / Viral Test
+Full Body Checkup
+Home Sample Collection
+Other Diagnostics
+Pathology Lab
+Radiology / Imaging
+Contact Lens
+Dental Clinic
+Eye Hospital
+Optical Store
+Orthodontics / Braces
+Other Dental / Vision
+Government Hospital
+Multi-Specialty Hospital
+Maternity Hospital
+Nursing Home
+Cancer Center / Oncology
+Orthopedic Center
+Other Hospital
+Private Clinic
+Ayurvedic / Herbal
+Homeopathy
+Medical Equipment
+Online Pharmacy
+Other Pharmacy
+Retail Pharmacy
+Surgical Supplies
+ATM Withdrawal
+Cash Deposit
+Demand Draft
+Foreign Currency Exchange
+Money Order
+Other Cash Operation
+Household Staff Salary
+Kids Pocket Money
+Other Household Payment
+Tip / Gratuity
+App Store / Play Store
+Box / Crate Subscription
+News / Magazine Subscription
+Other Recurring Subscription
+P2P Transfer to Family
+P2P Transfer to Friend
+Other Transfer
+Refund / Cashback
+Rent Payment P2P
+Split Bill
+Salary Credit
+Micro Transaction (< Rs.10)
+New / Unseen Merchant
+Other Unidentified
+Pending Classification
+Test Transaction
+Unclear Description
+Unknown Merchant
+Grooming Appliances
+Haircare Products
+Cosmetics / Makeup
+Other Beauty
+Perfume / Fragrance
+Skincare
+CrossFit / Functional
+Gym Membership
+Other Fitness
+Personal Trainer
+Pilates / Zumba / Dance
+Yoga Studio
+Home Grooming Service
+Mehndi / Bridal
+Men's Salon / Barber
+Other Salon
+Unisex Salon
+Women's Salon
+Ayurvedic Massage
+Other Spa
+Steam / Sauna
+Spa Treatment
+Thai / Balinese Massage
+Diet / Meal Plan
+Organic / Natural Products
+Other Wellness
+Protein / Health Drink
+Vitamins / Supplements
+Domestic Courier
+International Courier
+Other Logistics
+Packers & Movers
+Speed Post / India Post
+Warehouse / Storage
+Bookkeeping / Accounting
+CA / Auditor Fee
+Company Registration
+Financial Advisor
+Other Financial Service
+Tax Consultant
+Domain / Hosting
+Digital Marketing
+Freelancer Payment
+Other Freelance / Digital
+Printing / Design
+SaaS Subscription
+Court Filing
+Legal Consultation
+Legal Documentation
+Lawyer Fee
+Notary
+Other Legal
+Art Supplies
+E-Books / Kindle
+Newspaper / Magazine
+Other Books / Stationery
+Physical Books
+Stationery / Office Supplies
+Accessories / Bags
+Traditional / Ethnic Wear
+Footwear
+Kids' Clothing
+Men's Clothing
+Other Clothing
+Sports / Activewear
+Women's Clothing
+Audio / Headphones
+Camera / Photography
+Gaming Console / Accessories
+Laptop / Computer
+Mobile Phone
+Other Electronics
+Smart Home / IoT
+TV / Display
+Auto Accessories Shop
+Department Store
+Gift Shop
+Hardware / Tools
+Shopping Mall
+Music / Instrument Store
+Other Retail
+Sports / Outdoor Shop
+Toy Store
+Wholesale Market
+Cookware / Utensils
+Home Decor
+Furniture
+Kitchen Appliances
+Lighting
+Mattress / Bedding
+Other Home
+Storage / Organization
+Diamond / Precious Stones
+Gold Jewelry
+Silver / Imitation Jewelry
+Watch / Smartwatch
+Ajio / Tata CLiQ
+Amazon India
+FirstCry / Kids
+Flipkart
+Instagram / Social Commerce
+Meesho
+Myntra
+Nykaa
+Other Online Shopping
+Snapdeal / Others
+ACT Fibernet
+Airtel Xstream Fiber
+BSNL Broadband
+JioFiber
+Other Broadband
+Dish TV / D2H
+Other DTH
+Sun Direct / Regional
+Tata Play / Airtel Xstream
+Enterprise Data Plan
+Landline Bill
+Other Landline / Enterprise
+Intercom / PBX
+International Roaming
+Other Mobile
+Postpaid Bill
+Prepaid Recharge
+Value Added Services
+CNG / LPG Auto
+Diesel
+EV Charging
+Fuel Card / Prepaid
+Other Fuel
+Petrol / Gasoline
+Car Service / Repair
+Car Wash / Detailing
+Other Vehicle Maintenance
+Spare Parts / Accessories
+Two-Wheeler Service
+Tyre / Puncture
+Bridge / Tunnel Toll
+FASTag / Highway Toll
+Parking Lot / Garage
+Other Parking / Toll
+Street Parking
+Auto Rickshaw
+City Bus
+E-Rickshaw
+Local Train / Suburban
+Metro / Subway
+Other Public Transit
+State Bus / Volvo
+BluSmart
+InDriver
+Ola
+Other Ride Hailing
+Rapido
+Uber
+Airport Taxi
+Local Cab / Savaari
+Outstation Cab
+Other Cab / Rental
+Self-Drive Rental
+Tempo Traveller / Van
+Airport Transfer
+Flight Booking Platform
+Domestic Flight
+International Flight
+Airport Lounge
+Other Flight
+Airline Upgrade / Add-on
+Budget Hotel / OYO
+Business Hotel (3-4 Star)
+Dharamshala / Guest House
+Homestay / Airbnb
+Hostel / Dormitory
+Luxury Hotel (5-Star)
+Other Accommodation
+Resort
+Bus Ticket Platform
+IRCTC Railway Ticket
+Other Rail / Bus
+Rajdhani / Shatabdi / Vande Bharat
+Sleeper / AC Bus
+Tatkal / Premium Tatkal
+Volvo / Luxury Bus
+Adventure Activity
+Cruise
+Other Tour / Activity
+Tour Package
+Pilgrimage Tour
+Sightseeing / Entry Fee
+Wildlife Safari
+Dry Cleaning
+Domestic Helper / Maid
+Home Deep Cleaning
+Laundry / Ironing
+Generator / Inverter
+Other Electricity
+Prepaid Meter
+State Electricity Board
+Solar / Renewable
+Carpenter
+Electrician
+Other Home Service
+Pest Control
+Plumber
+Broadband Bill
+Cable TV
+Fiber Internet
+Other Internet / Cable
+Set-Top Box / Smart TV
+WiFi Hotspot
+Brokerage / Commission
+House Rent
+Other Housing
+Property Tax
+Security Deposit
+Society Maintenance
+LPG / Cooking Gas
+Other Water / Gas
+Piped Natural Gas
+Water Bill
+Water Purifier Service

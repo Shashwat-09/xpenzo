@@ -1,0 +1,25 @@
+{
+  "name": "xpenzo-functions",
+  "description": "Cloud Functions for Xpenzo — Groups & Splits (Phase 10) balance recompute, debt simplification, and friend reciprocity.",
+  "version": "1.0.0",
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^4.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "private": true
+}

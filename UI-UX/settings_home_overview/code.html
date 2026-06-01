@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings Home Overview - Xpenzo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a50d0d",
+                        "primary-foreground": "#ffffff",
+                        "background-light": "#F2F2F7","background-dark": "#000000",
+                        "surface-dark": "#1C1C1E",
+                        "surface-light": "#ffffff",
+                        "muted-dark": "#2C2C2E",
+                        "amber-accent": "#FFD60A",
+                        "brand-blue": "#1D40C0",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style id="xpenz-dark-mode">
+/* ===== XPENZ DARK MODE - Design System Tokens ===== */
+/* BG Dark: #111521 | Card Dark: #1a1f30 | Sidebar Dark: #0d1117 */
+
+html.dark body {
+  background-color: #111521 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Main container overrides */
+html.dark .bg-white { background-color: #1a1f30 !important; }
+html.dark .bg-slate-50, html.dark .bg-gray-50 { background-color: #111521 !important; }
+html.dark .bg-slate-100, html.dark .bg-gray-100 { background-color: #1e2536 !important; }
+html.dark .bg-slate-200, html.dark .bg-gray-200 { background-color: #252d3f !important; }
+html.dark .bg-background-light { background-color: #111521 !important; }
+html.dark .bg-surface-light { background-color: #1a1f30 !important; }
+html.dark .bg-card-light { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#ffffff\], html.dark .bg-\[\#FFFFFF\] { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#f8f6f6\], html.dark .bg-\[\#F7F6F3\], html.dark .bg-\[\#f6f6f8\] { background-color: #111521 !important; }
+html.dark .bg-\[\#f5f5f5\], html.dark .bg-\[\#f9fafb\] { background-color: #111521 !important; }
+
+/* White/near-white backgrounds on inner cards */
+html.dark .bg-white\/80 { background-color: rgba(26, 31, 48, 0.9) !important; }
+html.dark .bg-white\/90 { background-color: rgba(26, 31, 48, 0.95) !important; }
+
+/* Text color overrides */
+html.dark .text-black, html.dark .text-text-main, html.dark .text-\[\#000000\], html.dark .text-\[\#111\] {
+  color: #f1f5f9 !important;
+}
+html.dark .text-slate-900, html.dark .text-gray-900 { color: #f1f5f9 !important; }
+html.dark .text-slate-800, html.dark .text-gray-800 { color: #e2e8f0 !important; }
+html.dark .text-slate-700, html.dark .text-gray-700 { color: #cbd5e1 !important; }
+html.dark .text-slate-600, html.dark .text-gray-600, html.dark .text-text-muted { color: #94a3b8 !important; }
+html.dark .text-slate-500, html.dark .text-gray-500 { color: #64748b !important; }
+html.dark .text-slate-400, html.dark .text-gray-400 { color: #94a3b8 !important; }
+
+/* Border overrides */
+html.dark .border-slate-100, html.dark .border-gray-100 { border-color: #1e293b !important; }
+html.dark .border-slate-200, html.dark .border-gray-200 { border-color: #334155 !important; }
+html.dark .border-slate-300, html.dark .border-gray-300 { border-color: #475569 !important; }
+html.dark .border-white { border-color: #1e293b !important; }
+
+/* Divide overrides */
+html.dark .divide-slate-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-slate-200 > :not(:first-child) { border-color: #334155 !important; }
+html.dark .divide-gray-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-gray-200 > :not(:first-child) { border-color: #334155 !important; }
+
+/* Shadow adjustments */
+html.dark .shadow-sm, html.dark .shadow, html.dark .shadow-md, html.dark .shadow-lg, html.dark .shadow-xl, html.dark .shadow-2xl {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .shadow-none { box-shadow: none !important; }
+
+/* Input/form overrides */
+html.dark input, html.dark textarea, html.dark select {
+  background-color: #1e2536 !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+html.dark input::placeholder, html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+html.dark input:focus, html.dark textarea:focus, html.dark select:focus {
+  border-color: #1b3fc0 !important;
+  box-shadow: 0 0 0 2px rgba(27, 63, 192, 0.25) !important;
+}
+
+/* Backdrop blur */
+html.dark .backdrop-blur-md { background-color: rgba(17, 21, 33, 0.85) !important; }
+html.dark .backdrop-blur-lg { background-color: rgba(17, 21, 33, 0.9) !important; }
+
+/* Ring overrides */
+html.dark .ring-slate-100, html.dark .ring-gray-100 { --tw-ring-color: #1e293b !important; }
+html.dark .ring-white { --tw-ring-color: #1a1f30 !important; }
+
+/* Emerald/green accents preserved */
+html.dark .bg-emerald-50, html.dark .bg-green-50 { background-color: rgba(16, 185, 129, 0.1) !important; }
+html.dark .border-emerald-100, html.dark .border-green-100 { border-color: rgba(16, 185, 129, 0.2) !important; }
+html.dark .bg-emerald-100, html.dark .bg-green-100 { background-color: rgba(16, 185, 129, 0.15) !important; }
+
+/* Red/danger accents */
+html.dark .bg-red-50 { background-color: rgba(239, 68, 68, 0.1) !important; }
+html.dark .border-red-100 { border-color: rgba(239, 68, 68, 0.2) !important; }
+html.dark .bg-red-100 { background-color: rgba(239, 68, 68, 0.15) !important; }
+
+/* Amber/warning accents */
+html.dark .bg-amber-50, html.dark .bg-yellow-50 { background-color: rgba(245, 158, 11, 0.1) !important; }
+html.dark .border-amber-100 { border-color: rgba(245, 158, 11, 0.2) !important; }
+html.dark .bg-amber-100, html.dark .bg-yellow-100 { background-color: rgba(245, 158, 11, 0.15) !important; }
+
+/* Blue accents */
+html.dark .bg-blue-50 { background-color: rgba(59, 130, 246, 0.1) !important; }
+html.dark .border-blue-100 { border-color: rgba(59, 130, 246, 0.2) !important; }
+html.dark .bg-blue-100 { background-color: rgba(59, 130, 246, 0.15) !important; }
+
+/* Purple accents */
+html.dark .bg-purple-50, html.dark .bg-violet-50 { background-color: rgba(139, 92, 246, 0.1) !important; }
+html.dark .bg-purple-100, html.dark .bg-violet-100 { background-color: rgba(139, 92, 246, 0.15) !important; }
+
+/* Indigo accents (used as primary in some screens) */
+html.dark .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.1) !important; }
+html.dark .bg-indigo-100 { background-color: rgba(99, 102, 241, 0.15) !important; }
+
+/* Primary-tinted backgrounds */
+html.dark .bg-primary\/5, html.dark .bg-primary\/10 { background-color: rgba(27, 63, 192, 0.15) !important; }
+html.dark .bg-primary { background-color: #1b3fc0 !important; }
+
+/* Bottom nav / fixed bars */
+html.dark nav, html.dark nav.fixed {
+  background-color: #0d1117 !important;
+  border-color: #1e293b !important;
+}
+
+/* Card/panel specific */
+html.dark [class*="rounded"][class*="bg-white"],
+html.dark [class*="rounded"][class*="bg-slate-50"],
+html.dark [class*="rounded"][class*="bg-gray-50"] {
+  background-color: #1a1f30 !important;
+}
+
+/* Modal / overlay */
+html.dark .bg-black\/50, html.dark .bg-black\/40, html.dark .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Gradient overrides */
+html.dark .from-white { --tw-gradient-from: #1a1f30 !important; }
+html.dark .to-white { --tw-gradient-to: #1a1f30 !important; }
+html.dark .from-slate-50 { --tw-gradient-from: #111521 !important; }
+
+/* Scrollbar styling */
+html.dark ::-webkit-scrollbar-track { background: #111521; }
+html.dark ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+
+/* Hover states */
+html.dark .hover\:bg-slate-100:hover, html.dark .hover\:bg-gray-100:hover { background-color: #252d3f !important; }
+html.dark .hover\:bg-slate-50:hover, html.dark .hover\:bg-gray-50:hover { background-color: #1e2536 !important; }
+html.dark .hover\:bg-white:hover { background-color: #1a1f30 !important; }
+
+/* Active states */
+html.dark .active\:bg-slate-100:active, html.dark .active\:bg-gray-100:active { background-color: #252d3f !important; }
+
+/* Toggle / Switch backgrounds */
+html.dark .bg-slate-300, html.dark .bg-gray-300 { background-color: #475569 !important; }
+
+/* Status bar area */
+html.dark .bg-\[\#1D40C0\], html.dark .bg-\[\#1d40bf\], html.dark .bg-\[\#4f46e5\] {
+  background-color: #1b3fc0 !important;
+}
+
+/* Smooth transition for all color changes */
+html.dark * {
+  transition: background-color 0.2s ease, color 0.15s ease, border-color 0.2s ease;
+}
+</style>
+</head>
+<body class="bg-background-light font-display text-slate-900 antialiased selection:bg-primary selection:text-white pb-24">
+<div class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-md border-b border-slate-200">
+<div class="px-4 h-14 flex items-center justify-center relative">
+<h1 class="text-lg font-bold tracking-tight">Settings</h1>
+</div>
+</div>
+<main class="px-4 pt-4 flex flex-col gap-6">
+<section class="bg-surface-light rounded-2xl p-5 flex flex-col items-center gap-4 shadow-sm ring-1 ring-slate-900/5">
+<div class="relative">
+<div class="w-24 h-24 rounded-full overflow-hidden ring-4 ring-slate-100 shadow-xl">
+<img alt="Rohan's Profile Picture" class="w-full h-full object-cover" data-alt="Portrait of a young man smiling against a plain background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdFECvOsfa_DG_LUAVn89w_0gANU_dKVRLPu2hALCsM0UCdcCuCOFyB4gEAD83PgF1XUhK_aJ_R64l4nMX_BcgPbo3l-sUOi-QB1zZtEW_Gpxqd_fWJvv9oZ65Z7pe0HMppTraoH9b3HlH0YPnqwGDftxkpQVpV9Ej2Zutgjkeohku4O8Hbm_nhHWVvfxR2spGQ2VW2zLjjCL5pUjL0lrLKfDprYsdpanEmwn4ou7zRATWs4jqqFWWfFPZqdfJBLcr5Tgbr6mEgH8l"/>
+</div>
+<button class="absolute bottom-0 right-0 bg-brand-blue text-white p-1.5 rounded-full shadow-lg hover:bg-blue-800 transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<div class="text-center space-y-1">
+<h2 class="text-xl font-bold text-slate-900">Rohan</h2>
+<p class="text-sm text-slate-500">rohan@example.com <span class="mx-1 opacity-50">|</span> +1 234 567 890</p>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 rounded-full border border-slate-200 text-sm font-semibold text-slate-700 bg-white hover:bg-slate-50 transition-colors">
+            Edit Profile
+        </button>
+</section>
+<section class="flex flex-col gap-px bg-surface-light rounded-xl overflow-hidden shadow-sm ring-1 ring-slate-900/5">
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-600">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<span class="font-medium text-[15px]">Account &amp; Profile</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group border-t border-slate-100" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-600">
+<span class="material-symbols-outlined text-[20px]">diversity_3</span>
+</div>
+<div class="flex flex-col">
+<span class="font-medium text-[15px]">My Families</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-sm text-slate-500">2 families</span>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</div>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group border-t border-slate-100" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center text-orange-600">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<span class="font-medium text-[15px]">Backup &amp; Sync</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold tracking-wider bg-amber-accent text-black">PREMIUM</span>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</div>
+</a>
+</section>
+<a class="relative overflow-hidden rounded-xl p-4 flex items-center justify-between bg-gradient-to-r from-amber-500/10 to-orange-500/5 border border-amber-500/20 group" href="#">
+<div class="flex items-center gap-4 z-10">
+<div class="w-8 h-8 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 flex items-center justify-center text-black shadow-lg shadow-amber-500/20">
+<span class="material-symbols-outlined text-[20px] fill">star</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[15px] text-amber-600">Upgrade to Premium</span>
+<span class="text-xs text-amber-700/80">Unlock all features</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-amber-500 group-hover:text-amber-600 transition-colors z-10">arrow_forward</span>
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl"></div>
+</a>
+<section class="flex flex-col gap-px bg-surface-light rounded-xl overflow-hidden shadow-sm ring-1 ring-slate-900/5">
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600">
+<span class="material-symbols-outlined text-[20px]">devices</span>
+</div>
+<span class="font-medium text-[15px]">Devices</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group border-t border-slate-100" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center text-red-600">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</div>
+<span class="font-medium text-[15px]">Notifications</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group border-t border-slate-100" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center text-green-600">
+<span class="material-symbols-outlined text-[20px]">lock_person</span>
+</div>
+<span class="font-medium text-[15px]">Permissions</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group border-t border-slate-100" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600">
+<span class="material-symbols-outlined text-[20px]">battery_charging_full</span>
+</div>
+<span class="font-medium text-[15px]">Battery Optimization</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group border-t border-slate-100" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-600">
+<span class="material-symbols-outlined text-[20px]">language</span>
+</div>
+<span class="font-medium text-[15px]">Language &amp; Theme</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</a>
+</section>
+<section class="flex flex-col gap-px bg-surface-light rounded-xl overflow-hidden shadow-sm ring-1 ring-slate-900/5 mb-6">
+<a class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</div>
+<span class="font-medium text-[15px]">Help &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">chevron_right</span>
+</a>
+<button class="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors group border-t border-slate-100 text-left">
+<span class="font-medium text-[15px] pl-12 text-slate-700">Sign Out</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 hover:bg-red-50 transition-colors group border-t border-slate-100 text-left">
+<span class="font-medium text-[15px] pl-12 text-primary">Delete Account</span>
+</button>
+</section>
+<p class="text-center text-xs text-slate-400 pb-4">
+        Version 2.4.0 (Build 302)
+    </p>
+</main>
+<nav class="fixed bottom-0 w-full z-40 bg-surface-light/95 border-t border-slate-200 backdrop-blur-lg pb-safe">
+<div class="flex justify-around items-center h-16 max-w-lg mx-auto">
+<a class="flex flex-col items-center justify-center w-full h-full gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full h-full gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">bar_chart</span>
+<span class="text-[10px] font-medium">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full h-full gap-1 text-slate-400 hover:text-slate-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">attach_money</span>
+<span class="text-[10px] font-medium">Budget</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full h-full gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-[24px] fill">settings</span>
+<span class="text-[10px] font-medium">Settings</span>
+</a>
+</div>
+</nav>
+<div class="h-6"></div>
+<!-- Xpenz Dark Mode Toggle -->
+<button onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('xpenz-dark', document.documentElement.classList.contains('dark')); updateDMToggle();"
+  id="dm-toggle-btn"
+  style="position:fixed;top:12px;right:12px;z-index:9999;width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(148,163,184,0.3);cursor:pointer;transition:all 0.2s;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);">
+  <span class="material-symbols-outlined" style="font-size:18px;color:#64748b;" id="dm-icon">dark_mode</span>
+</button>
+<script>
+  // Persist dark mode preference
+  if (localStorage.getItem('xpenz-dark') === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+  function updateDMToggle() {
+    var isDark = document.documentElement.classList.contains('dark');
+    var btn = document.getElementById('dm-toggle-btn');
+    var icon = document.getElementById('dm-icon');
+    if (icon) icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+    if (btn) {
+      btn.style.background = isDark ? 'rgba(26,31,48,0.9)' : 'rgba(255,255,255,0.9)';
+      btn.style.borderColor = isDark ? 'rgba(51,65,85,0.5)' : 'rgba(148,163,184,0.3)';
+    }
+    if (icon) icon.style.color = isDark ? '#94a3b8' : '#64748b';
+  }
+  // Apply on load
+  updateDMToggle();
+</script>
+</body></html>

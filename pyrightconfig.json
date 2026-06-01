@@ -1,0 +1,10 @@
+{
+  "include": [
+    "ml/data_collection/scripts",
+    "scripts"
+  ],
+  "pythonVersion": "3.14",
+  "typeCheckingMode": "strict",
+  "reportMissingImports": "error",
+  "reportMissingModuleSource": "warning"
+}

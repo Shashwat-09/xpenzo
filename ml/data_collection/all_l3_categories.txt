@@ -1,0 +1,520 @@
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_NI|North Indian Restaurant|dhaba;punjabi;tandoor;butter chicken;dal makhani;naan;paratha|Haldiram;Bikanervala;Sagar Ratna;Moti Mahal
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_SI|South Indian Restaurant|dosa;idli;uttapam;sambhar;rasam;udupi;tiffin|Saravana Bhavan;A2B;Vasudev Adigas;Murugan Idli
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_CH|Chinese / Indo-Chinese|chinese;noodles;manchurian;schezwan;hakka;momos;wok|Mainland China;Chung Wah;Wow China
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_CT|Continental / European|continental;pasta;steak;european;french;grill|The Table;Olive Bar
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_IT|Italian / Pizza Parlor|pizza;pasta;italian;risotto;lasagna;wood fire|Little Italy;Jamie's Pizzeria;1441 Pizzeria
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_JK|Japanese / Korean / Thai|sushi;ramen;korean;thai;japanese;bento;kimchi|Guppy;Yauatcha;Hakkasan
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_MG|Mughlai / Biryani House|biryani;mughlai;kebab;korma;nihari;lucknowi;hyderabadi|Paradise Biryani;Behrouz;Pista House
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_BN|Bengali Restaurant|bengali;mishti;fish curry;rosogolla;kosha mangsho;machher jhol|Oh Calcutta;6 Ballygunge Place
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_GJ|Gujarati / Rajasthani Thali|gujarati;rajasthani;thali;dal baati;undhiyu;fafda;dhokla|Gordhan Thal;Rajdhani
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_KR|Kerala / Coastal|kerala;appam;puttu;malabar;fish fry;stew;coastal|Paragon;Kayees;Thalassery
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_MC|Multi-Cuisine Restaurant|multi-cuisine;family restaurant;multi cuisine;all day dining|Barbeque Nation;Absolute Barbecue
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_FD|Fine Dining|fine dining;premium;luxury;tasting menu;michelin;gourmet|Indian Accent;Bukhara;Dum Pukht
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_TH|Themed / Rooftop Restaurant|rooftop;themed;lounge dining;sky lounge;revolving|Farzi Cafe;Byg Brewski
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_BF|Buffet Restaurant|buffet;all you can eat;unlimited;spread|Pirates of Grill;AB's
+FD|Food & Dining|FD_REST|Restaurants|FD_REST_OTH|Other Restaurant|restaurant;hotel;bhojanalaya;mess;eatery|
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_BG|Burger Chain|burger;mcdonalds;burger king;whopper;big mac|McDonald's;Burger King;Wendy's
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_PZ|Pizza Chain|dominos;pizza hut;pizza;cheesy;stuffed crust|Domino's;Pizza Hut;La Pino'z
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_FC|Fried Chicken Chain|kfc;fried chicken;chicken bucket;popcorn chicken;crispy|KFC;Chick King
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_SW|Submarine / Sandwich|subway;sandwich;sub;wrap;panini|Subway;Quiznos
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_IN|Indian Fast Food Chain|haldiram;bikanervala;chaat;namkeen;mithai|Haldiram's;Bikanervala;Chatar Patar
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_WR|Wrap / Roll / Shawarma|shawarma;roll;kathi roll;wrap;frankie|Faasos;Tibbs Frankie
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_MO|Momos|momos;dumpling;steamed;fried momos;tandoori momos|Wow Momo;Momo King
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_PB|Pav Bhaji / Misal|pav bhaji;misal;bhaji;pav;maharashtrian|Sardar Pav Bhaji;Ashok Pav Bhaji
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_DS|Dosa / Idli Stand|dosa;idli;medu vada;masala dosa;rava dosa|Dosa Plaza;Vaango
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_CT|Chaat Counter|chaat;golgappa;sev puri;bhel puri;pani puri;tikki|Bittoo Tikki Wala;Prince Chaat
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_QS|Quick Service Restaurant|qsr;quick service;takeaway;grab and go;counter service|Chai Point;Box8
+FD|Food & Dining|FD_FAST|Fast Food|FD_FAST_OTH|Other Fast Food|fast food;snack bar;food court;stall|
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_CC|Coffee Chain|starbucks;ccd;cafe coffee day;third wave;blue tokai;coffee|Starbucks;Cafe Coffee Day;Third Wave Coffee;Blue Tokai
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_TH|Tea House / Chai|chaayos;chai point;tea;chai;kullad;cutting|Chaayos;Chai Point;MBA Chai Wala
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_JC|Juice Bar / Smoothie|juice;smoothie;fresh juice;cold pressed;shake|Huber & Holly;Raw Pressery
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_DS|Dessert Cafe|dessert;waffle;pancake;brownie;ice cream cafe|Theobroma;The Chocolate Room
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_BK|Bakery Cafe|bakery;cafe;pastry;croissant;artisan bread|The Baker's Dozen;Karachi Bakery
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_CW|Co-Working Cafe|co-working;work cafe;laptop friendly;wifi cafe|Social;Dialogues Cafe
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_LC|Local Cafe / Canteen|canteen;local cafe;tapri;irani cafe;udipi|Leopold Cafe;Indian Coffee House
+FD|Food & Dining|FD_CAFE|Cafes & Coffee|FD_CAFE_OTH|Other Cafe|cafe;coffee shop;espresso;latte|
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_KR|Kirana Store|kirana;general store;provision;grocery;neighbourhood|
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_SM|Supermarket Chain|dmart;reliance fresh;big bazaar;more;supermarket;star bazaar|DMart;Reliance Fresh;Big Bazaar;More Supermarket;Star Bazaar
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_ON|Online Grocery|bigbasket;blinkit;zepto;jiomart;instamart;dunzo;swiggy instamart|BigBasket;Blinkit;Zepto;JioMart;Swiggy Instamart
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_VF|Vegetable / Fruit Vendor|sabzi;vegetable;fruit;mandi;phool mandi;sabzi mandi|
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_MF|Meat / Fish Shop|meat;chicken;mutton;fish;seafood;butcher;machhi|Licious;FreshToHome;ZappFresh
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_DR|Dairy Shop|dairy;milk;curd;paneer;cheese;doodh;amul|Amul;Mother Dairy;Country Delight
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_DF|Dry Fruits / Nuts|dry fruit;nuts;almonds;cashew;raisin;kaju;badam|Nutraj;Happilo
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_SP|Spices / Masala|spice;masala;haldi;mirchi;jeera;dhania|MDH;Everest;Catch
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_OR|Organic / Health Store|organic;health food;gluten free;vegan;natural|Organic India;24 Mantra;Nature's Basket
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_WH|Wholesale / Cash-and-Carry|wholesale;cash and carry;bulk;metro cash;bestprice|Metro Cash & Carry;Walmart BestPrice
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_FZ|Frozen Food|frozen;ready to eat;instant;freezer;ITC masterchef|McCain;ITC Master Chef;Godrej Yummiez
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_IM|Imported / Gourmet|imported;gourmet;international;speciality;foreign|Foodhall;Nature's Basket
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_OG|Oil / Ghee|oil;ghee;cooking oil;mustard oil;refined oil;desi ghee|Fortune;Saffola;Patanjali
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_GR|Grain / Flour / Rice|atta;rice;flour;grain;maida;chawal;dal|Aashirvaad;India Gate;Tata Sampann
+FD|Food & Dining|FD_GROC|Groceries|FD_GROC_OTH|Other Grocery|grocery;provisions;household;daily needs|
+FD|Food & Dining|FD_DLVR|Food Delivery|FD_DLVR_SW|Swiggy|swiggy;swiggy order;swiggy delivery|Swiggy
+FD|Food & Dining|FD_DLVR|Food Delivery|FD_DLVR_ZM|Zomato|zomato;zomato order;zomato delivery;zomato gold|Zomato
+FD|Food & Dining|FD_DLVR|Food Delivery|FD_DLVR_DN|Dunzo|dunzo;dunzo daily;dunzo delivery|Dunzo
+FD|Food & Dining|FD_DLVR|Food Delivery|FD_DLVR_ES|EatSure / Rebel Foods|eatsure;rebel foods;faasos;behrouz;ovenstory|EatSure;Faasos;Behrouz Biryani
+FD|Food & Dining|FD_DLVR|Food Delivery|FD_DLVR_CK|Cloud Kitchen|cloud kitchen;virtual kitchen;delivery only;ghost kitchen|Box8;FreshMenu;Eatfit
+FD|Food & Dining|FD_DLVR|Food Delivery|FD_DLVR_OTH|Other Food Delivery|food delivery;online food;order online|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_CH|Chai / Tea Stall|chai;tea stall;tapri;cutting chai;bun maska|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_CT|Chaat / Golgappa|chaat;golgappa;pani puri;bhel;sev puri;dahi puri|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_VP|Vada Pav|vada pav;vadapav;batata vada;mumbai street|Goli Vada Pav;Jumbo King
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_SK|Samosa / Kachori|samosa;kachori;aloo tikki;pakora;bhajiya|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_KB|Kebab / Tikka Stall|kebab;seekh;tikka;tandoori;grill stall|Khan Chacha;Tunday Kebabi
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_ER|Egg Roll / Frankie|egg roll;frankie;kathi roll;egg bhurji;anda|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_CN|Corn / Bhutta|bhutta;corn;makka;roasted corn;baby corn|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_IC|Ice Cream Cart|ice cream;kulfi;ice gola;softy;matka kulfi|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_KG|Kulfi / Gola|kulfi;gola;chuski;baraf ka gola;shaved ice|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_JC|Juice / Sugarcane|juice;sugarcane;ganne ka ras;nimbu pani;lassi|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_PP|Pan / Betel Shop|pan;paan;betel;supari;mukhwas;pan masala|
+FD|Food & Dining|FD_STRT|Street Food|FD_STRT_OTH|Other Street Food|street food;thela;stall;hawker;footpath|
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_MT|Indian Sweets / Mithai|mithai;sweets;laddu;barfi;rasgulla;gulab jamun;jalebi|Bengali Sweet House;Aggarwal Sweets;K.C. Das
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_WB|Western Bakery|bakery;bread;croissant;baguette;sourdough|Theobroma;Le15 Patisserie
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_CK|Cake Shop|cake;birthday cake;custom cake;cupcake;pastry|Monginis;Just Bake;Mio Amore
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_CH|Chocolate Shop|chocolate;truffle;cocoa;praline;handmade chocolate|Cadbury;Fabelle;Smoor
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_NK|Namkeen / Snacks|namkeen;mixture;sev;bhujia;chips;snacks|Haldiram's;Bikano;Balaji Wafers
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_IP|Ice Cream Parlor|ice cream;gelato;sundae;parlour;parlor|Baskin Robbins;Naturals;Amul Parlour
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_FY|Frozen Yogurt|frozen yogurt;froyo;yogurt bar;toppings|Cocoberry;Red Mango
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_CK2|Cookie / Biscuit|cookie;biscuit;rusk;toast;cookies|Karachi Bakery;Pune Bakery
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_DT|Dry Fruits & Dates|dates;khajoor;energy balls;fruit;dry fruit box|
+FD|Food & Dining|FD_BAKE|Bakery & Sweets|FD_BAKE_OTH|Other Bakery / Sweets|bakery;sweet shop;confectionery;mithai shop|
+FD|Food & Dining|FD_ALCL|Alcohol & Bars|FD_ALCL_BP|Bar / Pub|bar;pub;drinks;cocktail;happy hour|Toit;The Irish House
+FD|Food & Dining|FD_ALCL|Alcohol & Bars|FD_ALCL_MB|Microbrewery / Brewery|microbrewery;brewery;craft beer;tap house;brew pub|Byg Brewski;Toit Brewery;Arbor Brewing
+FD|Food & Dining|FD_ALCL|Alcohol & Bars|FD_ALCL_WS|Wine Shop / Theka|wine shop;theka;ahata;liquor shop;desi sharab|
+FD|Food & Dining|FD_ALCL|Alcohol & Bars|FD_ALCL_LS|Liquor Store / Premium|liquor store;premium spirits;whisky;wine store;imported liquor|Living Liquidz;The Liquor Store
+FD|Food & Dining|FD_ALCL|Alcohol & Bars|FD_ALCL_LG|Lounge / Nightclub|lounge;nightclub;club;disco;dj night|Kitty Su;Aer Lounge
+FD|Food & Dining|FD_ALCL|Alcohol & Bars|FD_ALCL_RB|Restaurant Bar|restro bar;restobar;bar and grill;gastropub|Social;Boteco
+FD|Food & Dining|FD_ALCL|Alcohol & Bars|FD_ALCL_OTH|Other Alcohol|alcohol;beer;wine;spirits;drinks|
+TR|Transportation|TR_PUB|Public Transit|TR_PUB_MT|Metro / Subway|metro;subway;dmrc;namma metro;metro card|Delhi Metro;Mumbai Metro;Bangalore Metro
+TR|Transportation|TR_PUB|Public Transit|TR_PUB_CB|City Bus|bus;dtc;best bus;bmtc;city bus;public bus|DTC;BEST;BMTC;TSRTC
+TR|Transportation|TR_PUB|Public Transit|TR_PUB_AR|Auto Rickshaw|auto;auto rickshaw;autorickshaw;three wheeler;tuk tuk|
+TR|Transportation|TR_PUB|Public Transit|TR_PUB_ER|E-Rickshaw|e-rickshaw;electric rickshaw;toto;battery rickshaw|
+TR|Transportation|TR_PUB|Public Transit|TR_PUB_LT|Local Train / Suburban|local train;suburban;mumbai local;emu|Mumbai Local;Kolkata Suburban
+TR|Transportation|TR_PUB|Public Transit|TR_PUB_SB|State Bus / Volvo|state bus;volvo;ksrtc;rsrtc;upsrtc;apsrtc|KSRTC;RSRTC;UPSRTC;MSRTC
+TR|Transportation|TR_PUB|Public Transit|TR_PUB_OTH|Other Public Transit|ferry;boat;tram;monorail;water metro|
+TR|Transportation|TR_RIDE|Ride Hailing|TR_RIDE_UB|Uber|uber;uber go;uber auto;uber moto;uber xl|Uber
+TR|Transportation|TR_RIDE|Ride Hailing|TR_RIDE_OL|Ola|ola;ola mini;ola prime;ola auto;ola bike|Ola
+TR|Transportation|TR_RIDE|Ride Hailing|TR_RIDE_RP|Rapido|rapido;rapido bike;rapido auto|Rapido
+TR|Transportation|TR_RIDE|Ride Hailing|TR_RIDE_ID|InDriver|indriver;indrive;bid ride;negotiate fare|InDriver
+TR|Transportation|TR_RIDE|Ride Hailing|TR_RIDE_BS|BluSmart|blusmart;electric cab;ev taxi|BluSmart
+TR|Transportation|TR_RIDE|Ride Hailing|TR_RIDE_OTH|Other Ride Hailing|ride;taxi;cab;booking;namma yatri|Namma Yatri;Meru Cab
+TR|Transportation|TR_FUEL|Fuel & Charging|TR_FUEL_PT|Petrol / Gasoline|petrol;petrol pump;gasoline;fuel station|Indian Oil;HP;Bharat Petroleum
+TR|Transportation|TR_FUEL|Fuel & Charging|TR_FUEL_DL|Diesel|diesel;hsd;diesel pump|Indian Oil;HP;BP
+TR|Transportation|TR_FUEL|Fuel & Charging|TR_FUEL_CG|CNG / LPG Auto|cng;lpg;compressed natural gas;adani gas;igl|IGL;Mahanagar Gas;Adani Gas
+TR|Transportation|TR_FUEL|Fuel & Charging|TR_FUEL_EV|EV Charging|ev charging;electric vehicle;charging station;tata power ez|Tata Power EZ Charge;Ather Grid;ChargeZone
+TR|Transportation|TR_FUEL|Fuel & Charging|TR_FUEL_FC|Fuel Card / Prepaid|fuel card;fleet card;prepaid fuel;smartfleet|HPCL PayMart;IOC SmartFleet
+TR|Transportation|TR_FUEL|Fuel & Charging|TR_FUEL_OTH|Other Fuel|fuel;energy;refueling|
+TR|Transportation|TR_PARK|Parking & Tolls|TR_PARK_LT|Parking Lot / Garage|parking;parking lot;garage;multi level parking;basement parking|Get My Parking;Park+
+TR|Transportation|TR_PARK|Parking & Tolls|TR_PARK_ST|Street Parking|street parking;metered parking;pay and park;parking meter|
+TR|Transportation|TR_PARK|Parking & Tolls|TR_PARK_FT|FASTag / Highway Toll|fastag;highway toll;toll plaza;nhai;toll booth|NHAI;FASTag;Paytm FASTag
+TR|Transportation|TR_PARK|Parking & Tolls|TR_PARK_BT|Bridge / Tunnel Toll|bridge toll;tunnel toll;sea link;bandra worli|Bandra Worli Sea Link
+TR|Transportation|TR_PARK|Parking & Tolls|TR_PARK_OTH|Other Parking / Toll|parking fee;toll;valet;valet parking|
+TR|Transportation|TR_MAINT|Vehicle Maintenance|TR_MAINT_CS|Car Service / Repair|car service;car repair;garage;mechanic;car workshop|GoMechanic;myTVS;Pitstop
+TR|Transportation|TR_MAINT|Vehicle Maintenance|TR_MAINT_TW|Two-Wheeler Service|bike service;scooter repair;two wheeler;activa service|BikeWo;Ola Service
+TR|Transportation|TR_MAINT|Vehicle Maintenance|TR_MAINT_TY|Tyre / Puncture|tyre;tire;puncture;wheel alignment;balancing|MRF;CEAT;Apollo Tyres
+TR|Transportation|TR_MAINT|Vehicle Maintenance|TR_MAINT_CW|Car Wash / Detailing|car wash;detailing;polish;ceramic coating;interior cleaning|3M Car Care;ExpressWash
+TR|Transportation|TR_MAINT|Vehicle Maintenance|TR_MAINT_SP|Spare Parts / Accessories|spare parts;auto parts;car accessories;blinker;wiper|Boodmo;myTVS Parts
+TR|Transportation|TR_MAINT|Vehicle Maintenance|TR_MAINT_OTH|Other Vehicle Maintenance|vehicle service;rta;puc;emission test;vehicle insurance renewal|
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_AM|Amazon India|amazon;amazon india;amazon pay;prime|Amazon
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_FK|Flipkart|flipkart;flipkart order;supercoins|Flipkart
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_MY|Myntra|myntra;fashion;ethnic wear|Myntra
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_ME|Meesho|meesho;reseller;wholesale online|Meesho
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_AJ|Ajio / Tata CLiQ|ajio;tata cliq;tata;luxury fashion|Ajio;Tata CLiQ
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_NY|Nykaa|nykaa;nykaa fashion;beauty;cosmetics online|Nykaa
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_FC|FirstCry / Kids|firstcry;baby;kids;hopscotch|FirstCry;Hopscotch
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_SD|Snapdeal / Others|snapdeal;shopclues;paytm mall;indiamart|Snapdeal;ShopClues
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_IG|Instagram / Social Commerce|instagram shop;social commerce;whatsapp order;d2c|
+SH|Shopping|SH_ONLN|Online Shopping|SH_ONLN_OTH|Other Online Shopping|online shopping;ecommerce;online order;cod|
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_MN|Men's Clothing|mens wear;shirt;trouser;jeans;formal;casual|Peter England;Allen Solly;Van Heusen
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_WM|Women's Clothing|womens wear;kurti;saree;dress;lehenga;salwar|W;Biba;Global Desi;FabIndia
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_KD|Kids' Clothing|kids clothing;children wear;baby clothes;junior|Gini & Jony;Lilliput
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_ET|Traditional / Ethnic Wear|ethnic;traditional;kurta;sherwani;dhoti;lungi|Manyavar;FabIndia;Taneira
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_SP|Sports / Activewear|sportswear;activewear;tracksuit;gym wear;yoga wear|Nike;Adidas;Puma;HRX
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_FW|Footwear|shoes;sandals;chappal;sneakers;boots;jootis|Bata;Metro Shoes;Liberty;Crocs
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_AC|Accessories / Bags|bag;wallet;belt;sunglasses;watch;handbag|Titan;Fastrack;Hidesign;Wildcraft
+SH|Shopping|SH_CLTH|Clothing & Apparel|SH_CLTH_OTH|Other Clothing|clothing;garment;apparel;fashion;boutique|
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_MP|Mobile Phone|mobile;smartphone;phone;iphone;samsung;xiaomi|Samsung;Apple;Xiaomi;OnePlus;Croma
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_LP|Laptop / Computer|laptop;computer;desktop;macbook;hp laptop;dell|HP;Dell;Lenovo;Apple
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_TV|TV / Display|tv;television;smart tv;oled;led tv;monitor|Samsung;LG;Sony;Mi TV
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_AU|Audio / Headphones|headphones;earbuds;speaker;soundbar;tws;bluetooth|boAt;JBL;Sony;Bose
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_CM|Camera / Photography|camera;dslr;mirrorless;gopro;lens;photography|Canon;Nikon;Sony
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_SH|Smart Home / IoT|smart home;alexa;google home;smart plug;iot;smart light|Amazon Echo;Google Nest;Philips Hue
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_GM|Gaming Console / Accessories|playstation;xbox;nintendo;gaming;controller;ps5|Sony PS;Microsoft Xbox
+SH|Shopping|SH_ELEC|Electronics & Gadgets|SH_ELEC_OTH|Other Electronics|electronics;gadget;printer;projector;powerbank|Vijay Sales;Croma;Reliance Digital
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_FN|Furniture|furniture;sofa;table;chair;bed;wardrobe;almirah|IKEA;Pepperfry;Urban Ladder;Godrej Interio
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_KA|Kitchen Appliances|mixer;grinder;microwave;oven;blender;toaster;air fryer|Prestige;Pigeon;Philips;Bajaj
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_DC|Home Decor|decor;curtains;vase;painting;showpiece;wall art|Home Centre;FabIndia;Chumbak
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_MB|Mattress / Bedding|mattress;pillow;bedsheet;comforter;duvet;blanket|Sleepwell;Wakefit;Duroflex;Sunday
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_SO|Storage / Organization|storage;organizer;rack;shelf;cabinet;box|IKEA;Solimo
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_CW|Cookware / Utensils|cookware;utensils;kadhai;tawa;pressure cooker;bartan|Prestige;Hawkins;Vinod
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_LT|Lighting|light;bulb;lamp;led;chandelier;tube light|Philips;Havells;Wipro;Syska
+SH|Shopping|SH_HOME|Home & Kitchen|SH_HOME_OTH|Other Home|home;household;cleaning;mop;broom;dustbin|
+SH|Shopping|SH_BOOK|Books & Stationery|SH_BOOK_PB|Physical Books|book;novel;bookstore;kitab;pustak|Crossword;Om Book Shop;Landmark
+SH|Shopping|SH_BOOK|Books & Stationery|SH_BOOK_EB|E-Books / Kindle|ebook;kindle;audible;audiobook;digital book|Amazon Kindle;Google Books
+SH|Shopping|SH_BOOK|Books & Stationery|SH_BOOK_ST|Stationery / Office Supplies|stationery;pen;notebook;stapler;file;folder|Classmate;Camlin;Nataraj
+SH|Shopping|SH_BOOK|Books & Stationery|SH_BOOK_AR|Art Supplies|art supplies;canvas;paint;brush;sketch;colour|Faber Castell;Camlin;Winsor Newton
+SH|Shopping|SH_BOOK|Books & Stationery|SH_BOOK_NP|Newspaper / Magazine|newspaper;magazine;subscription;akhbar;patrika|TOI;Hindu;India Today
+SH|Shopping|SH_BOOK|Books & Stationery|SH_BOOK_OTH|Other Books / Stationery|stationery shop;bookshop;paper;printing paper|
+SH|Shopping|SH_GENR|General Retail|SH_GENR_ML|Shopping Mall|mall;shopping mall;shopping center;complex|Phoenix Marketcity;Select Citywalk;VR Mall
+SH|Shopping|SH_GENR|General Retail|SH_GENR_DS|Department Store|department store;shoppers stop;lifestyle;spencer|Shoppers Stop;Lifestyle;Central
+SH|Shopping|SH_GENR|General Retail|SH_GENR_WM|Wholesale Market|wholesale;market;mandi;sadar bazaar;bulk|
+SH|Shopping|SH_GENR|General Retail|SH_GENR_GF|Gift Shop|gift;gift shop;souvenir;memento;return gift|Archies;IGP
+SH|Shopping|SH_GENR|General Retail|SH_GENR_TY|Toy Store|toy;toy store;games;kids toys;lego|Hamley's;Toyzone
+SH|Shopping|SH_GENR|General Retail|SH_GENR_SP|Sports / Outdoor Shop|sports shop;cricket;badminton;outdoor gear;trekking|Decathlon;Sports Station
+SH|Shopping|SH_GENR|General Retail|SH_GENR_MS|Music / Instrument Store|music store;guitar;keyboard;instrument;musical|Furtados
+SH|Shopping|SH_GENR|General Retail|SH_GENR_AA|Auto Accessories Shop|auto accessories;car cover;seat cover;perfume;car mat|
+SH|Shopping|SH_GENR|General Retail|SH_GENR_HW|Hardware / Tools|hardware;tools;screws;drill;paint;cemented|Asian Paints;Bosch
+SH|Shopping|SH_GENR|General Retail|SH_GENR_OTH|Other Retail|retail;shop;store;dukan;general store|
+SH|Shopping|SH_JWLR|Jewelry & Watches|SH_JWLR_GL|Gold Jewelry|gold;sona;gold chain;gold ring;mangalsutra;gold bangle|Tanishq;Kalyan Jewellers;Malabar Gold;PC Jeweller
+SH|Shopping|SH_JWLR|Jewelry & Watches|SH_JWLR_DM|Diamond / Precious Stones|diamond;precious stone;ruby;emerald;sapphire;solitaire|CaratLane;BlueStone;Tanishq
+SH|Shopping|SH_JWLR|Jewelry & Watches|SH_JWLR_IM|Silver / Imitation Jewelry|silver;imitation;artificial;fashion jewelry;oxidized;chandi|Voylla;Zaveri Bazaar
+SH|Shopping|SH_JWLR|Jewelry & Watches|SH_JWLR_WT|Watch / Smartwatch|watch;smartwatch;wristwatch;fitness band;analog;digital watch|Titan;Fastrack;Casio;Noise;boAt Watch
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_MS|Multi-Specialty Hospital|hospital;multi specialty;super speciality;medical center|Apollo Hospital;Fortis;Max Healthcare;Medanta
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_GV|Government Hospital|government hospital;sarkari hospital;pgi;aiims|AIIMS;PGI Chandigarh;Safdarjung
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_PC|Private Clinic|clinic;private clinic;doctor clinic;polyclinic|
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_NH|Nursing Home|nursing home;care home;small hospital|
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_MT|Maternity Hospital|maternity;delivery;pregnancy;obgyn;labour|Cloudnine;Motherhood Hospital
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_OR|Orthopedic Center|orthopedic;bone;joint;spine;fracture;knee|Shalby Hospital
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_ON|Cancer Center / Oncology|cancer;oncology;chemotherapy;radiation;tumor|Tata Memorial;HCG Oncology
+HC|Healthcare|HC_HOSP|Hospitals & Clinics|HC_HOSP_OTH|Other Hospital|hospital;medical;treatment;inpatient|
+HC|Healthcare|HC_PHRM|Pharmacy & Medicine|HC_PHRM_RT|Retail Pharmacy|pharmacy;chemist;medical store;dawai;aushadhi|Apollo Pharmacy;MedPlus;Wellness Forever
+HC|Healthcare|HC_PHRM|Pharmacy & Medicine|HC_PHRM_ON|Online Pharmacy|1mg;pharmeasy;netmeds;online medicine;tata health|1mg;PharmEasy;Netmeds;Tata 1mg
+HC|Healthcare|HC_PHRM|Pharmacy & Medicine|HC_PHRM_AY|Ayurvedic / Herbal|ayurvedic;herbal;patanjali;himalaya;baidyanath;dabur|Patanjali;Himalaya;Dabur;Baidyanath
+HC|Healthcare|HC_PHRM|Pharmacy & Medicine|HC_PHRM_HM|Homeopathy|homeopathy;homeopathic;sbl;reckeweg;schwabe|Dr. Batra's
+HC|Healthcare|HC_PHRM|Pharmacy & Medicine|HC_PHRM_ME|Medical Equipment|medical equipment;bp monitor;thermometer;oximeter;wheelchair|Omron;Dr Morepen
+HC|Healthcare|HC_PHRM|Pharmacy & Medicine|HC_PHRM_SU|Surgical Supplies|surgical;syringe;bandage;gauze;mask;gloves|
+HC|Healthcare|HC_PHRM|Pharmacy & Medicine|HC_PHRM_OTH|Other Pharmacy|medicine;tablet;capsule;syrup;prescription|
+HC|Healthcare|HC_DIAG|Diagnostics & Labs|HC_DIAG_PL|Pathology Lab|pathology;lab;blood test;urine test;srl|Dr Lal PathLabs;SRL Diagnostics;Thyrocare
+HC|Healthcare|HC_DIAG|Diagnostics & Labs|HC_DIAG_RD|Radiology / Imaging|xray;mri;ct scan;ultrasound;sonography;radiology|Vijaya Diagnostic;Star Imaging
+HC|Healthcare|HC_DIAG|Diagnostics & Labs|HC_DIAG_BT|Blood Test|cbc;blood sugar;hba1c;lipid profile;thyroid test|
+HC|Healthcare|HC_DIAG|Diagnostics & Labs|HC_DIAG_FB|Full Body Checkup|full body checkup;health package;annual checkup;master health|Indus Health Plus
+HC|Healthcare|HC_DIAG|Diagnostics & Labs|HC_DIAG_CV|COVID / Viral Test|covid test;rtpcr;rapid test;antigen;viral panel|
+HC|Healthcare|HC_DIAG|Diagnostics & Labs|HC_DIAG_HC|Home Sample Collection|home collection;sample pickup;home visit lab;phlebotomy|Orange Health;Healthians
+HC|Healthcare|HC_DIAG|Diagnostics & Labs|HC_DIAG_OTH|Other Diagnostics|diagnostic;test;screening;scan|
+HC|Healthcare|HC_DCTR|Doctor Consultation|HC_DCTR_GP|General Physician|general physician;gp;family doctor;mbbs|Practo;mFine
+HC|Healthcare|HC_DCTR|Doctor Consultation|HC_DCTR_SP|Specialist Consultation|specialist;consultant;senior doctor;md|
+HC|Healthcare|HC_DCTR|Doctor Consultation|HC_DCTR_PD|Pediatrician|pediatrician;child specialist;baby doctor;neonatal|
+HC|Healthcare|HC_DCTR|Doctor Consultation|HC_DCTR_GY|Gynecologist / OBGYN|gynecologist;obgyn;womens health;pregnancy;fertility|
+HC|Healthcare|HC_DCTR|Doctor Consultation|HC_DCTR_DM|Dermatologist|dermatologist;skin doctor;skin specialist;acne;hair fall|Kaya Clinic;Oliva Clinic
+HC|Healthcare|HC_DCTR|Doctor Consultation|HC_DCTR_PS|Psychiatrist / Psychologist|psychiatrist;psychologist;mental health;therapy;counseling|Amaha;YourDOST
+HC|Healthcare|HC_DCTR|Doctor Consultation|HC_DCTR_OTH|Other Doctor|doctor;consultation;opd;checkup;follow up|
+HC|Healthcare|HC_DNTL|Dental & Vision|HC_DNTL_DC|Dental Clinic|dental;dentist;tooth;cavity;root canal|Clove Dental;Sabka Dentist;MyDentist
+HC|Healthcare|HC_DNTL|Dental & Vision|HC_DNTL_OT|Orthodontics / Braces|braces;orthodontic;aligners;invisalign;teeth straightening|toothsi
+HC|Healthcare|HC_DNTL|Dental & Vision|HC_DNTL_OP|Optical Store|optical;eyeglasses;glasses;spectacles;frames;lenskart|Lenskart;Titan Eye Plus;GKB Opticals
+HC|Healthcare|HC_DNTL|Dental & Vision|HC_DNTL_EH|Eye Hospital|eye hospital;ophthalmology;lasik;cataract;vision center|Dr. Agarwal's Eye Hospital;Shankar Netralaya
+HC|Healthcare|HC_DNTL|Dental & Vision|HC_DNTL_CL|Contact Lens|contact lens;colored lens;disposable lens;daily lens|Lenskart;Bausch & Lomb
+HC|Healthcare|HC_DNTL|Dental & Vision|HC_DNTL_OTH|Other Dental / Vision|dental care;eye care;oral health;vision|
+FI|Finance & Insurance|FI_BANK|Banking|FI_BANK_FT|Fund Transfer / NEFT / IMPS|neft;imps;rtgs;fund transfer;bank transfer|
+FI|Finance & Insurance|FI_BANK|Banking|FI_BANK_AF|Bank Account Fee|account fee;annual fee;maintenance charge;minimum balance|
+FI|Finance & Insurance|FI_BANK|Banking|FI_BANK_LK|Locker Charges|locker;safe deposit;locker rent;bank locker|
+FI|Finance & Insurance|FI_BANK|Banking|FI_BANK_CB|Cheque / DD / Pay Order|cheque;demand draft;pay order;banker cheque;dd charges|
+FI|Finance & Insurance|FI_BANK|Banking|FI_BANK_FX|Foreign Exchange|forex;foreign exchange;currency exchange;remittance|BookMyForex;Thomas Cook;Wise
+FI|Finance & Insurance|FI_BANK|Banking|FI_BANK_NR|NRI Banking|nri;nre;nro;overseas transfer;remittance|
+FI|Finance & Insurance|FI_BANK|Banking|FI_BANK_OTH|Other Banking|bank;banking;branch;bank charges|
+FI|Finance & Insurance|FI_INSR|Insurance|FI_INSR_HI|Health Insurance|health insurance;mediclaim;medical insurance;hospitalization|Star Health;ICICI Lombard;New India Assurance
+FI|Finance & Insurance|FI_INSR|Insurance|FI_INSR_LI|Life Insurance|life insurance;lic;term plan;endowment;ulip|LIC;HDFC Life;SBI Life;Max Life
+FI|Finance & Insurance|FI_INSR|Insurance|FI_INSR_VI|Vehicle Insurance|motor insurance;car insurance;bike insurance;third party|Bajaj Allianz;ICICI Lombard;HDFC Ergo
+FI|Finance & Insurance|FI_INSR|Insurance|FI_INSR_HO|Home Insurance|home insurance;property insurance;fire insurance;burglary|
+FI|Finance & Insurance|FI_INSR|Insurance|FI_INSR_TI|Travel Insurance|travel insurance;trip insurance;flight insurance;overseas medical|Care Insurance;Digit Insurance
+FI|Finance & Insurance|FI_INSR|Insurance|FI_INSR_OTH|Other Insurance|insurance;premium;policy;coverage;claim|
+FI|Finance & Insurance|FI_INVST|Investments|FI_INVST_MF|Mutual Fund / SIP|mutual fund;sip;elss;fund;nav;amc|Groww;Zerodha Coin;Kuvera;ET Money
+FI|Finance & Insurance|FI_INVST|Investments|FI_INVST_ST|Stock Trading|stock;share;equity;nse;bse;demat|Zerodha;Upstox;Groww;Angel One
+FI|Finance & Insurance|FI_INVST|Investments|FI_INVST_FD|Fixed Deposit|fixed deposit;fd;rd;recurring deposit;term deposit|
+FI|Finance & Insurance|FI_INVST|Investments|FI_INVST_PP|PPF / NPS / EPF|ppf;nps;epf;provident fund;pension|
+FI|Finance & Insurance|FI_INVST|Investments|FI_INVST_GL|Gold / Silver / Crypto|gold;silver;digital gold;sovereign gold bond;crypto;bitcoin|SafeGold;Augmont;WazirX;CoinDCX
+FI|Finance & Insurance|FI_INVST|Investments|FI_INVST_OTH|Other Investment|investment;returns;portfolio;wealth;bonds|
+FI|Finance & Insurance|FI_LOAN|Loans & Credit|FI_LOAN_HL|Home Loan EMI|home loan;housing loan;mortgage;home emi|SBI;HDFC;LIC Housing;ICICI Bank
+FI|Finance & Insurance|FI_LOAN|Loans & Credit|FI_LOAN_PL|Personal Loan EMI|personal loan;personal emi;instant loan|Bajaj Finserv;MoneyTap
+FI|Finance & Insurance|FI_LOAN|Loans & Credit|FI_LOAN_VL|Vehicle Loan EMI|car loan;bike loan;vehicle loan;auto emi|
+FI|Finance & Insurance|FI_LOAN|Loans & Credit|FI_LOAN_EL|Education Loan EMI|education loan;student loan;study loan|Avanse;Credila
+FI|Finance & Insurance|FI_LOAN|Loans & Credit|FI_LOAN_CC|Credit Card Payment|credit card;card payment;card bill;outstanding;credit limit|
+FI|Finance & Insurance|FI_LOAN|Loans & Credit|FI_LOAN_OTH|Other Loan|loan;emi;installment;borrowing;interest|
+FI|Finance & Insurance|FI_DGTL|Digital Payments|FI_DGTL_WT|Wallet Top-up|wallet;top up;paytm wallet;phonepe wallet;load money|Paytm;PhonePe;Freecharge
+FI|Finance & Insurance|FI_DGTL|Digital Payments|FI_DGTL_UC|UPI Collect Request|collect;upi collect;payment request;mandate|
+FI|Finance & Insurance|FI_DGTL|Digital Payments|FI_DGTL_PG|Payment Gateway|razorpay;payu;ccavenue;payment gateway;checkout|Razorpay;PayU;CCAvenue
+FI|Finance & Insurance|FI_DGTL|Digital Payments|FI_DGTL_BN|BNPL / Pay Later|buy now pay later;bnpl;lazypay;simpl;pay later|LazyPay;Simpl;Amazon Pay Later
+FI|Finance & Insurance|FI_DGTL|Digital Payments|FI_DGTL_OTH|Other Digital Payment|digital payment;online payment;upi;qr code|
+ED|Education|ED_SCHL|School|ED_SCHL_TF|School Tuition Fee|school fee;tuition;admission;school charges|DPS;DAV;KV;Ryan International
+ED|Education|ED_SCHL|School|ED_SCHL_BS|School Bus / Transport|school bus;van;school transport;bus fee|
+ED|Education|ED_SCHL|School|ED_SCHL_UF|School Uniform|uniform;school uniform;blazer;tie;school dress|
+ED|Education|ED_SCHL|School|ED_SCHL_BK|School Books / Supplies|textbook;school book;ncert;cbse book;icse|NCERT;S Chand
+ED|Education|ED_SCHL|School|ED_SCHL_EV|School Events / Trips|school trip;excursion;annual day;sports day;picnic|
+ED|Education|ED_SCHL|School|ED_SCHL_OTH|Other School|school;vidyalaya;pathshala;academy|
+ED|Education|ED_HIGH|Higher Education|ED_HIGH_CF|College / University Fee|college fee;university fee;semester fee;admission fee|DU;IIT;NIT;BITS
+ED|Education|ED_HIGH|Higher Education|ED_HIGH_HF|Hostel Fee|hostel;pg;mess fee;accommodation;dormitory|
+ED|Education|ED_HIGH|Higher Education|ED_HIGH_EX|Exam / Application Fee|exam fee;application fee;entrance fee;jee;neet;gate|NTA;UGC
+ED|Education|ED_HIGH|Higher Education|ED_HIGH_CV|Convocation / Certificate|convocation;degree;certificate;transcript;marksheet|
+ED|Education|ED_HIGH|Higher Education|ED_HIGH_SA|Study Abroad Counseling|study abroad;ielts;toefl;gre;gmat;visa counseling|IDP;Leverage Edu;Yocket
+ED|Education|ED_HIGH|Higher Education|ED_HIGH_OTH|Other Higher Education|higher education;post graduation;phd;research|
+ED|Education|ED_COACH|Coaching & Tuition|ED_COACH_JN|IIT/JEE/NEET Coaching|iit coaching;jee;neet;kota;allen;fiitjee;akash|Allen;FIITJEE;Aakash Institute;Resonance
+ED|Education|ED_COACH|Coaching & Tuition|ED_COACH_UP|UPSC / SSC Coaching|upsc;ias;ssc;civil services;competitive exam|Vajiram;Drishti IAS;Unacademy
+ED|Education|ED_COACH|Coaching & Tuition|ED_COACH_PT|Private Tutor|tutor;tuition;home tuition;private class;personal coaching|
+ED|Education|ED_COACH|Coaching & Tuition|ED_COACH_LN|Language Classes|english;hindi;spanish;french;german;language course|British Council;Duolingo
+ED|Education|ED_COACH|Coaching & Tuition|ED_COACH_MA|Music / Art / Dance|music class;dance class;art class;drawing;singing;kathak|
+ED|Education|ED_COACH|Coaching & Tuition|ED_COACH_OTH|Other Coaching|coaching;classes;tuition center;institute|
+ED|Education|ED_ONLN|Online Learning|ED_ONLN_MC|MOOC Platform|udemy;coursera;edx;khan academy;mooc;nptel|Udemy;Coursera;edX;NPTEL
+ED|Education|ED_ONLN|Online Learning|ED_ONLN_IN|Indian EdTech|byjus;unacademy;vedantu;physics wallah;toppr|BYJU'S;Unacademy;Vedantu;Physics Wallah
+ED|Education|ED_ONLN|Online Learning|ED_ONLN_SK|Skill Development|coding;design;data science;devops;upskill;bootcamp|Scaler;Coding Ninjas;upGrad
+ED|Education|ED_ONLN|Online Learning|ED_ONLN_PR|Professional Certification|certification;aws;google cert;pmp;cfa;professional|Google;AWS;Microsoft;Simplilearn
+ED|Education|ED_ONLN|Online Learning|ED_ONLN_WS|Workshop / Masterclass|workshop;masterclass;webinar;seminar;live class|
+ED|Education|ED_ONLN|Online Learning|ED_ONLN_OTH|Other Online Learning|online course;e-learning;distance learning;digital education|
+ED|Education|ED_SUPL|Educational Supplies|ED_SUPL_TX|Textbooks|textbook;reference book;guide;study material|
+ED|Education|ED_SUPL|Educational Supplies|ED_SUPL_RF|Reference Books|reference;encyclopedia;dictionary;competitive book|Arihant;RS Aggarwal
+ED|Education|ED_SUPL|Educational Supplies|ED_SUPL_EL|E-Learning Material|e-learning;pdf;study notes;digital content;video lectures|
+ED|Education|ED_SUPL|Educational Supplies|ED_SUPL_LB|Lab Equipment|lab;microscope;beaker;test tube;chemistry kit|
+ED|Education|ED_SUPL|Educational Supplies|ED_SUPL_PM|Project Materials|project;chart;model;science project;material|
+ED|Education|ED_SUPL|Educational Supplies|ED_SUPL_OTH|Other Educational Supply|educational;school supply;student supplies|
+EN|Entertainment|EN_MOVR|Movies & Cinema|EN_MOVR_TK|Movie Ticket|movie ticket;bookmyshow;cinema ticket;film ticket|BookMyShow;Paytm Movies
+EN|Entertainment|EN_MOVR|Movies & Cinema|EN_MOVR_IX|IMAX / Premium Screen|imax;4dx;premium;gold class;recliner|PVR IMAX;INOX INSIGNIA
+EN|Entertainment|EN_MOVR|Movies & Cinema|EN_MOVR_DI|Drive-In Cinema|drive-in;open air;outdoor cinema|
+EN|Entertainment|EN_MOVR|Movies & Cinema|EN_MOVR_FF|Film Festival|film festival;mami;iffi;screening;premiere|
+EN|Entertainment|EN_MOVR|Movies & Cinema|EN_MOVR_SN|Cinema Snacks / F&B|popcorn;cinema food;nachos;movie snacks|PVR;INOX
+EN|Entertainment|EN_MOVR|Movies & Cinema|EN_MOVR_MP|Multiplex Chain|pvr;inox;cinepolis;miraj;multiplex;cinema hall|PVR INOX;Cinepolis;Miraj Cinemas
+EN|Entertainment|EN_MOVR|Movies & Cinema|EN_MOVR_OTH|Other Cinema|cinema;movie;theatre;film|
+EN|Entertainment|EN_STRM|Streaming & OTT|EN_STRM_NF|Netflix|netflix;netflix subscription;netflix premium|Netflix
+EN|Entertainment|EN_STRM|Streaming & OTT|EN_STRM_AP|Amazon Prime Video|amazon prime;prime video;prime membership|Amazon Prime
+EN|Entertainment|EN_STRM|Streaming & OTT|EN_STRM_DH|Disney+ Hotstar|hotstar;disney+;disney hotstar;star sports|Disney+ Hotstar
+EN|Entertainment|EN_STRM|Streaming & OTT|EN_STRM_JC|JioCinema|jiocinema;jio cinema;jio tv|JioCinema
+EN|Entertainment|EN_STRM|Streaming & OTT|EN_STRM_YT|YouTube Premium|youtube;youtube premium;youtube music;yt premium|YouTube
+EN|Entertainment|EN_STRM|Streaming & OTT|EN_STRM_MS|Music Streaming|spotify;gaana;jiosaavn;apple music;wynk|Spotify;Gaana;JioSaavn;Apple Music
+EN|Entertainment|EN_STRM|Streaming & OTT|EN_STRM_OTH|Other OTT / Streaming|ott;streaming;sonyliv;zee5;voot;mxplayer|SonyLIV;ZEE5;Voot
+EN|Entertainment|EN_GAME|Gaming|EN_GAME_MG|Mobile Game Purchase|mobile game;play store;app store;game purchase|Google Play;Apple App Store
+EN|Entertainment|EN_GAME|Gaming|EN_GAME_PC|PC / Console Game|steam;playstation store;xbox store;pc game;console game|Steam;PlayStation;Xbox
+EN|Entertainment|EN_GAME|Gaming|EN_GAME_GC|Gaming Cafe / Lounge|gaming cafe;cyber cafe;lan party;esports lounge|
+EN|Entertainment|EN_GAME|Gaming|EN_GAME_IA|In-App Purchase|in-app;gems;coins;game currency;battlepass;skin|BGMI;Free Fire;Clash Royale
+EN|Entertainment|EN_GAME|Gaming|EN_GAME_GS|Game Subscription|game pass;ps plus;xbox game pass;apple arcade|Xbox Game Pass;PS Plus
+EN|Entertainment|EN_GAME|Gaming|EN_GAME_OTH|Other Gaming|gaming;game;esports;fantasy sports;dream11|Dream11;MPL
+EN|Entertainment|EN_EVNT|Events & Experiences|EN_EVNT_CN|Concert / Live Music|concert;live music;gig;music festival;sunburn;nh7|BookMyShow;Insider.in
+EN|Entertainment|EN_EVNT|Events & Experiences|EN_EVNT_SC|Stand-up Comedy|stand-up;comedy show;open mic;comedian;laugh|Canvas Laugh Club;Comedy Store
+EN|Entertainment|EN_EVNT|Events & Experiences|EN_EVNT_TP|Theme Park / Water Park|theme park;water park;amusement park;rides;adventure|Imagicaa;Wonderla;EsselWorld
+EN|Entertainment|EN_EVNT|Events & Experiences|EN_EVNT_EX|Exhibition / Fair / Mela|exhibition;fair;mela;expo;trade fair;book fair|
+EN|Entertainment|EN_EVNT|Events & Experiences|EN_EVNT_VR|Escape Room / VR|escape room;virtual reality;vr;mystery room;puzzle room|Mystery Rooms;Breakout
+EN|Entertainment|EN_EVNT|Events & Experiences|EN_EVNT_OTH|Other Event|event;ticket;show;experience;activity|
+EN|Entertainment|EN_SPRT|Sports|EN_SPRT_TK|Sports Ticket (IPL/ISL)|ipl;isl;cricket match;football match;sports ticket|BookMyShow;Paytm Insider
+EN|Entertainment|EN_SPRT|Sports|EN_SPRT_EQ|Sports Equipment|cricket bat;football;badminton;racquet;sports gear|Decathlon;Sports Station;SG Cricket
+EN|Entertainment|EN_SPRT|Sports|EN_SPRT_GF|Gym / Fitness Center|gym;fitness;cult fit;gold gym;anytime fitness|Cult.fit;Gold's Gym;Anytime Fitness
+EN|Entertainment|EN_SPRT|Sports|EN_SPRT_SW|Swimming Pool|swimming;pool;swim class;aqua fitness|
+EN|Entertainment|EN_SPRT|Sports|EN_SPRT_AC|Sports Academy|cricket academy;football academy;tennis coaching;sports training|
+EN|Entertainment|EN_SPRT|Sports|EN_SPRT_OTH|Other Sports|sports;athletic;marathon;run;cycling|
+EN|Entertainment|EN_HBBY|Hobbies & Leisure|EN_HBBY_PH|Photography|photography;photo studio;portrait;camera rental|
+EN|Entertainment|EN_HBBY|Hobbies & Leisure|EN_HBBY_CR|Crafts / DIY|crafts;diy;handmade;knitting;crochet;pottery|
+EN|Entertainment|EN_HBBY|Hobbies & Leisure|EN_HBBY_GD|Gardening|gardening;plants;nursery;seeds;pot;fertilizer|Nurserylive;Ugaoo
+EN|Entertainment|EN_HBBY|Hobbies & Leisure|EN_HBBY_RD|Reading / Book Club|reading;book club;library;kindle unlimited|
+EN|Entertainment|EN_HBBY|Hobbies & Leisure|EN_HBBY_BG|Board Games / Puzzles|board game;puzzle;chess;ludo;monopoly;carrom|
+EN|Entertainment|EN_HBBY|Hobbies & Leisure|EN_HBBY_OTH|Other Hobby|hobby;leisure;pastime;recreation;collection|
+UT|Utilities & Bills|UT_ELEC|Electricity|UT_ELEC_SB|State Electricity Board|electricity bill;light bill;bijli;discom;bses;tata power|BSES;Tata Power;MSEDCL;BESCOM
+UT|Utilities & Bills|UT_ELEC|Electricity|UT_ELEC_PM|Prepaid Meter|prepaid meter;prepaid electricity;recharge meter|
+UT|Utilities & Bills|UT_ELEC|Electricity|UT_ELEC_SL|Solar / Renewable|solar;solar panel;renewable;rooftop solar;solar emi|Tata Solar;Loom Solar
+UT|Utilities & Bills|UT_ELEC|Electricity|UT_ELEC_GI|Generator / Inverter|generator;inverter;ups;battery;genset|Luminous;Microtek;Su-Kam
+UT|Utilities & Bills|UT_ELEC|Electricity|UT_ELEC_OTH|Other Electricity|power;current;unit;kwh;meter reading|
+UT|Utilities & Bills|UT_WATR|Water & Gas|UT_WATR_WB|Water Bill|water bill;jal board;water supply;paani bill|Delhi Jal Board;MCGM Water
+UT|Utilities & Bills|UT_WATR|Water & Gas|UT_WATR_LP|LPG / Cooking Gas|lpg;gas cylinder;cooking gas;indane;hp gas;bharat gas|Indane Gas;HP Gas;Bharat Gas
+UT|Utilities & Bills|UT_WATR|Water & Gas|UT_WATR_PG|Piped Natural Gas|piped gas;png;natural gas;igl;mahanagar gas|IGL;Mahanagar Gas;Gujarat Gas
+UT|Utilities & Bills|UT_WATR|Water & Gas|UT_WATR_WP|Water Purifier Service|water purifier;ro;uv;kent;aquaguard;filter|Kent;Aquaguard;Pureit;Livpure
+UT|Utilities & Bills|UT_WATR|Water & Gas|UT_WATR_OTH|Other Water / Gas|utility;gas;water;tanker;borewell|
+UT|Utilities & Bills|UT_NET|Internet & Cable|UT_NET_BB|Broadband Bill|broadband;internet bill;wifi bill;monthly plan|Airtel;BSNL;JioFiber
+UT|Utilities & Bills|UT_NET|Internet & Cable|UT_NET_FB|Fiber Internet|fiber;ftth;fibre;optical;gigabit|JioFiber;Airtel Xstream Fiber;ACT Fibernet
+UT|Utilities & Bills|UT_NET|Internet & Cable|UT_NET_CT|Cable TV|cable tv;cable operator;local cable;set top box|Hathway;DEN Networks
+UT|Utilities & Bills|UT_NET|Internet & Cable|UT_NET_ST|Set-Top Box / Smart TV|set top box;stb;smart stick;fire stick;chromecast|Amazon Fire;Google Chromecast
+UT|Utilities & Bills|UT_NET|Internet & Cable|UT_NET_WH|WiFi Hotspot|wifi;hotspot;public wifi;pocket wifi|
+UT|Utilities & Bills|UT_NET|Internet & Cable|UT_NET_OTH|Other Internet / Cable|internet;cable;data;bandwidth|
+UT|Utilities & Bills|UT_RENT|Rent & Housing|UT_RENT_HR|House Rent|rent;house rent;flat rent;monthly rent;kiraya|
+UT|Utilities & Bills|UT_RENT|Rent & Housing|UT_RENT_SM|Society Maintenance|maintenance;society charges;apartment maintenance;common area|MyGate;NoBroker Hood
+UT|Utilities & Bills|UT_RENT|Rent & Housing|UT_RENT_PT|Property Tax|property tax;house tax;municipal tax;griha kar|
+UT|Utilities & Bills|UT_RENT|Rent & Housing|UT_RENT_BK|Brokerage / Commission|broker;brokerage;agent;commission;dalal|NoBroker;MagicBricks;99acres
+UT|Utilities & Bills|UT_RENT|Rent & Housing|UT_RENT_SD|Security Deposit|security deposit;caution money;advance;refundable deposit|
+UT|Utilities & Bills|UT_RENT|Rent & Housing|UT_RENT_OTH|Other Housing|housing;accommodation;shelter;living expense|
+UT|Utilities & Bills|UT_HSVC|Home Services|UT_HSVC_PL|Plumber|plumber;plumbing;pipe;tap;leak;drain;nalkaa|Urban Company;Housejoy
+UT|Utilities & Bills|UT_HSVC|Home Services|UT_HSVC_EL|Electrician|electrician;wiring;switch;circuit;mcb;bijli mistri|Urban Company
+UT|Utilities & Bills|UT_HSVC|Home Services|UT_HSVC_CP|Carpenter|carpenter;woodwork;furniture repair;cabinet;mistri|
+UT|Utilities & Bills|UT_HSVC|Home Services|UT_HSVC_PC|Pest Control|pest control;cockroach;termite;rat;fumigation|Urban Company;HiCare
+UT|Utilities & Bills|UT_HSVC|Home Services|UT_HSVC_OTH|Other Home Service|home service;handyman;painter;mason;repair|
+UT|Utilities & Bills|UT_CLEN|Cleaning & Laundry|UT_CLEN_LN|Laundry / Ironing|laundry;ironing;dhobi;washing;press;istri|UClean;Laundrokart
+UT|Utilities & Bills|UT_CLEN|Cleaning & Laundry|UT_CLEN_DC|Dry Cleaning|dry clean;dry cleaning;suit cleaning;wedding dress clean|Pressto;White Tiger
+UT|Utilities & Bills|UT_CLEN|Cleaning & Laundry|UT_CLEN_DH|Domestic Helper / Maid|maid;domestic help;bai;house help;kaam wali;servant|Helper4U;BookMyBai
+UT|Utilities & Bills|UT_CLEN|Cleaning & Laundry|UT_CLEN_HC|Home Deep Cleaning|deep cleaning;home cleaning;sofa cleaning;carpet cleaning;ac cleaning|Urban Company;HouseJoy
+TC|Telecom|TC_MOB|Mobile Recharge|TC_MOB_PR|Prepaid Recharge|recharge;prepaid;talktime;data pack;validity|Airtel;Jio;Vi;BSNL
+TC|Telecom|TC_MOB|Mobile Recharge|TC_MOB_PO|Postpaid Bill|postpaid;monthly bill;plan;itemised bill|Airtel;Jio;Vi
+TC|Telecom|TC_MOB|Mobile Recharge|TC_MOB_IR|International Roaming|roaming;international pack;country pack;ir|
+TC|Telecom|TC_MOB|Mobile Recharge|TC_MOB_VA|Value Added Services|vas;caller tune;hello tune;premium sms;content|
+TC|Telecom|TC_MOB|Mobile Recharge|TC_MOB_OTH|Other Mobile|mobile;telecom;sim;mnp;port|
+TC|Telecom|TC_DTH|DTH & TV|TC_DTH_TP|Tata Play / Airtel Xstream|tata play;tata sky;airtel xstream;dth recharge|Tata Play;Airtel Xstream
+TC|Telecom|TC_DTH|DTH & TV|TC_DTH_DT|Dish TV / D2H|dish tv;d2h;videocon d2h;dish recharge|Dish TV;D2H
+TC|Telecom|TC_DTH|DTH & TV|TC_DTH_SD|Sun Direct / Regional|sun direct;sun dth;regional dth|Sun Direct
+TC|Telecom|TC_DTH|DTH & TV|TC_DTH_OTH|Other DTH|dth;satellite tv;dish;set top box recharge|
+TC|Telecom|TC_BRDB|Broadband & WiFi|TC_BRDB_AF|Airtel Xstream Fiber|airtel fiber;airtel xstream;airtel broadband|Airtel
+TC|Telecom|TC_BRDB|Broadband & WiFi|TC_BRDB_JF|JioFiber|jio fiber;jiofiber;jio broadband|Jio
+TC|Telecom|TC_BRDB|Broadband & WiFi|TC_BRDB_BS|BSNL Broadband|bsnl;bsnl broadband;bsnl fiber;bharat fiber|BSNL
+TC|Telecom|TC_BRDB|Broadband & WiFi|TC_BRDB_AC|ACT Fibernet|act fibernet;act;beam fiber|ACT Fibernet
+TC|Telecom|TC_BRDB|Broadband & WiFi|TC_BRDB_OTH|Other Broadband|broadband;fiber;isp;internet provider|Excitel;Hathway
+TC|Telecom|TC_LAND|Landline & Enterprise|TC_LAND_LL|Landline Bill|landline;telephone;phone bill;std;isd|BSNL;MTNL;Airtel Landline
+TC|Telecom|TC_LAND|Landline & Enterprise|TC_LAND_PX|Intercom / PBX|intercom;pbx;epabx;office phone;extension|
+TC|Telecom|TC_LAND|Landline & Enterprise|TC_LAND_ED|Enterprise Data Plan|enterprise;leased line;mpls;corporate data;business internet|
+TC|Telecom|TC_LAND|Landline & Enterprise|TC_LAND_OTH|Other Landline / Enterprise|communication;telephone;voice;sip trunk|
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_LX|Luxury Hotel (5-Star)|5 star;luxury hotel;taj;oberoi;itc hotels;marriott|Taj Hotels;The Oberoi;ITC Hotels;Marriott
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_BZ|Business Hotel (3-4 Star)|business hotel;3 star;4 star;lemon tree;fortune|Lemon Tree;Fortune Hotels;Radisson
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_BG|Budget Hotel / OYO|budget hotel;oyo;treebo;fabhotel;cheap hotel|OYO;Treebo;FabHotels
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_HM|Homestay / Airbnb|homestay;airbnb;vrbo;guest house;bed and breakfast|Airbnb;StayVista
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_RS|Resort|resort;beach resort;hill resort;spa resort;wellness resort|Club Mahindra;Sterling Resorts
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_HS|Hostel / Dormitory|hostel;dorm;backpacker;zostel;goStops|Zostel;goStops;Backpacker Panda
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_DH|Dharamshala / Guest House|dharamshala;dharamsala;choultry;govt guest house;circuit house|
+TV|Travel & Accommodation|TV_HOTL|Hotels & Stays|TV_HOTL_OTH|Other Accommodation|hotel;stay;accommodation;lodge;motel|
+TV|Travel & Accommodation|TV_FLT|Flights|TV_FLT_DM|Domestic Flight|domestic flight;indigo;spicejet;air india;vistara|IndiGo;SpiceJet;Air India;Vistara;Akasa Air
+TV|Travel & Accommodation|TV_FLT|Flights|TV_FLT_IN|International Flight|international flight;overseas;foreign;emirates;singapore airlines|Emirates;Singapore Airlines;Qatar Airways
+TV|Travel & Accommodation|TV_FLT|Flights|TV_FLT_BK|Flight Booking Platform|makemytrip;goibibo;cleartrip;ixigo;flight booking|MakeMyTrip;Goibibo;Cleartrip;ixigo;EaseMyTrip
+TV|Travel & Accommodation|TV_FLT|Flights|TV_FLT_UG|Airline Upgrade / Add-on|seat upgrade;extra baggage;meal pre-order;priority boarding|
+TV|Travel & Accommodation|TV_FLT|Flights|TV_FLT_LG|Airport Lounge|airport lounge;priority pass;dreamfolks;lounge access|Priority Pass;DreamFolks
+TV|Travel & Accommodation|TV_FLT|Flights|TV_FLT_AT|Airport Transfer|airport taxi;airport drop;airport pickup;shuttle|
+TV|Travel & Accommodation|TV_FLT|Flights|TV_FLT_OTH|Other Flight|flight;airline;air travel;aviation;boarding pass|
+TV|Travel & Accommodation|TV_RAIL|Train & Bus|TV_RAIL_IR|IRCTC Railway Ticket|irctc;railway ticket;train booking;indian railways|IRCTC
+TV|Travel & Accommodation|TV_RAIL|Train & Bus|TV_RAIL_TK|Tatkal / Premium Tatkal|tatkal;premium tatkal;urgent train;last minute|IRCTC
+TV|Travel & Accommodation|TV_RAIL|Train & Bus|TV_RAIL_RS|Rajdhani / Shatabdi / Vande Bharat|rajdhani;shatabdi;vande bharat;duronto;premium train|
+TV|Travel & Accommodation|TV_RAIL|Train & Bus|TV_RAIL_BT|Bus Ticket Platform|redbus;abhibus;bus booking;online bus|RedBus;AbhiBus;Paytm Bus
+TV|Travel & Accommodation|TV_RAIL|Train & Bus|TV_RAIL_SB|Sleeper / AC Bus|sleeper bus;ac bus;semi sleeper;overnight bus|Orange Travels;SRS Travels
+TV|Travel & Accommodation|TV_RAIL|Train & Bus|TV_RAIL_VB|Volvo / Luxury Bus|volvo;luxury bus;multi axle;mercedes bus;scania|KPN Travels;VRL Travels
+TV|Travel & Accommodation|TV_RAIL|Train & Bus|TV_RAIL_OTH|Other Rail / Bus|train;rail;bus;ticket;reservation;berth|
+TV|Travel & Accommodation|TV_CAB|Cab & Self-Drive|TV_CAB_OS|Outstation Cab|outstation;intercity;one way;round trip;cab booking|Savaari;Gozo Cabs
+TV|Travel & Accommodation|TV_CAB|Cab & Self-Drive|TV_CAB_AT|Airport Taxi|airport taxi;airport cab;airport drop;meru|Meru Cab;Uber Airport
+TV|Travel & Accommodation|TV_CAB|Cab & Self-Drive|TV_CAB_SD|Self-Drive Rental|self drive;zoomcar;drivezy;revv;car rental|Zoomcar;Drivezy;Revv
+TV|Travel & Accommodation|TV_CAB|Cab & Self-Drive|TV_CAB_LC|Local Cab / Savaari|local cab;full day;half day;savaari;local rental|Savaari;Ola Outstation
+TV|Travel & Accommodation|TV_CAB|Cab & Self-Drive|TV_CAB_TT|Tempo Traveller / Van|tempo traveller;van;minibus;group travel;12 seater|
+TV|Travel & Accommodation|TV_CAB|Cab & Self-Drive|TV_CAB_OTH|Other Cab / Rental|cab;rental;hire;chauffeur;driver|
+TV|Travel & Accommodation|TV_TOUR|Tours & Activities|TV_TOUR_PK|Tour Package|tour package;holiday package;makemytrip package;group tour|MakeMyTrip;Thomas Cook;SOTC
+TV|Travel & Accommodation|TV_TOUR|Tours & Activities|TV_TOUR_AD|Adventure Activity|adventure;trekking;paragliding;rafting;bungee;scuba|Thrillophilia;Zostel Experiences
+TV|Travel & Accommodation|TV_TOUR|Tours & Activities|TV_TOUR_SS|Sightseeing / Entry Fee|sightseeing;entry fee;monument;museum ticket;heritage|ASI;State Tourism
+TV|Travel & Accommodation|TV_TOUR|Tours & Activities|TV_TOUR_PL|Pilgrimage Tour|pilgrimage;yatra;tirtha;chardham;vaishno devi;amarnath|IRCTC Tourism;Yatra.com
+TV|Travel & Accommodation|TV_TOUR|Tours & Activities|TV_TOUR_WL|Wildlife Safari|safari;jungle;wildlife;national park;tiger;jeep safari|
+TV|Travel & Accommodation|TV_TOUR|Tours & Activities|TV_TOUR_CR|Cruise|cruise;ship;river cruise;luxury cruise;cordelia|Cordelia Cruises;Jalesh
+TV|Travel & Accommodation|TV_TOUR|Tours & Activities|TV_TOUR_OTH|Other Tour / Activity|tour;trip;excursion;travel activity;local experience|
+GV|Government & Taxes|GV_ITAX|Income Tax|GV_ITAX_AD|Advance Tax|advance tax;quarterly tax;tax installment|
+GV|Government & Taxes|GV_ITAX|Income Tax|GV_ITAX_SA|Self-Assessment Tax|self assessment;itr;tax return;balance tax|
+GV|Government & Taxes|GV_ITAX|Income Tax|GV_ITAX_TD|TDS / TCS|tds;tcs;tax deducted;tax collected;withholding|
+GV|Government & Taxes|GV_ITAX|Income Tax|GV_ITAX_CF|Tax Filing Fee (CA)|tax filing;ca fee;itr filing;e-filing|ClearTax;TaxBuddy
+GV|Government & Taxes|GV_ITAX|Income Tax|GV_ITAX_PN|Income Tax Penalty|tax penalty;late fee;interest 234;default|
+GV|Government & Taxes|GV_ITAX|Income Tax|GV_ITAX_OTH|Other Income Tax|income tax;it department;pan;aadhaar link|
+GV|Government & Taxes|GV_GST|GST & Business Tax|GV_GST_GP|GST Payment|gst;cgst;sgst;igst;gst challan|
+GV|Government & Taxes|GV_GST|GST & Business Tax|GV_GST_GF|GST Filing / Return|gstr;gst return;gst filing;gstr1;gstr3b|ClearTax GST;TallyPrime
+GV|Government & Taxes|GV_GST|GST & Business Tax|GV_GST_PT|Professional Tax|professional tax;pt;profession tax;employment tax|
+GV|Government & Taxes|GV_GST|GST & Business Tax|GV_GST_CD|Custom Duty / Excise|custom duty;import duty;excise;customs|Indian Customs
+GV|Government & Taxes|GV_GST|GST & Business Tax|GV_GST_OTH|Other Business Tax|business tax;corporate tax;cess;surcharge|
+GV|Government & Taxes|GV_FEES|Government Fees|GV_FEES_PP|Passport / Visa Fee|passport;visa;passport seva;visa fee;oci|Passport Seva;VFS Global;BLS International
+GV|Government & Taxes|GV_FEES|Government Fees|GV_FEES_DL|Driving License / RTO|driving license;dl;rto;learner license;vehicle registration|Parivahan
+GV|Government & Taxes|GV_FEES|Government Fees|GV_FEES_AP|Aadhaar / PAN Card|aadhaar;pan card;uid;uidai;nsdl;pan update|UIDAI;NSDL;UTIITSL
+GV|Government & Taxes|GV_FEES|Government Fees|GV_FEES_CF|Court Fee / Stamp Paper|court fee;stamp paper;judicial stamp;court stamp;e-stamp|
+GV|Government & Taxes|GV_FEES|Government Fees|GV_FEES_RG|Registration / Stamp Duty|stamp duty;registration;property registration;sub registrar|
+GV|Government & Taxes|GV_FEES|Government Fees|GV_FEES_OTH|Other Government Fee|government fee;service fee;certificate;attestation|
+GV|Government & Taxes|GV_FINE|Fines & Challans|GV_FINE_TC|Traffic Challan / E-Challan|challan;traffic fine;e-challan;speeding;red light|Parivahan;State Traffic Police
+GV|Government & Taxes|GV_FINE|Fines & Challans|GV_FINE_PK|Parking Fine|parking fine;no parking;towing;parking violation|
+GV|Government & Taxes|GV_FINE|Fines & Challans|GV_FINE_CT|Court Fine|court fine;penalty;contempt;legal fine|
+GV|Government & Taxes|GV_FINE|Fines & Challans|GV_FINE_MN|Municipal Fine / Penalty|municipal;corporation fine;civic fine;nagar nigam|
+GV|Government & Taxes|GV_FINE|Fines & Challans|GV_FINE_OTH|Other Fine|fine;penalty;violation;infraction|
+GV|Government & Taxes|GV_DGOV|Digital Government Services|GV_DGOV_DG|DigiLocker / Digital Cert|digilocker;digital certificate;e-certificate;nad|DigiLocker
+GV|Government & Taxes|GV_DGOV|Digital Government Services|GV_DGOV_UM|UMANG / e-Governance|umang;e-governance;common service;csc;e-district|UMANG;CSC
+GV|Government & Taxes|GV_DGOV|Digital Government Services|GV_DGOV_RC|Ration Card / PDS|ration card;pds;fair price;antyodaya;bpl card|
+GV|Government & Taxes|GV_DGOV|Digital Government Services|GV_DGOV_OTH|Other e-Gov Service|e-government;online government;digital india;jan seva|
+PC|Personal Care & Wellness|PC_SALN|Salon & Grooming|PC_SALN_MS|Men's Salon / Barber|barber;haircut;shave;men salon;nai|Truefitt & Hill;Enrich
+PC|Personal Care & Wellness|PC_SALN|Salon & Grooming|PC_SALN_WS|Women's Salon|women salon;ladies salon;beauty parlour;facial;waxing|Lakme Salon;Jawed Habib;Green Trends
+PC|Personal Care & Wellness|PC_SALN|Salon & Grooming|PC_SALN_UX|Unisex Salon|unisex salon;salon;hair spa;hair color;keratin|Naturals;Toni&Guy;Jean-Claude Biguine
+PC|Personal Care & Wellness|PC_SALN|Salon & Grooming|PC_SALN_HG|Home Grooming Service|home salon;urban company;doorstep;at home beauty|Urban Company;Yes Madam
+PC|Personal Care & Wellness|PC_SALN|Salon & Grooming|PC_SALN_MH|Mehndi / Bridal|mehndi;bridal makeup;wedding makeup;henna;dulhan|
+PC|Personal Care & Wellness|PC_SALN|Salon & Grooming|PC_SALN_OTH|Other Salon|salon;parlour;grooming;beauty|
+PC|Personal Care & Wellness|PC_SPA|Spa & Massage|PC_SPA_ST|Spa Treatment|spa;spa treatment;body wrap;facial spa;luxury spa|O2 Spa;Tattva Spa
+PC|Personal Care & Wellness|PC_SPA|Spa & Massage|PC_SPA_AY|Ayurvedic Massage|ayurvedic;abhyangam;shirodhara;panchakarma;kottakkal|Kottakkal;Kerala Ayurveda
+PC|Personal Care & Wellness|PC_SPA|Spa & Massage|PC_SPA_TH|Thai / Balinese Massage|thai massage;balinese;hot stone;aroma massage|
+PC|Personal Care & Wellness|PC_SPA|Spa & Massage|PC_SPA_SS|Steam / Sauna|steam;sauna;steam bath;hammam;turkish bath|
+PC|Personal Care & Wellness|PC_SPA|Spa & Massage|PC_SPA_OTH|Other Spa|massage;relaxation;wellness spa;body therapy|
+PC|Personal Care & Wellness|PC_FIT|Fitness & Yoga|PC_FIT_GM|Gym Membership|gym;gym membership;fitness center;gold gym;anytime|Gold's Gym;Anytime Fitness;Talwalkars
+PC|Personal Care & Wellness|PC_FIT|Fitness & Yoga|PC_FIT_YG|Yoga Studio|yoga;yoga studio;yoga class;isha yoga;art of living|Cult.fit;Isha Yoga
+PC|Personal Care & Wellness|PC_FIT|Fitness & Yoga|PC_FIT_PZ|Pilates / Zumba / Dance|pilates;zumba;dance fitness;aerobics;group class|Cult.fit;The Pilates Studio
+PC|Personal Care & Wellness|PC_FIT|Fitness & Yoga|PC_FIT_PT|Personal Trainer|personal trainer;pt;fitness coach;home trainer|HealthifyMe
+PC|Personal Care & Wellness|PC_FIT|Fitness & Yoga|PC_FIT_CF|CrossFit / Functional|crossfit;functional training;hiit;bootcamp;calisthenics|
+PC|Personal Care & Wellness|PC_FIT|Fitness & Yoga|PC_FIT_OTH|Other Fitness|fitness;workout;exercise;training|
+PC|Personal Care & Wellness|PC_BEAU|Beauty & Cosmetics|PC_BEAU_MK|Cosmetics / Makeup|makeup;cosmetics;lipstick;foundation;mascara;kajal|Nykaa;Lakme;Maybelline;MAC
+PC|Personal Care & Wellness|PC_BEAU|Beauty & Cosmetics|PC_BEAU_SK|Skincare|skincare;moisturizer;serum;sunscreen;face wash;cream|Minimalist;Plum;Mamaearth;Cetaphil
+PC|Personal Care & Wellness|PC_BEAU|Beauty & Cosmetics|PC_BEAU_HC|Haircare Products|shampoo;conditioner;hair oil;hair serum;anti dandruff|L'Oreal;Tresemme;Dove;Pantene
+PC|Personal Care & Wellness|PC_BEAU|Beauty & Cosmetics|PC_BEAU_PF|Perfume / Fragrance|perfume;deodorant;fragrance;cologne;attar;itra|Forest Essentials;Wild Stone;Denver
+PC|Personal Care & Wellness|PC_BEAU|Beauty & Cosmetics|PC_BEAU_GA|Grooming Appliances|trimmer;hair dryer;straightener;shaver;epilator|Philips;Braun;Dyson
+PC|Personal Care & Wellness|PC_BEAU|Beauty & Cosmetics|PC_BEAU_OTH|Other Beauty|beauty;personal care;hygiene;toiletry|
+PC|Personal Care & Wellness|PC_WELL|Wellness & Nutrition|PC_WELL_VS|Vitamins / Supplements|vitamin;supplement;multivitamin;omega;calcium;iron|HealthKart;TrueBasics;Swisse
+PC|Personal Care & Wellness|PC_WELL|Wellness & Nutrition|PC_WELL_PR|Protein / Health Drink|protein;whey;health drink;horlicks;bournvita;ensure|MuscleBlaze;Optimum Nutrition;MyProtein
+PC|Personal Care & Wellness|PC_WELL|Wellness & Nutrition|PC_WELL_OR|Organic / Natural Products|organic;natural;chemical free;herbal;ayurvedic product|Forest Essentials;Kama Ayurveda;Khadi Natural
+PC|Personal Care & Wellness|PC_WELL|Wellness & Nutrition|PC_WELL_DT|Diet / Meal Plan|diet plan;meal plan;calorie;keto;intermittent fasting|HealthifyMe;Cult.fit Eat
+PC|Personal Care & Wellness|PC_WELL|Wellness & Nutrition|PC_WELL_OTH|Other Wellness|wellness;health;nutrition;detox;immunity|
+FS|Family & Social|FS_GIFT|Gifts & Celebrations|FS_GIFT_BD|Birthday Gift|birthday;birthday gift;birthday party;b'day|
+FS|Family & Social|FS_GIFT|Gifts & Celebrations|FS_GIFT_WD|Wedding Gift / Shagun|wedding;shagun;marriage gift;shadi;vivah|
+FS|Family & Social|FS_GIFT|Gifts & Celebrations|FS_GIFT_FT|Festival Gift|diwali;eid;christmas;holi;rakhi;festival gift|
+FS|Family & Social|FS_GIFT|Gifts & Celebrations|FS_GIFT_AN|Anniversary Gift|anniversary;wedding anniversary;celebration;couple|
+FS|Family & Social|FS_GIFT|Gifts & Celebrations|FS_GIFT_GC|Gift Card / Voucher|gift card;voucher;gift voucher;amazon gift card;e-gift|Amazon;Flipkart;Myntra;Sodexo
+FS|Family & Social|FS_GIFT|Gifts & Celebrations|FS_GIFT_FL|Flowers / Bouquet|flowers;bouquet;floral;rose;phool|Ferns N Petals;FlowerAura;IGP
+FS|Family & Social|FS_GIFT|Gifts & Celebrations|FS_GIFT_OTH|Other Gift|gift;present;surprise;token;memento|
+FS|Family & Social|FS_DONA|Donations & Charity|FS_DONA_RD|Religious Donation / Dakshina|donation;dakshina;daan;chanda;religious offering|
+FS|Family & Social|FS_DONA|Donations & Charity|FS_DONA_NG|NGO / Charity|ngo;charity;ngo donation;give india;milaap;ketto|GiveIndia;Milaap;Ketto
+FS|Family & Social|FS_DONA|Donations & Charity|FS_DONA_CF|Crowdfunding|crowdfunding;fundraiser;gofundme;impact guru|ImpactGuru;Ketto;Milaap
+FS|Family & Social|FS_DONA|Donations & Charity|FS_DONA_TM|Temple / Mosque / Church|temple;mandir;masjid;church;gurudwara;tirupati|ISKCON;Tirupati TTD
+FS|Family & Social|FS_DONA|Donations & Charity|FS_DONA_OTH|Other Donation|donation;philanthropy;social cause;contribution|
+FS|Family & Social|FS_RELG|Religious & Spiritual|FS_RELG_PJ|Pooja / Havan|pooja;puja;havan;yagya;aarti;archana|OnlinePuja.com;BookMyPooja
+FS|Family & Social|FS_RELG|Religious & Spiritual|FS_RELG_TV|Temple / Holy Place Visit|darshan;temple visit;tirtha;dham;kshetra|
+FS|Family & Social|FS_RELG|Religious & Spiritual|FS_RELG_RB|Religious Books / Items|religious book;geeta;quran;bible;agarbatti;dhoop|Gita Press
+FS|Family & Social|FS_RELG|Religious & Spiritual|FS_RELG_PG|Pilgrimage|pilgrimage;yatra;tirth yatra;char dham;hajj;umrah|
+FS|Family & Social|FS_RELG|Religious & Spiritual|FS_RELG_AS|Astrology / Puja Service|astrology;kundali;horoscope;pandit;jyotish;puja service|AstroSage;Astrotalk
+FS|Family & Social|FS_RELG|Religious & Spiritual|FS_RELG_OTH|Other Religious|religious;spiritual;devotion;faith;blessing|
+FS|Family & Social|FS_BABY|Childcare & Baby|FS_BABY_PR|Baby Products / Diapers|diaper;baby;pampers;huggies;baby lotion;baby oil|FirstCry;Pampers;Huggies;MamaEarth
+FS|Family & Social|FS_BABY|Childcare & Baby|FS_BABY_DC|Daycare / Creche|daycare;creche;playschool;nursery school;preschool|EuroKids;Kidzee;Oi Playschool
+FS|Family & Social|FS_BABY|Childcare & Baby|FS_BABY_BF|Baby Food / Formula|baby food;formula;cerelac;nestum;breast pump|Nestle Cerelac;Aptamil
+FS|Family & Social|FS_BABY|Childcare & Baby|FS_BABY_KE|Kids' Entertainment|kids zone;play area;fun zone;kidz land;trampoline park|KidZania;Fun City
+FS|Family & Social|FS_BABY|Childcare & Baby|FS_BABY_OTH|Other Childcare|childcare;parenting;nanny;babysitter;aaya|
+FS|Family & Social|FS_PET|Pet Care|FS_PET_FD|Pet Food|pet food;dog food;cat food;pedigree;whiskas|Pedigree;Whiskas;Royal Canin;Drools
+FS|Family & Social|FS_PET|Pet Care|FS_PET_VT|Veterinary / Vet Visit|vet;veterinary;animal hospital;dog doctor;vaccination|
+FS|Family & Social|FS_PET|Pet Care|FS_PET_GR|Pet Grooming|pet grooming;dog bath;pet spa;dog haircut|Heads Up For Tails
+FS|Family & Social|FS_PET|Pet Care|FS_PET_AC|Pet Accessories|pet accessories;leash;collar;pet bed;pet toy;aquarium|Heads Up For Tails;Supertails
+FS|Family & Social|FS_PET|Pet Care|FS_PET_OTH|Other Pet Care|pet;animal;pet boarding;pet adoption;kennel|
+PS|Professional Services|PS_LEGL|Legal Services|PS_LEGL_LF|Lawyer Fee|lawyer;advocate;vakil;legal fee;attorney|
+PS|Professional Services|PS_LEGL|Legal Services|PS_LEGL_LD|Legal Documentation|legal document;agreement;contract;deed;affidavit|
+PS|Professional Services|PS_LEGL|Legal Services|PS_LEGL_NT|Notary|notary;notarize;attestation;notary public|
+PS|Professional Services|PS_LEGL|Legal Services|PS_LEGL_CF|Court Filing|court filing;case filing;petition;court fee|
+PS|Professional Services|PS_LEGL|Legal Services|PS_LEGL_LC|Legal Consultation|legal consultation;legal advice;case consultation|LegalKart;Vakilsearch
+PS|Professional Services|PS_LEGL|Legal Services|PS_LEGL_OTH|Other Legal|legal;law;court;judiciary|
+PS|Professional Services|PS_FNSV|Financial Services|PS_FNSV_CA|CA / Auditor Fee|ca;chartered accountant;auditor;audit fee|
+PS|Professional Services|PS_FNSV|Financial Services|PS_FNSV_TC|Tax Consultant|tax consultant;tax advisor;tax planning;tax expert|ClearTax;TaxBuddy
+PS|Professional Services|PS_FNSV|Financial Services|PS_FNSV_FA|Financial Advisor|financial advisor;wealth manager;investment advisor;planner|
+PS|Professional Services|PS_FNSV|Financial Services|PS_FNSV_BK|Bookkeeping / Accounting|bookkeeping;accounting;tally;zoho books;quickbooks|Tally;Zoho Books
+PS|Professional Services|PS_FNSV|Financial Services|PS_FNSV_CR|Company Registration|company registration;incorporation;gst registration;msme registration|Vakilsearch;IndiaFilings;ClearTax
+PS|Professional Services|PS_FNSV|Financial Services|PS_FNSV_OTH|Other Financial Service|financial service;consulting;advisory|
+PS|Professional Services|PS_COUR|Courier & Logistics|PS_COUR_DM|Domestic Courier|courier;dtdc;bluedart;delhivery;ecom express|DTDC;BlueDart;Delhivery;Ecom Express
+PS|Professional Services|PS_COUR|Courier & Logistics|PS_COUR_IN|International Courier|international courier;dhl;fedex;ups;overseas shipping|DHL;FedEx;UPS;Aramex
+PS|Professional Services|PS_COUR|Courier & Logistics|PS_COUR_SP|Speed Post / India Post|speed post;india post;registered post;postal;parcel|India Post
+PS|Professional Services|PS_COUR|Courier & Logistics|PS_COUR_PM|Packers & Movers|packers movers;relocation;shifting;transport;household goods|Agarwal Packers;NoBroker Packers
+PS|Professional Services|PS_COUR|Courier & Logistics|PS_COUR_WH|Warehouse / Storage|warehouse;storage;godown;self storage;mini storage|StoreMore;JEBS
+PS|Professional Services|PS_COUR|Courier & Logistics|PS_COUR_OTH|Other Logistics|logistics;shipping;delivery;transport;freight|
+PS|Professional Services|PS_FRLC|Freelance & Digital|PS_FRLC_FP|Freelancer Payment|freelancer;fiverr;upwork;freelance fee;gig work|Fiverr;Upwork;Freelancer.com
+PS|Professional Services|PS_FRLC|Freelance & Digital|PS_FRLC_SS|SaaS Subscription|saas;subscription;software;canva;notion;slack;zoom|Canva;Notion;Slack;Zoom;Microsoft 365
+PS|Professional Services|PS_FRLC|Freelance & Digital|PS_FRLC_DH|Domain / Hosting|domain;hosting;godaddy;hostinger;cloudflare;aws|GoDaddy;Hostinger;AWS;DigitalOcean
+PS|Professional Services|PS_FRLC|Freelance & Digital|PS_FRLC_DM|Digital Marketing|google ads;facebook ads;seo;social media marketing;instagram ads|Google Ads;Meta Ads
+PS|Professional Services|PS_FRLC|Freelance & Digital|PS_FRLC_PD|Printing / Design|printing;visiting card;banner;flex;pamphlet;graphic design|Vista Print;Printo
+PS|Professional Services|PS_FRLC|Freelance & Digital|PS_FRLC_OTH|Other Freelance / Digital|freelance;digital;online service;tech service|
+MS|Miscellaneous|MS_TRFR|Transfers|MS_TRFR_FM|P2P Transfer to Family|family transfer;send to family;pocket money;allowance;ghar|
+MS|Miscellaneous|MS_TRFR|Transfers|MS_TRFR_FR|P2P Transfer to Friend|friend transfer;send to friend;split;share expense|
+MS|Miscellaneous|MS_TRFR|Transfers|MS_TRFR_RP|Rent Payment P2P|rent transfer;landlord;pg payment;room rent|
+MS|Miscellaneous|MS_TRFR|Transfers|MS_TRFR_SL|Salary Credit|salary;credit;payroll;wages;tankhwah|
+MS|Miscellaneous|MS_TRFR|Transfers|MS_TRFR_RF|Refund / Cashback|refund;cashback;reversal;return;credit back|
+MS|Miscellaneous|MS_TRFR|Transfers|MS_TRFR_SB|Split Bill|split bill;splitwise;share bill;divide;settle up|Splitwise
+MS|Miscellaneous|MS_TRFR|Transfers|MS_TRFR_OTH|Other Transfer|transfer;send money;p2p;payment|
+MS|Miscellaneous|MS_CASH|Cash Operations|MS_CASH_AW|ATM Withdrawal|atm;cash withdrawal;atm machine;cash out|
+MS|Miscellaneous|MS_CASH|Cash Operations|MS_CASH_CD|Cash Deposit|cash deposit;cdm;cash machine;deposit|
+MS|Miscellaneous|MS_CASH|Cash Operations|MS_CASH_MO|Money Order|money order;postal order;demand draft|India Post
+MS|Miscellaneous|MS_CASH|Cash Operations|MS_CASH_DD|Demand Draft|demand draft;dd;banker cheque;bank draft|
+MS|Miscellaneous|MS_CASH|Cash Operations|MS_CASH_FX|Foreign Currency Exchange|money exchange;forex counter;currency exchange;bureau de change|Thomas Cook;BookMyForex
+MS|Miscellaneous|MS_CASH|Cash Operations|MS_CASH_OTH|Other Cash Operation|cash;currency;notes;coins|
+MS|Miscellaneous|MS_UNKN|Unidentified|MS_UNKN_UM|Unknown Merchant|unknown;unrecognized;new merchant;first time|
+MS|Miscellaneous|MS_UNKN|Unidentified|MS_UNKN_UD|Unclear Description|unclear;vague;ambiguous;generic;no description|
+MS|Miscellaneous|MS_UNKN|Unidentified|MS_UNKN_NM|New / Unseen Merchant|new merchant;unseen;first transaction;unregistered|
+MS|Miscellaneous|MS_UNKN|Unidentified|MS_UNKN_TT|Test Transaction|test;dummy;trial;sample;verification|
+MS|Miscellaneous|MS_UNKN|Unidentified|MS_UNKN_MC|Micro Transaction (< Rs.10)|micro;small;penny;tiny;nominal|
+MS|Miscellaneous|MS_UNKN|Unidentified|MS_UNKN_PC|Pending Classification|pending;unclassified;to be categorized;awaiting|
+MS|Miscellaneous|MS_UNKN|Unidentified|MS_UNKN_OTH|Other Unidentified|other;miscellaneous;uncategorized|
+MS|Miscellaneous|MS_SBSC|Recurring Subscriptions|MS_SBSC_AP|App Store / Play Store|app store;play store;google play;apple;in-app;app purchase|Google Play;Apple App Store
+MS|Miscellaneous|MS_SBSC|Recurring Subscriptions|MS_SBSC_NM|News / Magazine Subscription|news subscription;magazine;digital news;premium article;paywall|The Hindu;Economic Times;Mint
+MS|Miscellaneous|MS_SBSC|Recurring Subscriptions|MS_SBSC_BX|Box / Crate Subscription|subscription box;monthly box;snack box;beauty box;crate|Barkbox India;FabBag
+MS|Miscellaneous|MS_SBSC|Recurring Subscriptions|MS_SBSC_OTH|Other Recurring Subscription|subscription;recurring;auto debit;monthly charge;annual plan|
+MS|Miscellaneous|MS_POCK|Pocket Money & Household|MS_POCK_KD|Kids Pocket Money|pocket money;allowance;kids money;bachche ka paisa|
+MS|Miscellaneous|MS_POCK|Pocket Money & Household|MS_POCK_HH|Household Staff Salary|maid salary;driver salary;cook salary;watchman;guard salary|
+MS|Miscellaneous|MS_POCK|Pocket Money & Household|MS_POCK_TP|Tip / Gratuity|tip;gratuity;bakshish;service tip;waiter tip|
+MS|Miscellaneous|MS_POCK|Pocket Money & Household|MS_POCK_OTH|Other Household Payment|household;domestic expense;daily expense;routine payment|

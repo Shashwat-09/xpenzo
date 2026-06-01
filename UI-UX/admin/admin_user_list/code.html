@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Xpenz Admin — Users</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#1b3fc0",
+        "primary-light": "#2d52d6",
+        "surface-light": "#f6f6f8",
+        "surface-dark": "#111521",
+        "card-dark": "#1a1f30",
+        "sidebar-dark": "#0d1117",
+        "accent-green": "#10b981",
+        "accent-amber": "#f59e0b",
+        "danger": "#ef4444",
+      },
+      fontFamily: {
+        "display": ["Manrope", "sans-serif"],
+        "serif": ["Lora", "serif"],
+      },
+      borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem" },
+    },
+  },
+}
+</script>
+<style>
+body { min-height: 100dvh; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="bg-surface-light dark:bg-surface-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="flex h-screen overflow-hidden">
+
+<!-- ===== SIDEBAR (same as dashboard) ===== -->
+<aside class="hidden lg:flex w-64 flex-col bg-white dark:bg-sidebar-dark border-r border-slate-200 dark:border-slate-800 shrink-0">
+  <div class="h-16 flex items-center px-6 border-b border-slate-100 dark:border-slate-800">
+    <h1 class="font-serif text-xl font-bold text-slate-900 dark:text-white tracking-tight">Xpenzo.</h1>
+    <span class="ml-2 text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full uppercase tracking-wider">Admin</span>
+  </div>
+  <nav class="flex-1 overflow-y-auto hide-scrollbar py-4 px-3">
+    <div class="space-y-1">
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-primary text-white text-sm font-semibold transition-colors">
+        <span class="material-symbols-outlined text-[20px]">group</span><span>Users</span>
+        <span class="ml-auto text-[11px] font-bold bg-white/20 px-2 py-0.5 rounded-full">12.4K</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">family_restroom</span><span>Families</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Transactions</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">smart_toy</span><span>ML Models</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">credit_card</span><span>Subscriptions</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">campaign</span><span>Notifications</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">toggle_on</span><span>Feature Flags</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Analytics</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">support_agent</span><span>Support</span>
+        <span class="ml-auto text-[11px] font-bold bg-danger/10 text-danger px-2 py-0.5 rounded-full">7</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">shield</span><span>Security</span>
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+        <span class="material-symbols-outlined text-[20px]">dns</span><span>System Health</span>
+      </a>
+    </div>
+  </nav>
+  <div class="p-3 border-t border-slate-100 dark:border-slate-800">
+    <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/50">
+      <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">SA</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-xs font-semibold text-slate-700 dark:text-slate-300 truncate">Shashwat A.</p>
+        <p class="text-[10px] text-slate-400 dark:text-slate-500">Super Admin</p>
+      </div>
+      <button class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300"><span class="material-symbols-outlined text-[18px]">logout</span></button>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="flex-1 flex flex-col overflow-hidden">
+  <!-- Topbar -->
+  <header class="h-16 flex items-center justify-between px-6 bg-white dark:bg-sidebar-dark border-b border-slate-200 dark:border-slate-800 shrink-0">
+    <div class="flex items-center gap-4">
+      <button class="lg:hidden text-slate-600 dark:text-slate-400"><span class="material-symbols-outlined">menu</span></button>
+      <div class="hidden sm:flex items-center bg-slate-50 dark:bg-slate-800 rounded-xl px-4 py-2 gap-2 w-80 border border-slate-200 dark:border-slate-700">
+        <span class="material-symbols-outlined text-slate-400 text-[18px]">search</span>
+        <input type="text" placeholder="Search users, families, tickets..." class="bg-transparent border-none outline-none text-sm text-slate-700 dark:text-slate-300 placeholder:text-slate-400 w-full"/>
+        <kbd class="hidden md:inline text-[10px] font-bold text-slate-400 bg-white dark:bg-slate-700 px-1.5 py-0.5 rounded border border-slate-200 dark:border-slate-600">⌘K</kbd>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <button onclick="document.documentElement.classList.toggle('dark')" class="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">
+        <span class="material-symbols-outlined text-[18px] dark:hidden">dark_mode</span>
+        <span class="material-symbols-outlined text-[18px] hidden dark:inline">light_mode</span>
+      </button>
+      <button class="relative w-9 h-9 flex items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400">
+        <span class="material-symbols-outlined text-[18px]">notifications</span>
+        <span class="absolute -top-0.5 -right-0.5 w-4 h-4 bg-danger text-white text-[9px] font-bold flex items-center justify-center rounded-full">3</span>
+      </button>
+      <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-white text-xs font-bold">SA</div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="flex-1 overflow-y-auto p-6 space-y-6">
+    <!-- Breadcrumb + Header -->
+    <div>
+      <div class="flex items-center gap-2 text-xs text-slate-400 dark:text-slate-500 mb-3">
+        <a href="#" class="hover:text-primary transition-colors">Dashboard</a>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span class="text-slate-700 dark:text-slate-300 font-semibold">Users</span>
+      </div>
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">User Management</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">12,432 total users · 3,847 active today</p>
+        </div>
+        <button class="flex items-center gap-2 bg-primary text-white rounded-xl px-4 py-2.5 text-sm font-semibold hover:bg-primary-light transition-colors">
+          <span class="material-symbols-outlined text-[18px]">download</span>
+          Export CSV
+        </button>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="bg-white dark:bg-card-dark rounded-2xl border border-slate-100 dark:border-slate-800 p-4">
+      <div class="flex flex-wrap items-center gap-3">
+        <div class="flex items-center bg-slate-50 dark:bg-slate-800 rounded-xl px-3 py-2 gap-2 flex-1 min-w-[200px] max-w-md border border-slate-200 dark:border-slate-700">
+          <span class="material-symbols-outlined text-slate-400 text-[18px]">search</span>
+          <input type="text" placeholder="Search by name, phone, or UID..." class="bg-transparent border-none outline-none text-sm text-slate-700 dark:text-slate-300 placeholder:text-slate-400 w-full"/>
+        </div>
+        <select class="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm text-slate-700 dark:text-slate-300 font-medium">
+          <option>All Status</option>
+          <option>Active</option>
+          <option>Inactive</option>
+          <option>Suspended</option>
+        </select>
+        <select class="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm text-slate-700 dark:text-slate-300 font-medium">
+          <option>All Plans</option>
+          <option>Premium</option>
+          <option>Free</option>
+        </select>
+        <select class="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm text-slate-700 dark:text-slate-300 font-medium">
+          <option>All Families</option>
+          <option>In Family</option>
+          <option>No Family</option>
+        </select>
+        <button class="flex items-center gap-2 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+          <span class="material-symbols-outlined text-[16px]">tune</span>
+          More Filters
+        </button>
+      </div>
+    </div>
+
+    <!-- User Table -->
+    <div class="bg-white dark:bg-card-dark rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-slate-100 dark:border-slate-800">
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">
+                <input type="checkbox" class="rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary"/>
+              </th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">User</th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">Status</th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">Plan</th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">Family</th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">
+                <button class="flex items-center gap-1 hover:text-slate-700 dark:hover:text-slate-200 transition-colors">
+                  Transactions
+                  <span class="material-symbols-outlined text-[14px]">unfold_more</span>
+                </button>
+              </th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">ML Accuracy</th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">
+                <button class="flex items-center gap-1 hover:text-slate-700 dark:hover:text-slate-200 transition-colors">
+                  Joined
+                  <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+                </button>
+              </th>
+              <th class="text-left px-5 py-4 font-semibold text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-50 dark:divide-slate-800">
+            <!-- Row 1 -->
+            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors cursor-pointer">
+              <td class="px-5 py-4"><input type="checkbox" class="rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary"/></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold shrink-0">PS</div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">Priya Sharma</p>
+                    <p class="text-xs text-slate-400">+91 98765 43210</p>
+                  </div>
+                </div>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-accent-green/10 text-accent-green">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span>Active
+                </span>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-600 dark:text-purple-400">
+                  <span class="material-symbols-outlined text-[12px]">star</span>Premium
+                </span>
+              </td>
+              <td class="px-5 py-4">
+                <span class="text-sm text-slate-700 dark:text-slate-300">Sharma Family</span>
+              </td>
+              <td class="px-5 py-4"><span class="font-semibold text-slate-700 dark:text-slate-300">342</span></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-16 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-accent-green rounded-full" style="width:91%"></div>
+                  </div>
+                  <span class="text-xs font-semibold text-accent-green">91%</span>
+                </div>
+              </td>
+              <td class="px-5 py-4"><span class="text-slate-500 dark:text-slate-400">Jan 15, 2026</span></td>
+              <td class="px-5 py-4">
+                <button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">more_vert</span>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors cursor-pointer">
+              <td class="px-5 py-4"><input type="checkbox" class="rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary"/></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-accent-green flex items-center justify-center text-white text-xs font-bold shrink-0">RV</div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">Rahul Verma</p>
+                    <p class="text-xs text-slate-400">+91 91234 56789</p>
+                  </div>
+                </div>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-accent-green/10 text-accent-green">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span>Active
+                </span>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-600 dark:text-purple-400">
+                  <span class="material-symbols-outlined text-[12px]">star</span>Premium
+                </span>
+              </td>
+              <td class="px-5 py-4"><span class="text-sm text-slate-700 dark:text-slate-300">Verma Household</span></td>
+              <td class="px-5 py-4"><span class="font-semibold text-slate-700 dark:text-slate-300">287</span></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-16 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-accent-green rounded-full" style="width:88%"></div>
+                  </div>
+                  <span class="text-xs font-semibold text-accent-green">88%</span>
+                </div>
+              </td>
+              <td class="px-5 py-4"><span class="text-slate-500 dark:text-slate-400">Feb 02, 2026</span></td>
+              <td class="px-5 py-4">
+                <button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">more_vert</span>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors cursor-pointer">
+              <td class="px-5 py-4"><input type="checkbox" class="rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary"/></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-accent-amber flex items-center justify-center text-white text-xs font-bold shrink-0">AG</div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">Anita Gupta</p>
+                    <p class="text-xs text-slate-400">+91 87654 32109</p>
+                  </div>
+                </div>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-accent-green/10 text-accent-green">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span>Active
+                </span>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">Free</span>
+              </td>
+              <td class="px-5 py-4"><span class="text-sm text-slate-400">—</span></td>
+              <td class="px-5 py-4"><span class="font-semibold text-slate-700 dark:text-slate-300">156</span></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-16 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-accent-amber rounded-full" style="width:72%"></div>
+                  </div>
+                  <span class="text-xs font-semibold text-accent-amber">72%</span>
+                </div>
+              </td>
+              <td class="px-5 py-4"><span class="text-slate-500 dark:text-slate-400">Feb 14, 2026</span></td>
+              <td class="px-5 py-4">
+                <button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">more_vert</span>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 4 — Suspended -->
+            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors cursor-pointer bg-danger/[0.02]">
+              <td class="px-5 py-4"><input type="checkbox" class="rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary"/></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-slate-400 flex items-center justify-center text-white text-xs font-bold shrink-0">VK</div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">Vikram Kumar</p>
+                    <p class="text-xs text-slate-400">+91 76543 21098</p>
+                  </div>
+                </div>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-danger/10 text-danger">
+                  <span class="w-1.5 h-1.5 rounded-full bg-danger"></span>Suspended
+                </span>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">Free</span>
+              </td>
+              <td class="px-5 py-4"><span class="text-sm text-slate-400">Kumar Family</span></td>
+              <td class="px-5 py-4"><span class="font-semibold text-slate-700 dark:text-slate-300">89</span></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-16 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-danger rounded-full" style="width:45%"></div>
+                  </div>
+                  <span class="text-xs font-semibold text-danger">45%</span>
+                </div>
+              </td>
+              <td class="px-5 py-4"><span class="text-slate-500 dark:text-slate-400">Mar 01, 2026</span></td>
+              <td class="px-5 py-4">
+                <button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">more_vert</span>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors cursor-pointer">
+              <td class="px-5 py-4"><input type="checkbox" class="rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary"/></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-pink-500 flex items-center justify-center text-white text-xs font-bold shrink-0">NP</div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">Neha Patel</p>
+                    <p class="text-xs text-slate-400">+91 65432 10987</p>
+                  </div>
+                </div>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-accent-green/10 text-accent-green">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span>Active
+                </span>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-600 dark:text-purple-400">
+                  <span class="material-symbols-outlined text-[12px]">star</span>Premium
+                </span>
+              </td>
+              <td class="px-5 py-4"><span class="text-sm text-slate-700 dark:text-slate-300">Patel Family</span></td>
+              <td class="px-5 py-4"><span class="font-semibold text-slate-700 dark:text-slate-300">423</span></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-16 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-accent-green rounded-full" style="width:94%"></div>
+                  </div>
+                  <span class="text-xs font-semibold text-accent-green">94%</span>
+                </div>
+              </td>
+              <td class="px-5 py-4"><span class="text-slate-500 dark:text-slate-400">Dec 28, 2025</span></td>
+              <td class="px-5 py-4">
+                <button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">more_vert</span>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 6 — Inactive -->
+            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors cursor-pointer">
+              <td class="px-5 py-4"><input type="checkbox" class="rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary"/></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-full bg-teal-500 flex items-center justify-center text-white text-xs font-bold shrink-0">AJ</div>
+                  <div>
+                    <p class="font-semibold text-slate-900 dark:text-white">Amit Joshi</p>
+                    <p class="text-xs text-slate-400">+91 54321 09876</p>
+                  </div>
+                </div>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
+                  <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>Inactive
+                </span>
+              </td>
+              <td class="px-5 py-4">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">Free</span>
+              </td>
+              <td class="px-5 py-4"><span class="text-sm text-slate-400">—</span></td>
+              <td class="px-5 py-4"><span class="font-semibold text-slate-700 dark:text-slate-300">23</span></td>
+              <td class="px-5 py-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-16 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-accent-amber rounded-full" style="width:68%"></div>
+                  </div>
+                  <span class="text-xs font-semibold text-accent-amber">68%</span>
+                </div>
+              </td>
+              <td class="px-5 py-4"><span class="text-slate-500 dark:text-slate-400">Mar 05, 2026</span></td>
+              <td class="px-5 py-4">
+                <button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
+                  <span class="material-symbols-outlined text-[18px]">more_vert</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Pagination -->
+      <div class="flex items-center justify-between px-5 py-4 border-t border-slate-100 dark:border-slate-800">
+        <p class="text-xs text-slate-500 dark:text-slate-400">Showing <span class="font-semibold text-slate-700 dark:text-slate-300">1-50</span> of <span class="font-semibold text-slate-700 dark:text-slate-300">12,432</span> users</p>
+        <div class="flex items-center gap-1">
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">chevron_left</span>
+          </button>
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-primary text-white text-xs font-bold">1</button>
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 text-xs font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">2</button>
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 text-xs font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">3</button>
+          <span class="px-1 text-slate-400">…</span>
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 text-xs font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">249</button>
+          <button class="w-8 h-8 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+</body>
+</html>

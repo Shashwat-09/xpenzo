@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Premium Family Insights - Xpenzo</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b3fc0",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#ffffff",
+                        "text-main": "#1A1A1A",
+                        "text-muted": "#4A4A4A",
+                        "card-bg": "#FFFFFF",
+                        "card-border": "#E5E7EB",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style id="xpenz-dark-mode">
+/* ===== XPENZ DARK MODE - Design System Tokens ===== */
+/* BG Dark: #111521 | Card Dark: #1a1f30 | Sidebar Dark: #0d1117 */
+
+html.dark body {
+  background-color: #111521 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Main container overrides */
+html.dark .bg-white { background-color: #1a1f30 !important; }
+html.dark .bg-slate-50, html.dark .bg-gray-50 { background-color: #111521 !important; }
+html.dark .bg-slate-100, html.dark .bg-gray-100 { background-color: #1e2536 !important; }
+html.dark .bg-slate-200, html.dark .bg-gray-200 { background-color: #252d3f !important; }
+html.dark .bg-background-light { background-color: #111521 !important; }
+html.dark .bg-surface-light { background-color: #1a1f30 !important; }
+html.dark .bg-card-light { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#ffffff\], html.dark .bg-\[\#FFFFFF\] { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#f8f6f6\], html.dark .bg-\[\#F7F6F3\], html.dark .bg-\[\#f6f6f8\] { background-color: #111521 !important; }
+html.dark .bg-\[\#f5f5f5\], html.dark .bg-\[\#f9fafb\] { background-color: #111521 !important; }
+
+/* White/near-white backgrounds on inner cards */
+html.dark .bg-white\/80 { background-color: rgba(26, 31, 48, 0.9) !important; }
+html.dark .bg-white\/90 { background-color: rgba(26, 31, 48, 0.95) !important; }
+
+/* Text color overrides */
+html.dark .text-black, html.dark .text-text-main, html.dark .text-\[\#000000\], html.dark .text-\[\#111\] {
+  color: #f1f5f9 !important;
+}
+html.dark .text-slate-900, html.dark .text-gray-900 { color: #f1f5f9 !important; }
+html.dark .text-slate-800, html.dark .text-gray-800 { color: #e2e8f0 !important; }
+html.dark .text-slate-700, html.dark .text-gray-700 { color: #cbd5e1 !important; }
+html.dark .text-slate-600, html.dark .text-gray-600, html.dark .text-text-muted { color: #94a3b8 !important; }
+html.dark .text-slate-500, html.dark .text-gray-500 { color: #64748b !important; }
+html.dark .text-slate-400, html.dark .text-gray-400 { color: #94a3b8 !important; }
+
+/* Border overrides */
+html.dark .border-slate-100, html.dark .border-gray-100 { border-color: #1e293b !important; }
+html.dark .border-slate-200, html.dark .border-gray-200 { border-color: #334155 !important; }
+html.dark .border-slate-300, html.dark .border-gray-300 { border-color: #475569 !important; }
+html.dark .border-white { border-color: #1e293b !important; }
+
+/* Divide overrides */
+html.dark .divide-slate-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-slate-200 > :not(:first-child) { border-color: #334155 !important; }
+html.dark .divide-gray-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-gray-200 > :not(:first-child) { border-color: #334155 !important; }
+
+/* Shadow adjustments */
+html.dark .shadow-sm, html.dark .shadow, html.dark .shadow-md, html.dark .shadow-lg, html.dark .shadow-xl, html.dark .shadow-2xl {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .shadow-none { box-shadow: none !important; }
+
+/* Input/form overrides */
+html.dark input, html.dark textarea, html.dark select {
+  background-color: #1e2536 !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+html.dark input::placeholder, html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+html.dark input:focus, html.dark textarea:focus, html.dark select:focus {
+  border-color: #1b3fc0 !important;
+  box-shadow: 0 0 0 2px rgba(27, 63, 192, 0.25) !important;
+}
+
+/* Backdrop blur */
+html.dark .backdrop-blur-md { background-color: rgba(17, 21, 33, 0.85) !important; }
+html.dark .backdrop-blur-lg { background-color: rgba(17, 21, 33, 0.9) !important; }
+
+/* Ring overrides */
+html.dark .ring-slate-100, html.dark .ring-gray-100 { --tw-ring-color: #1e293b !important; }
+html.dark .ring-white { --tw-ring-color: #1a1f30 !important; }
+
+/* Emerald/green accents preserved */
+html.dark .bg-emerald-50, html.dark .bg-green-50 { background-color: rgba(16, 185, 129, 0.1) !important; }
+html.dark .border-emerald-100, html.dark .border-green-100 { border-color: rgba(16, 185, 129, 0.2) !important; }
+html.dark .bg-emerald-100, html.dark .bg-green-100 { background-color: rgba(16, 185, 129, 0.15) !important; }
+
+/* Red/danger accents */
+html.dark .bg-red-50 { background-color: rgba(239, 68, 68, 0.1) !important; }
+html.dark .border-red-100 { border-color: rgba(239, 68, 68, 0.2) !important; }
+html.dark .bg-red-100 { background-color: rgba(239, 68, 68, 0.15) !important; }
+
+/* Amber/warning accents */
+html.dark .bg-amber-50, html.dark .bg-yellow-50 { background-color: rgba(245, 158, 11, 0.1) !important; }
+html.dark .border-amber-100 { border-color: rgba(245, 158, 11, 0.2) !important; }
+html.dark .bg-amber-100, html.dark .bg-yellow-100 { background-color: rgba(245, 158, 11, 0.15) !important; }
+
+/* Blue accents */
+html.dark .bg-blue-50 { background-color: rgba(59, 130, 246, 0.1) !important; }
+html.dark .border-blue-100 { border-color: rgba(59, 130, 246, 0.2) !important; }
+html.dark .bg-blue-100 { background-color: rgba(59, 130, 246, 0.15) !important; }
+
+/* Purple accents */
+html.dark .bg-purple-50, html.dark .bg-violet-50 { background-color: rgba(139, 92, 246, 0.1) !important; }
+html.dark .bg-purple-100, html.dark .bg-violet-100 { background-color: rgba(139, 92, 246, 0.15) !important; }
+
+/* Indigo accents (used as primary in some screens) */
+html.dark .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.1) !important; }
+html.dark .bg-indigo-100 { background-color: rgba(99, 102, 241, 0.15) !important; }
+
+/* Primary-tinted backgrounds */
+html.dark .bg-primary\/5, html.dark .bg-primary\/10 { background-color: rgba(27, 63, 192, 0.15) !important; }
+html.dark .bg-primary { background-color: #1b3fc0 !important; }
+
+/* Bottom nav / fixed bars */
+html.dark nav, html.dark nav.fixed {
+  background-color: #0d1117 !important;
+  border-color: #1e293b !important;
+}
+
+/* Card/panel specific */
+html.dark [class*="rounded"][class*="bg-white"],
+html.dark [class*="rounded"][class*="bg-slate-50"],
+html.dark [class*="rounded"][class*="bg-gray-50"] {
+  background-color: #1a1f30 !important;
+}
+
+/* Modal / overlay */
+html.dark .bg-black\/50, html.dark .bg-black\/40, html.dark .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Gradient overrides */
+html.dark .from-white { --tw-gradient-from: #1a1f30 !important; }
+html.dark .to-white { --tw-gradient-to: #1a1f30 !important; }
+html.dark .from-slate-50 { --tw-gradient-from: #111521 !important; }
+
+/* Scrollbar styling */
+html.dark ::-webkit-scrollbar-track { background: #111521; }
+html.dark ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+
+/* Hover states */
+html.dark .hover\:bg-slate-100:hover, html.dark .hover\:bg-gray-100:hover { background-color: #252d3f !important; }
+html.dark .hover\:bg-slate-50:hover, html.dark .hover\:bg-gray-50:hover { background-color: #1e2536 !important; }
+html.dark .hover\:bg-white:hover { background-color: #1a1f30 !important; }
+
+/* Active states */
+html.dark .active\:bg-slate-100:active, html.dark .active\:bg-gray-100:active { background-color: #252d3f !important; }
+
+/* Toggle / Switch backgrounds */
+html.dark .bg-slate-300, html.dark .bg-gray-300 { background-color: #475569 !important; }
+
+/* Status bar area */
+html.dark .bg-\[\#1D40C0\], html.dark .bg-\[\#1d40bf\], html.dark .bg-\[\#4f46e5\] {
+  background-color: #1b3fc0 !important;
+}
+
+/* Smooth transition for all color changes */
+html.dark * {
+  transition: background-color 0.2s ease, color 0.15s ease, border-color 0.2s ease;
+}
+</style>
+</head>
+<body class="bg-background-light font-display text-text-main antialiased selection:bg-primary/30">
+<div class="relative mx-auto flex h-full min-h-screen w-full max-w-md flex-col overflow-hidden bg-background-light shadow-2xl">
+<div class="sticky top-0 z-20 flex items-center justify-between bg-white/90 px-4 py-4 backdrop-blur-md border-b border-slate-200">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-500 hover:bg-slate-100 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="bg-gradient-to-r from-amber-500 to-amber-600 bg-clip-text text-xs font-bold tracking-widest text-transparent flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-amber-500" style="font-variation-settings: 'FILL' 1">star</span>
+                PREMIUM
+            </span>
+<h1 class="text-lg font-bold leading-tight text-text-main">Family Insights</h1>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-500 hover:bg-slate-100 transition-colors">
+<span class="material-symbols-outlined text-[24px]">settings</span>
+</button>
+</div>
+<main class="flex-1 overflow-y-auto no-scrollbar pb-24">
+<section class="px-4 pt-6">
+<div class="mb-6 text-center">
+<p class="text-sm font-medium text-text-muted">Total Spend (Last 6 Months)</p>
+<div class="flex items-center justify-center gap-2 mt-1">
+<h2 class="text-4xl font-extrabold tracking-tight text-text-main">$4,250.00</h2>
+</div>
+<div class="mt-2 inline-flex items-center rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600">
+<span class="material-symbols-outlined mr-1 text-[16px]">trending_up</span>
+                    +12% vs last month
+                </div>
+</div>
+<div class="relative w-full rounded-2xl bg-white p-4 shadow-sm border border-card-border">
+<div class="mb-4 flex items-center justify-between">
+<h3 class="text-sm font-semibold text-text-main">Spending Trend</h3>
+<div class="flex rounded-lg bg-slate-100 p-1">
+<button class="rounded px-2 py-1 text-xs font-medium text-slate-500 hover:text-slate-900">1M</button>
+<button class="rounded bg-white px-2 py-1 text-xs font-bold text-primary shadow-sm">6M</button>
+<button class="rounded px-2 py-1 text-xs font-medium text-slate-500 hover:text-slate-900">1Y</button>
+</div>
+</div>
+<div class="relative h-40 w-full overflow-hidden">
+<div class="absolute inset-0 flex flex-col justify-between py-2">
+<div class="h-px w-full border-t border-dashed border-slate-200"></div>
+<div class="h-px w-full border-t border-dashed border-slate-200"></div>
+<div class="h-px w-full border-t border-dashed border-slate-200"></div>
+<div class="h-px w-full border-t border-dashed border-slate-200"></div>
+</div>
+<svg class="absolute inset-0 h-full w-full" preserveAspectRatio="none" viewBox="0 0 100 50">
+<path class="fill-primary/5" d="M0,50 L0,35 Q10,25 20,30 T40,20 T60,25 T80,10 T100,15 L100,50 Z"></path>
+<path class="stroke-primary" d="M0,35 Q10,25 20,30 T40,20 T60,25 T80,10 T100,15" fill="none" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<circle class="fill-white stroke-primary" cx="20" cy="30" r="1.5" stroke-width="1"></circle>
+<circle class="fill-white stroke-primary" cx="40" cy="20" r="1.5" stroke-width="1"></circle>
+<circle class="fill-white stroke-primary" cx="60" cy="25" r="1.5" stroke-width="1"></circle>
+<circle class="fill-white stroke-primary" cx="80" cy="10" r="1.5" stroke-width="1"></circle>
+</svg>
+<div class="absolute right-[20%] top-[10%] -translate-x-1/2 translate-y-[-120%]">
+<div class="relative rounded-lg bg-slate-800 px-2 py-1 text-[10px] font-bold text-white shadow-lg">
+                            $1,240
+                            <div class="absolute left-1/2 top-full -ml-1 h-0 w-0 border-x-[4px] border-t-[4px] border-x-transparent border-t-slate-800"></div>
+</div>
+</div>
+</div>
+<div class="mt-2 flex justify-between px-1 text-[10px] font-medium text-slate-400">
+<span>Nov</span>
+<span>Dec</span>
+<span>Jan</span>
+<span>Feb</span>
+<span>Mar</span>
+<span>Apr</span>
+</div>
+</div>
+</section>
+<section class="px-4 mt-6">
+<div class="relative overflow-hidden rounded-xl bg-rose-50 border border-rose-100 p-4">
+<div class="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-rose-200/30 blur-xl"></div>
+<div class="flex items-start gap-3">
+<div class="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-rose-500/10 text-rose-600">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">warning</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-rose-800">Anomaly Detected</h3>
+<p class="mt-1 text-xs leading-relaxed text-text-muted">
+                            Unusual spike in <strong>Groceries</strong>. Spending is 40% higher than your average for the second week of the month.
+                        </p>
+<button class="mt-3 text-xs font-semibold text-rose-600 hover:underline">View Transaction Details</button>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-8 px-4">
+<div class="mb-4 flex items-center justify-between">
+<h2 class="text-lg font-bold text-text-main">Member Trends</h2>
+<button class="text-xs font-semibold text-primary">See All</button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col rounded-xl bg-white p-3 shadow-sm border border-card-border">
+<div class="flex items-center gap-2 mb-2">
+<div class="h-8 w-8 rounded-full overflow-hidden bg-slate-100">
+<img alt="Man with beard smiling" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdSOe29F2UXMBS763i6dzP8dbin-qG5mAjNB5mBf1tD8AUeIXoOR5s-kEnuLNqIuvhpBF9e84JbxJ-VUdukv0mCKk-uZlgbsAc__xmvedDgbsWqdBvfkDIS4tOJTYz6oCG2MgF61kwjPoWOa6Q7_JogYz-ckrQffQYqNepyxeWVcImCwHeprGVXQN77hUI37ArTsstQ5muNeSk9_IcEN5iG5shop0iDYICeXpstDbghS3YiSsDJNWQNDatOV09FVjzLOXx-orLww53"/>
+</div>
+<span class="text-xs font-medium truncate text-text-main">Dad</span>
+</div>
+<p class="text-lg font-bold text-text-main">$1,200</p>
+<div class="h-8 w-full mt-2">
+<svg class="h-full w-full" preserveAspectRatio="none" viewBox="0 0 50 20">
+<path class="stroke-emerald-500" d="M0,5 L10,8 L20,4 L30,10 L40,15 L50,18" fill="none" stroke-width="2"></path>
+</svg>
+</div>
+<p class="text-[10px] text-slate-500 mt-1">▼ 5% this week</p>
+</div>
+<div class="flex flex-col rounded-xl bg-white p-3 shadow-sm border border-card-border">
+<div class="flex items-center gap-2 mb-2">
+<div class="h-8 w-8 rounded-full overflow-hidden bg-slate-100">
+<img alt="Woman smiling outdoors" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrxYMEgb4v2GGbfWEUssAOf97KJYE59sXhcZU_ERLq0WmT7dhujo579DS3OqA9aqDr9XwRk3mn7mHw7BXpPL-0cpQeB9oRjSGwj8y2BpIgIP6bRu9RCexDP0QTaii_2uvNUoPPoCO-oG4KR3BpcuXQ7LT3nl-6n2aBeIJ0XVNuistJ_wfYTJvBJudN8eCSEVyob-e0Svr6fXJjbzGocBRyGfNii2aRDQ-_kLilQZUdzxz8aPbOqdtn4G4RywqSyD3JPzQGEKPuSbMM"/>
+</div>
+<span class="text-xs font-medium truncate text-text-main">Mom</span>
+</div>
+<p class="text-lg font-bold text-text-main">$1,450</p>
+<div class="h-8 w-full mt-2">
+<svg class="h-full w-full" preserveAspectRatio="none" viewBox="0 0 50 20">
+<path class="stroke-slate-300" d="M0,10 L10,10 L20,12 L30,8 L40,10 L50,10" fill="none" stroke-width="2"></path>
+</svg>
+</div>
+<p class="text-[10px] text-slate-500 mt-1">~ Flat trend</p>
+</div>
+<div class="flex flex-col rounded-xl bg-white p-3 shadow-sm border border-card-border">
+<div class="flex items-center gap-2 mb-2">
+<div class="h-8 w-8 rounded-full overflow-hidden bg-slate-100">
+<img alt="Young boy smiling" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBySVKA4q8WdkZlGHU3SRc9tiksI1Ej_EUZ_XRU7WoTjQm1uBaNco4LvHdi4paOwAcmFBYPuyj_3Pq2orAnQ7Gl27Y979SwdSRcWC5rAn5lTxXVN18_fk30vA9nrScmRGF5YhDd2XUFTvxdMro250rttcWENvEuwSlHMCWjpGeO4S2qiGbyIXyGAx_mHZ3YSgqujiMz2kt2BwDZDiq3-wv-JvM_5RzB7K_Ifep0S5S_o-TUeHzBcgQgohTDIIWvp9YR9MmIDrYdh6mQ"/>
+</div>
+<span class="text-xs font-medium truncate text-text-main">Leo</span>
+</div>
+<p class="text-lg font-bold text-text-main">$50</p>
+<div class="h-8 w-full mt-2">
+<svg class="h-full w-full" preserveAspectRatio="none" viewBox="0 0 50 20">
+<path class="stroke-rose-500" d="M0,18 L10,15 L20,10 L30,8 L40,5 L50,2" fill="none" stroke-width="2"></path>
+</svg>
+</div>
+<p class="text-[10px] text-slate-500 mt-1">▲ 15% this week</p>
+</div>
+<div class="flex flex-col rounded-xl bg-white p-3 shadow-sm border border-card-border">
+<div class="flex items-center gap-2 mb-2">
+<div class="h-8 w-8 rounded-full overflow-hidden bg-slate-100">
+<img alt="Girl smiling side profile" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxM8aoZgPYHzuc6R4CvKJj3z-TF0n1igjcQJSiAkAbMV9T0-gKaoNlYZcOyGt4QjkZw_gyf_Z2PbSGuMlShQbWzv3TTSceE20Tkwa182hGBlqA5yRQRq4nRUy8YPGz-9a9gk7ZYnJylfGmYeGJiQ0YrXZteoazxSGwVsmTAm7_03tYcVQlmE2wvW1stSx8re7ItxmTFlHEWpRyLobDgh3_vrh7XVpZK7PTYzwW_sNAnDh7oarif7tygIRJHUL7GYdqdXEpTAt7xSbl"/>
+</div>
+<span class="text-xs font-medium truncate text-text-main">Mia</span>
+</div>
+<p class="text-lg font-bold text-text-main">$20</p>
+<div class="h-8 w-full mt-2">
+<svg class="h-full w-full" preserveAspectRatio="none" viewBox="0 0 50 20">
+<path class="stroke-slate-300" d="M0,10 L15,10 L30,10 L40,10 L50,10" fill="none" stroke-width="2"></path>
+</svg>
+</div>
+<p class="text-[10px] text-slate-500 mt-1">~ Flat trend</p>
+</div>
+</div>
+</section>
+<section class="mt-8 px-4 pb-4">
+<div class="mb-4 flex items-center gap-2">
+<div class="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+</div>
+<h2 class="text-lg font-bold text-text-main">Smart Predictions</h2>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+<div class="min-w-[280px] shrink-0 rounded-2xl bg-white p-5 border border-card-border shadow-md relative group overflow-hidden">
+<div class="absolute right-0 top-0 -mr-8 -mt-8 h-24 w-24 rounded-full bg-indigo-50 blur-2xl transition-all group-hover:bg-indigo-100"></div>
+<div class="relative z-10">
+<div class="mb-3 flex items-center justify-between">
+<span class="rounded-md bg-indigo-50 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-indigo-600 border border-indigo-100">Forecast</span>
+<span class="material-symbols-outlined text-indigo-400 text-[18px]">calendar_month</span>
+</div>
+<h3 class="mb-1 text-2xl font-bold text-text-main">$4,200</h3>
+<p class="text-xs font-medium text-text-muted">Estimated spend for next month</p>
+<div class="mt-4 h-1 w-full rounded-full bg-slate-100">
+<div class="h-1 w-[85%] rounded-full bg-indigo-500"></div>
+</div>
+<p class="mt-2 text-[10px] text-slate-400">Based on your recurring bills and average habits.</p>
+</div>
+</div>
+<div class="min-w-[280px] shrink-0 rounded-2xl bg-white p-5 border border-card-border shadow-md relative group overflow-hidden">
+<div class="absolute right-0 top-0 -mr-8 -mt-8 h-24 w-24 rounded-full bg-emerald-50 blur-2xl transition-all group-hover:bg-emerald-100"></div>
+<div class="relative z-10">
+<div class="mb-3 flex items-center justify-between">
+<span class="rounded-md bg-emerald-50 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-emerald-600 border border-emerald-100">Tip</span>
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">savings</span>
+</div>
+<h3 class="mb-1 text-2xl font-bold text-text-main">Save $200</h3>
+<p class="text-xs font-medium text-text-muted">Reduce dining out by 2 visits</p>
+<button class="mt-4 w-full rounded-lg bg-emerald-50 py-2 text-xs font-bold text-emerald-600 hover:bg-emerald-100 transition-colors border border-emerald-200">
+                            Set Budget Challenge
+                        </button>
+</div>
+</div>
+<div class="min-w-[280px] shrink-0 rounded-2xl p-5 border border-card-border shadow-md relative overflow-hidden flex flex-col justify-center items-center text-center bg-white">
+<div class="absolute inset-0 bg-slate-50/70 backdrop-blur-[2px] z-20 flex flex-col items-center justify-center">
+<div class="bg-white p-3 rounded-full mb-2 border border-slate-200 shadow-sm">
+<span class="material-symbols-outlined text-slate-400 text-[24px]">lock</span>
+</div>
+<p class="text-sm font-bold text-text-main">Unlock Investment AI</p>
+<p class="text-xs text-text-muted mb-3 px-4">Get personalized stock picks based on spend.</p>
+<button class="px-4 py-2 bg-gradient-to-r from-amber-400 to-amber-600 text-white font-bold text-xs rounded-full shadow-sm">Upgrade Tier</button>
+</div>
+<div class="opacity-20 w-full">
+<div class="h-6 w-1/2 bg-slate-200 rounded mb-2 mx-auto"></div>
+<div class="h-20 w-full bg-slate-100 rounded"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div class="sticky bottom-0 z-30 flex w-full flex-col bg-white border-t border-slate-200">
+<div class="flex items-center justify-between px-6 pb-6 pt-3">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">home</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px] fill-current" style="font-variation-settings: 'FILL' 1">analytics</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Insights</p>
+</a>
+<div class="relative -top-6 flex flex-1 justify-center">
+<button class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg shadow-primary/30 ring-4 ring-white transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-[32px] text-white">add</span>
+</button>
+</div>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Wallet</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Profile</p>
+</a>
+</div>
+</div>
+</div>
+
+<!-- Xpenz Dark Mode Toggle -->
+<button onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('xpenz-dark', document.documentElement.classList.contains('dark')); updateDMToggle();"
+  id="dm-toggle-btn"
+  style="position:fixed;top:12px;right:12px;z-index:9999;width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(148,163,184,0.3);cursor:pointer;transition:all 0.2s;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);">
+  <span class="material-symbols-outlined" style="font-size:18px;color:#64748b;" id="dm-icon">dark_mode</span>
+</button>
+<script>
+  // Persist dark mode preference
+  if (localStorage.getItem('xpenz-dark') === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+  function updateDMToggle() {
+    var isDark = document.documentElement.classList.contains('dark');
+    var btn = document.getElementById('dm-toggle-btn');
+    var icon = document.getElementById('dm-icon');
+    if (icon) icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+    if (btn) {
+      btn.style.background = isDark ? 'rgba(26,31,48,0.9)' : 'rgba(255,255,255,0.9)';
+      btn.style.borderColor = isDark ? 'rgba(51,65,85,0.5)' : 'rgba(148,163,184,0.3)';
+    }
+    if (icon) icon.style.color = isDark ? '#94a3b8' : '#64748b';
+  }
+  // Apply on load
+  updateDMToggle();
+</script>
+</body></html>

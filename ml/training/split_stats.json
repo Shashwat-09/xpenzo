@@ -1,0 +1,15 @@
+{
+  "total_combined": 570288,
+  "labeled_records": 418645,
+  "synthetic_records": 74437,
+  "enhanced_records": 130213,
+  "train_size": 484735,
+  "val_size": 57028,
+  "test_size": 28525,
+  "l1_classes": 15,
+  "l2_classes": 80,
+  "l3_classes": 520,
+  "l3_min_count": 344,
+  "l3_median_count": 419,
+  "l3_max_count": 77332
+}

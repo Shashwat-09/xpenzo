@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Delete Account Confirmation - Xpenzo</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#991B1B",
+                        "brand-accent": "#1D40C0",
+                        "brand-light": "#EEF2FF",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            min-height: max(884px, 100dvh);
+        }
+        :root {
+            --brand-blue: #1D40C0;
+            --destructive-red: #991B1B;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style id="xpenz-dark-mode">
+/* ===== XPENZ DARK MODE - Design System Tokens ===== */
+/* BG Dark: #111521 | Card Dark: #1a1f30 | Sidebar Dark: #0d1117 */
+
+html.dark body {
+  background-color: #111521 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Main container overrides */
+html.dark .bg-white { background-color: #1a1f30 !important; }
+html.dark .bg-slate-50, html.dark .bg-gray-50 { background-color: #111521 !important; }
+html.dark .bg-slate-100, html.dark .bg-gray-100 { background-color: #1e2536 !important; }
+html.dark .bg-slate-200, html.dark .bg-gray-200 { background-color: #252d3f !important; }
+html.dark .bg-background-light { background-color: #111521 !important; }
+html.dark .bg-surface-light { background-color: #1a1f30 !important; }
+html.dark .bg-card-light { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#ffffff\], html.dark .bg-\[\#FFFFFF\] { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#f8f6f6\], html.dark .bg-\[\#F7F6F3\], html.dark .bg-\[\#f6f6f8\] { background-color: #111521 !important; }
+html.dark .bg-\[\#f5f5f5\], html.dark .bg-\[\#f9fafb\] { background-color: #111521 !important; }
+
+/* White/near-white backgrounds on inner cards */
+html.dark .bg-white\/80 { background-color: rgba(26, 31, 48, 0.9) !important; }
+html.dark .bg-white\/90 { background-color: rgba(26, 31, 48, 0.95) !important; }
+
+/* Text color overrides */
+html.dark .text-black, html.dark .text-text-main, html.dark .text-\[\#000000\], html.dark .text-\[\#111\] {
+  color: #f1f5f9 !important;
+}
+html.dark .text-slate-900, html.dark .text-gray-900 { color: #f1f5f9 !important; }
+html.dark .text-slate-800, html.dark .text-gray-800 { color: #e2e8f0 !important; }
+html.dark .text-slate-700, html.dark .text-gray-700 { color: #cbd5e1 !important; }
+html.dark .text-slate-600, html.dark .text-gray-600, html.dark .text-text-muted { color: #94a3b8 !important; }
+html.dark .text-slate-500, html.dark .text-gray-500 { color: #64748b !important; }
+html.dark .text-slate-400, html.dark .text-gray-400 { color: #94a3b8 !important; }
+
+/* Border overrides */
+html.dark .border-slate-100, html.dark .border-gray-100 { border-color: #1e293b !important; }
+html.dark .border-slate-200, html.dark .border-gray-200 { border-color: #334155 !important; }
+html.dark .border-slate-300, html.dark .border-gray-300 { border-color: #475569 !important; }
+html.dark .border-white { border-color: #1e293b !important; }
+
+/* Divide overrides */
+html.dark .divide-slate-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-slate-200 > :not(:first-child) { border-color: #334155 !important; }
+html.dark .divide-gray-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-gray-200 > :not(:first-child) { border-color: #334155 !important; }
+
+/* Shadow adjustments */
+html.dark .shadow-sm, html.dark .shadow, html.dark .shadow-md, html.dark .shadow-lg, html.dark .shadow-xl, html.dark .shadow-2xl {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .shadow-none { box-shadow: none !important; }
+
+/* Input/form overrides */
+html.dark input, html.dark textarea, html.dark select {
+  background-color: #1e2536 !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+html.dark input::placeholder, html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+html.dark input:focus, html.dark textarea:focus, html.dark select:focus {
+  border-color: #1b3fc0 !important;
+  box-shadow: 0 0 0 2px rgba(27, 63, 192, 0.25) !important;
+}
+
+/* Backdrop blur */
+html.dark .backdrop-blur-md { background-color: rgba(17, 21, 33, 0.85) !important; }
+html.dark .backdrop-blur-lg { background-color: rgba(17, 21, 33, 0.9) !important; }
+
+/* Ring overrides */
+html.dark .ring-slate-100, html.dark .ring-gray-100 { --tw-ring-color: #1e293b !important; }
+html.dark .ring-white { --tw-ring-color: #1a1f30 !important; }
+
+/* Emerald/green accents preserved */
+html.dark .bg-emerald-50, html.dark .bg-green-50 { background-color: rgba(16, 185, 129, 0.1) !important; }
+html.dark .border-emerald-100, html.dark .border-green-100 { border-color: rgba(16, 185, 129, 0.2) !important; }
+html.dark .bg-emerald-100, html.dark .bg-green-100 { background-color: rgba(16, 185, 129, 0.15) !important; }
+
+/* Red/danger accents */
+html.dark .bg-red-50 { background-color: rgba(239, 68, 68, 0.1) !important; }
+html.dark .border-red-100 { border-color: rgba(239, 68, 68, 0.2) !important; }
+html.dark .bg-red-100 { background-color: rgba(239, 68, 68, 0.15) !important; }
+
+/* Amber/warning accents */
+html.dark .bg-amber-50, html.dark .bg-yellow-50 { background-color: rgba(245, 158, 11, 0.1) !important; }
+html.dark .border-amber-100 { border-color: rgba(245, 158, 11, 0.2) !important; }
+html.dark .bg-amber-100, html.dark .bg-yellow-100 { background-color: rgba(245, 158, 11, 0.15) !important; }
+
+/* Blue accents */
+html.dark .bg-blue-50 { background-color: rgba(59, 130, 246, 0.1) !important; }
+html.dark .border-blue-100 { border-color: rgba(59, 130, 246, 0.2) !important; }
+html.dark .bg-blue-100 { background-color: rgba(59, 130, 246, 0.15) !important; }
+
+/* Purple accents */
+html.dark .bg-purple-50, html.dark .bg-violet-50 { background-color: rgba(139, 92, 246, 0.1) !important; }
+html.dark .bg-purple-100, html.dark .bg-violet-100 { background-color: rgba(139, 92, 246, 0.15) !important; }
+
+/* Indigo accents (used as primary in some screens) */
+html.dark .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.1) !important; }
+html.dark .bg-indigo-100 { background-color: rgba(99, 102, 241, 0.15) !important; }
+
+/* Primary-tinted backgrounds */
+html.dark .bg-primary\/5, html.dark .bg-primary\/10 { background-color: rgba(27, 63, 192, 0.15) !important; }
+html.dark .bg-primary { background-color: #1b3fc0 !important; }
+
+/* Bottom nav / fixed bars */
+html.dark nav, html.dark nav.fixed {
+  background-color: #0d1117 !important;
+  border-color: #1e293b !important;
+}
+
+/* Card/panel specific */
+html.dark [class*="rounded"][class*="bg-white"],
+html.dark [class*="rounded"][class*="bg-slate-50"],
+html.dark [class*="rounded"][class*="bg-gray-50"] {
+  background-color: #1a1f30 !important;
+}
+
+/* Modal / overlay */
+html.dark .bg-black\/50, html.dark .bg-black\/40, html.dark .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Gradient overrides */
+html.dark .from-white { --tw-gradient-from: #1a1f30 !important; }
+html.dark .to-white { --tw-gradient-to: #1a1f30 !important; }
+html.dark .from-slate-50 { --tw-gradient-from: #111521 !important; }
+
+/* Scrollbar styling */
+html.dark ::-webkit-scrollbar-track { background: #111521; }
+html.dark ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+
+/* Hover states */
+html.dark .hover\:bg-slate-100:hover, html.dark .hover\:bg-gray-100:hover { background-color: #252d3f !important; }
+html.dark .hover\:bg-slate-50:hover, html.dark .hover\:bg-gray-50:hover { background-color: #1e2536 !important; }
+html.dark .hover\:bg-white:hover { background-color: #1a1f30 !important; }
+
+/* Active states */
+html.dark .active\:bg-slate-100:active, html.dark .active\:bg-gray-100:active { background-color: #252d3f !important; }
+
+/* Toggle / Switch backgrounds */
+html.dark .bg-slate-300, html.dark .bg-gray-300 { background-color: #475569 !important; }
+
+/* Status bar area */
+html.dark .bg-\[\#1D40C0\], html.dark .bg-\[\#1d40bf\], html.dark .bg-\[\#4f46e5\] {
+  background-color: #1b3fc0 !important;
+}
+
+/* Smooth transition for all color changes */
+html.dark * {
+  transition: background-color 0.2s ease, color 0.15s ease, border-color 0.2s ease;
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-brand-accent/20">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl bg-background-light dark:bg-background-dark">
+<header class="sticky top-0 z-50 flex items-center bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm p-4 pb-2 justify-between border-b border-slate-200 dark:border-white/10">
+<button class="text-slate-900 dark:text-slate-100 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Delete Account</h2>
+<button class="flex items-center justify-end px-2">
+<p class="text-slate-500 dark:text-slate-400 text-base font-bold leading-normal tracking-[0.015em] shrink-0 hover:opacity-80 transition-opacity">Cancel</p>
+</button>
+</header>
+<main class="flex flex-col flex-1 p-4 gap-6 pb-32">
+<div class="relative overflow-hidden rounded-xl bg-[#EEF2FF] dark:bg-brand-accent/10 border border-brand-accent/20 p-5">
+<div class="absolute -right-4 -top-4 text-brand-accent/10 rotate-12">
+<span class="material-symbols-outlined text-[120px] leading-none">warning</span>
+</div>
+<div class="relative z-10 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-[#1D40C0]">
+<span class="material-symbols-outlined">warning</span>
+<span class="text-sm font-bold uppercase tracking-wider">Warning</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight">Permanent Action</h3>
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-relaxed">
+                        This action is <span class="font-bold text-[#1D40C0]">irreversible</span>. Once deleted, there is no going back. All your financial data will be permanently lost.
+                    </p>
+</div>
+</div>
+<section>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight mb-4">You will lose access to:</h3>
+<div class="flex flex-col gap-3">
+<div class="flex items-start gap-4 p-3 rounded-lg bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">
+<div class="flex items-center justify-center size-10 rounded-full bg-brand-light dark:bg-brand-accent/20 text-[#1D40C0] shrink-0">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</div>
+<div class="flex flex-col">
+<span class="text-slate-900 dark:text-slate-100 font-bold text-sm">Transaction History</span>
+<span class="text-slate-500 dark:text-slate-400 text-xs">All past income and expense records</span>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3 rounded-lg bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">
+<div class="flex items-center justify-center size-10 rounded-full bg-brand-light dark:bg-brand-accent/20 text-[#1D40C0] shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<span class="text-slate-900 dark:text-slate-100 font-bold text-sm">Linked Budgets</span>
+<span class="text-slate-500 dark:text-slate-400 text-xs">Active budget plans and saving goals</span>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3 rounded-lg bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">
+<div class="flex items-center justify-center size-10 rounded-full bg-brand-light dark:bg-brand-accent/20 text-[#1D40C0] shrink-0">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<span class="text-slate-900 dark:text-slate-100 font-bold text-sm">Receipt Images</span>
+<span class="text-slate-500 dark:text-slate-400 text-xs">All uploaded photos and attachments</span>
+</div>
+</div>
+</div>
+</section>
+<div class="bg-brand-accent/5 dark:bg-brand-accent/10 rounded-xl p-5 border border-brand-accent/20">
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent">download</span>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold text-base">Save your data first?</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm mt-1">We recommend downloading your transaction history before deleting your account.</p>
+</div>
+</div>
+<button class="w-full bg-[#1D40C0] text-white py-3 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+                        Export My Data
+                    </button>
+</div>
+</div>
+<div class="space-y-6 pt-4 border-t border-slate-200 dark:border-white/10">
+<label class="flex items-start gap-3 group cursor-pointer">
+<div class="relative flex items-center">
+<input class="peer size-5 appearance-none rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 checked:bg-[#1D40C0] checked:border-[#1D40C0] focus:ring-2 focus:ring-brand-accent/20 transition-all" type="checkbox"/>
+<span class="material-symbols-outlined absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[16px] text-white opacity-0 peer-checked:opacity-100 pointer-events-none">check</span>
+</div>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors pt-0.5">
+                        I acknowledge that this action is permanent and all my data will be wiped immediately.
+                    </span>
+</label>
+<div class="space-y-2">
+<label class="block text-sm font-bold text-slate-900 dark:text-slate-100" for="confirm-delete">
+                        To confirm, type <span class="text-[#1D40C0]">DELETE</span> below
+                    </label>
+<input class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 text-base font-bold text-slate-900 dark:white placeholder:text-slate-400 focus:border-[#1D40C0] focus:ring-1 focus:ring-[#1D40C0] outline-none transition-all uppercase" id="confirm-delete" placeholder="DELETE" type="text"/>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-white/10 max-w-md mx-auto">
+<button class="w-full bg-[#991B1B] disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 rounded-xl text-base shadow-lg shadow-primary/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2" disabled="">
+<span class="material-symbols-outlined">delete_forever</span>
+                Delete My Account
+            </button>
+</div>
+</div>
+<!-- Xpenz Dark Mode Toggle -->
+<button onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('xpenz-dark', document.documentElement.classList.contains('dark')); updateDMToggle();"
+  id="dm-toggle-btn"
+  style="position:fixed;top:12px;right:12px;z-index:9999;width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(148,163,184,0.3);cursor:pointer;transition:all 0.2s;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);">
+  <span class="material-symbols-outlined" style="font-size:18px;color:#64748b;" id="dm-icon">dark_mode</span>
+</button>
+<script>
+  // Persist dark mode preference
+  if (localStorage.getItem('xpenz-dark') === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+  function updateDMToggle() {
+    var isDark = document.documentElement.classList.contains('dark');
+    var btn = document.getElementById('dm-toggle-btn');
+    var icon = document.getElementById('dm-icon');
+    if (icon) icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+    if (btn) {
+      btn.style.background = isDark ? 'rgba(26,31,48,0.9)' : 'rgba(255,255,255,0.9)';
+      btn.style.borderColor = isDark ? 'rgba(51,65,85,0.5)' : 'rgba(148,163,184,0.3)';
+    }
+    if (icon) icon.style.color = isDark ? '#94a3b8' : '#64748b';
+  }
+  // Apply on load
+  updateDMToggle();
+</script>
+</body></html>

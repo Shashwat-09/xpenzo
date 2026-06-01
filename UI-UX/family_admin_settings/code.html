@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Family Admin Settings</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b3fc0",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111521",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style id="xpenz-dark-mode">
+/* ===== XPENZ DARK MODE - Design System Tokens ===== */
+/* BG Dark: #111521 | Card Dark: #1a1f30 | Sidebar Dark: #0d1117 */
+
+html.dark body {
+  background-color: #111521 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Main container overrides */
+html.dark .bg-white { background-color: #1a1f30 !important; }
+html.dark .bg-slate-50, html.dark .bg-gray-50 { background-color: #111521 !important; }
+html.dark .bg-slate-100, html.dark .bg-gray-100 { background-color: #1e2536 !important; }
+html.dark .bg-slate-200, html.dark .bg-gray-200 { background-color: #252d3f !important; }
+html.dark .bg-background-light { background-color: #111521 !important; }
+html.dark .bg-surface-light { background-color: #1a1f30 !important; }
+html.dark .bg-card-light { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#ffffff\], html.dark .bg-\[\#FFFFFF\] { background-color: #1a1f30 !important; }
+html.dark .bg-\[\#f8f6f6\], html.dark .bg-\[\#F7F6F3\], html.dark .bg-\[\#f6f6f8\] { background-color: #111521 !important; }
+html.dark .bg-\[\#f5f5f5\], html.dark .bg-\[\#f9fafb\] { background-color: #111521 !important; }
+
+/* White/near-white backgrounds on inner cards */
+html.dark .bg-white\/80 { background-color: rgba(26, 31, 48, 0.9) !important; }
+html.dark .bg-white\/90 { background-color: rgba(26, 31, 48, 0.95) !important; }
+
+/* Text color overrides */
+html.dark .text-black, html.dark .text-text-main, html.dark .text-\[\#000000\], html.dark .text-\[\#111\] {
+  color: #f1f5f9 !important;
+}
+html.dark .text-slate-900, html.dark .text-gray-900 { color: #f1f5f9 !important; }
+html.dark .text-slate-800, html.dark .text-gray-800 { color: #e2e8f0 !important; }
+html.dark .text-slate-700, html.dark .text-gray-700 { color: #cbd5e1 !important; }
+html.dark .text-slate-600, html.dark .text-gray-600, html.dark .text-text-muted { color: #94a3b8 !important; }
+html.dark .text-slate-500, html.dark .text-gray-500 { color: #64748b !important; }
+html.dark .text-slate-400, html.dark .text-gray-400 { color: #94a3b8 !important; }
+
+/* Border overrides */
+html.dark .border-slate-100, html.dark .border-gray-100 { border-color: #1e293b !important; }
+html.dark .border-slate-200, html.dark .border-gray-200 { border-color: #334155 !important; }
+html.dark .border-slate-300, html.dark .border-gray-300 { border-color: #475569 !important; }
+html.dark .border-white { border-color: #1e293b !important; }
+
+/* Divide overrides */
+html.dark .divide-slate-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-slate-200 > :not(:first-child) { border-color: #334155 !important; }
+html.dark .divide-gray-100 > :not(:first-child) { border-color: #1e293b !important; }
+html.dark .divide-gray-200 > :not(:first-child) { border-color: #334155 !important; }
+
+/* Shadow adjustments */
+html.dark .shadow-sm, html.dark .shadow, html.dark .shadow-md, html.dark .shadow-lg, html.dark .shadow-xl, html.dark .shadow-2xl {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .shadow-none { box-shadow: none !important; }
+
+/* Input/form overrides */
+html.dark input, html.dark textarea, html.dark select {
+  background-color: #1e2536 !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+html.dark input::placeholder, html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+html.dark input:focus, html.dark textarea:focus, html.dark select:focus {
+  border-color: #1b3fc0 !important;
+  box-shadow: 0 0 0 2px rgba(27, 63, 192, 0.25) !important;
+}
+
+/* Backdrop blur */
+html.dark .backdrop-blur-md { background-color: rgba(17, 21, 33, 0.85) !important; }
+html.dark .backdrop-blur-lg { background-color: rgba(17, 21, 33, 0.9) !important; }
+
+/* Ring overrides */
+html.dark .ring-slate-100, html.dark .ring-gray-100 { --tw-ring-color: #1e293b !important; }
+html.dark .ring-white { --tw-ring-color: #1a1f30 !important; }
+
+/* Emerald/green accents preserved */
+html.dark .bg-emerald-50, html.dark .bg-green-50 { background-color: rgba(16, 185, 129, 0.1) !important; }
+html.dark .border-emerald-100, html.dark .border-green-100 { border-color: rgba(16, 185, 129, 0.2) !important; }
+html.dark .bg-emerald-100, html.dark .bg-green-100 { background-color: rgba(16, 185, 129, 0.15) !important; }
+
+/* Red/danger accents */
+html.dark .bg-red-50 { background-color: rgba(239, 68, 68, 0.1) !important; }
+html.dark .border-red-100 { border-color: rgba(239, 68, 68, 0.2) !important; }
+html.dark .bg-red-100 { background-color: rgba(239, 68, 68, 0.15) !important; }
+
+/* Amber/warning accents */
+html.dark .bg-amber-50, html.dark .bg-yellow-50 { background-color: rgba(245, 158, 11, 0.1) !important; }
+html.dark .border-amber-100 { border-color: rgba(245, 158, 11, 0.2) !important; }
+html.dark .bg-amber-100, html.dark .bg-yellow-100 { background-color: rgba(245, 158, 11, 0.15) !important; }
+
+/* Blue accents */
+html.dark .bg-blue-50 { background-color: rgba(59, 130, 246, 0.1) !important; }
+html.dark .border-blue-100 { border-color: rgba(59, 130, 246, 0.2) !important; }
+html.dark .bg-blue-100 { background-color: rgba(59, 130, 246, 0.15) !important; }
+
+/* Purple accents */
+html.dark .bg-purple-50, html.dark .bg-violet-50 { background-color: rgba(139, 92, 246, 0.1) !important; }
+html.dark .bg-purple-100, html.dark .bg-violet-100 { background-color: rgba(139, 92, 246, 0.15) !important; }
+
+/* Indigo accents (used as primary in some screens) */
+html.dark .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.1) !important; }
+html.dark .bg-indigo-100 { background-color: rgba(99, 102, 241, 0.15) !important; }
+
+/* Primary-tinted backgrounds */
+html.dark .bg-primary\/5, html.dark .bg-primary\/10 { background-color: rgba(27, 63, 192, 0.15) !important; }
+html.dark .bg-primary { background-color: #1b3fc0 !important; }
+
+/* Bottom nav / fixed bars */
+html.dark nav, html.dark nav.fixed {
+  background-color: #0d1117 !important;
+  border-color: #1e293b !important;
+}
+
+/* Card/panel specific */
+html.dark [class*="rounded"][class*="bg-white"],
+html.dark [class*="rounded"][class*="bg-slate-50"],
+html.dark [class*="rounded"][class*="bg-gray-50"] {
+  background-color: #1a1f30 !important;
+}
+
+/* Modal / overlay */
+html.dark .bg-black\/50, html.dark .bg-black\/40, html.dark .bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Gradient overrides */
+html.dark .from-white { --tw-gradient-from: #1a1f30 !important; }
+html.dark .to-white { --tw-gradient-to: #1a1f30 !important; }
+html.dark .from-slate-50 { --tw-gradient-from: #111521 !important; }
+
+/* Scrollbar styling */
+html.dark ::-webkit-scrollbar-track { background: #111521; }
+html.dark ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+
+/* Hover states */
+html.dark .hover\:bg-slate-100:hover, html.dark .hover\:bg-gray-100:hover { background-color: #252d3f !important; }
+html.dark .hover\:bg-slate-50:hover, html.dark .hover\:bg-gray-50:hover { background-color: #1e2536 !important; }
+html.dark .hover\:bg-white:hover { background-color: #1a1f30 !important; }
+
+/* Active states */
+html.dark .active\:bg-slate-100:active, html.dark .active\:bg-gray-100:active { background-color: #252d3f !important; }
+
+/* Toggle / Switch backgrounds */
+html.dark .bg-slate-300, html.dark .bg-gray-300 { background-color: #475569 !important; }
+
+/* Status bar area */
+html.dark .bg-\[\#1D40C0\], html.dark .bg-\[\#1d40bf\], html.dark .bg-\[\#4f46e5\] {
+  background-color: #1b3fc0 !important;
+}
+
+/* Smooth transition for all color changes */
+html.dark * {
+  transition: background-color 0.2s ease, color 0.15s ease, border-color 0.2s ease;
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top App Bar -->
+<header class="flex items-center px-4 py-3 bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<button class="flex items-center justify-center w-10 h-10 -ml-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold mr-8">Family Settings</h1>
+</header>
+<main class="flex-1 overflow-y-auto pb-8">
+<!-- Family Profile Section -->
+<div class="px-4 pt-4 pb-6">
+<div class="flex flex-col items-center">
+<div class="relative mb-4">
+<div class="w-24 h-24 rounded-full bg-slate-200 dark:bg-slate-800 bg-cover bg-center border-4 border-white dark:border-slate-900 shadow-sm" data-alt="Happy family photo profile picture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8IvY9MNfOl3unMe1L1wdeWrePTZityEK8KUa7YmGbMu2A13oC3JrfcT8dUckxZ_hCi8CLcYzfNuHUSYdL-xvKyy12xMIA1PhfBbOrWpSmquty1h2XhO0zLrBt_WDhbZN9kSiGCevPA5QTqTntfkG573l4pPL-pIhQdZH9bbXumlBKny5UzShi5gkGD85OqptYlmI5JXRe5mql4htWdHR9auewLMqL6xutWYrw4e9XZOK9B-F1Hnsk3wZH09uVKHytDb0bFsTX9RSi');">
+</div>
+<div class="absolute bottom-0 right-0 bg-background-light dark:bg-background-dark rounded-full p-1 border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined text-primary text-[20px]">edit</span>
+</div>
+</div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">Smith Family</h2>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full border border-primary/20">
+                        Admin
+                    </span>
+<span class="px-3 py-1 bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-full border border-slate-300 dark:border-slate-700">
+                        Free Plan
+                    </span>
+</div>
+</div>
+</div>
+<!-- Invitation Code Card -->
+<section class="px-4 mb-6">
+<h3 class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3 ml-1">Invitation</h3>
+<div class="bg-white dark:bg-slate-800 rounded-xl p-5 shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden relative group">
+<!-- Abstract Pattern Background -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 pointer-events-none"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium mb-1">Invitation Code</p>
+<div class="flex items-center gap-3">
+<h4 class="text-3xl font-extrabold text-slate-900 dark:text-white tracking-wider font-mono">XP-45892</h4>
+<button aria-label="Copy Code" class="text-primary hover:text-blue-700 transition-colors p-1">
+<span class="material-symbols-outlined text-xl">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white py-2.5 px-4 rounded-lg text-sm font-bold transition-colors">
+<!-- Simple WhatsApp-like icon using material symbols or text -->
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                            WhatsApp
+                        </button>
+<button class="flex items-center justify-center gap-2 bg-primary hover:bg-blue-700 text-white py-2.5 px-4 rounded-lg text-sm font-bold transition-colors">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+                            Share
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Settings List -->
+<section class="px-4 mb-8">
+<h3 class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3 ml-1">General</h3>
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700">
+<!-- Manage Members -->
+<button class="w-full flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors group border-b border-slate-100 dark:border-slate-700/50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">group</span>
+</div>
+<div class="text-left">
+<p class="text-base font-semibold text-slate-900 dark:text-white">Manage Members</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">4 active members</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300">chevron_right</span>
+</button>
+<!-- Family Budgets -->
+<button class="w-full flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors group border-b border-slate-100 dark:border-slate-700/50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</div>
+<div class="text-left">
+<p class="text-base font-semibold text-slate-900 dark:text-white">Family Budgets</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">$2,500 limit</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300">chevron_right</span>
+</button>
+<!-- Notifications -->
+<button class="w-full flex items-center justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors group">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div class="text-left">
+<p class="text-base font-semibold text-slate-900 dark:text-white">Notifications</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Weekly reports enabled</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Destructive Action -->
+<div class="px-4 mt-auto">
+<button class="w-full bg-white dark:bg-slate-800 border border-red-100 dark:border-red-900/30 rounded-xl p-4 flex items-center justify-center gap-2 group hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-red-500">logout</span>
+<span class="text-red-500 font-bold text-sm">Leave Family</span>
+</button>
+<p class="text-center text-xs text-slate-400 mt-4 mb-2">Version 2.4.0 • Build 8921</p>
+</div>
+</main>
+<!-- Xpenz Dark Mode Toggle -->
+<button onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('xpenz-dark', document.documentElement.classList.contains('dark')); updateDMToggle();"
+  id="dm-toggle-btn"
+  style="position:fixed;top:12px;right:12px;z-index:9999;width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(148,163,184,0.3);cursor:pointer;transition:all 0.2s;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);">
+  <span class="material-symbols-outlined" style="font-size:18px;color:#64748b;" id="dm-icon">dark_mode</span>
+</button>
+<script>
+  // Persist dark mode preference
+  if (localStorage.getItem('xpenz-dark') === 'true') {
+    document.documentElement.classList.add('dark');
+  }
+  function updateDMToggle() {
+    var isDark = document.documentElement.classList.contains('dark');
+    var btn = document.getElementById('dm-toggle-btn');
+    var icon = document.getElementById('dm-icon');
+    if (icon) icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+    if (btn) {
+      btn.style.background = isDark ? 'rgba(26,31,48,0.9)' : 'rgba(255,255,255,0.9)';
+      btn.style.borderColor = isDark ? 'rgba(51,65,85,0.5)' : 'rgba(148,163,184,0.3)';
+    }
+    if (icon) icon.style.color = isDark ? '#94a3b8' : '#64748b';
+  }
+  // Apply on load
+  updateDMToggle();
+</script>
+</body></html>

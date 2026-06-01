@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Xpenzo — Home (Playful & Warm redesign)</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream:   "#FFF6EC",
+          surface: "#FFFFFF",
+          ink:     "#2C2520",
+          muted:   "#A89B8C",
+          coral:   "#FF6F61",
+          "coral-soft": "#FFE4DF",
+          mint:    "#2BC4A2",
+          "mint-soft":  "#D8F5EE",
+          sun:     "#FFB23E",
+          "sun-soft":   "#FFF0D6",
+          grape:   "#8B7BF0",
+          "grape-soft": "#EAE6FF",
+          sky:     "#4DA8F0",
+          "sky-soft":   "#DCEEFF",
+        },
+        fontFamily: {
+          display: ["Fredoka", "sans-serif"],
+          body:    ["Nunito", "sans-serif"],
+        },
+        borderRadius: { xl: "1.25rem", "2xl": "1.75rem", "3xl": "2.25rem", "4xl": "2.75rem" },
+        boxShadow: {
+          soft:  "0 8px 24px -8px rgba(140,110,80,0.25)",
+          lift:  "0 14px 34px -10px rgba(140,110,80,0.32)",
+          glow:  "0 12px 30px -8px rgba(255,111,97,0.5)",
+        },
+      },
+    },
+  };
+</script>
+<style>
+  .ms { font-family: "Material Symbols Rounded"; font-weight: normal; font-style: normal; line-height: 1; display: inline-block; }
+  .fill { font-variation-settings: "FILL" 1; }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  body { min-height: 100dvh; }
+  @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-7px) } }
+  .floaty { animation: float 5s ease-in-out infinite; }
+  .press { transition: transform .12s ease; }
+  .press:active { transform: scale(0.95); }
+  .row-press { transition: transform .12s ease, box-shadow .2s ease; }
+  .row-press:active { transform: scale(0.985); }
+</style>
+</head>
+<body class="bg-[#F3E9DC] font-body text-ink antialiased">
+<div class="relative mx-auto flex min-h-screen w-full max-w-md flex-col overflow-hidden bg-cream shadow-2xl">
+
+  <!-- soft background blobs -->
+  <div class="pointer-events-none absolute -top-24 -left-20 h-64 w-64 rounded-full bg-coral/20 blur-3xl"></div>
+  <div class="pointer-events-none absolute top-40 -right-24 h-64 w-64 rounded-full bg-mint/20 blur-3xl"></div>
+
+  <!-- Header -->
+  <header class="relative z-20 flex items-center justify-between px-5 pt-7 pb-3">
+    <div class="flex items-center gap-3">
+      <div class="size-12 rounded-2xl border-2 border-white bg-cover bg-center shadow-soft" style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuAo7dqdI7z3YbzkH2OJb3w9oMy-o3FADUOwZfZyEEF3g_D0YjxAImmtqd-h2c2SpCKbIyh0JUD6kFW0D0kcm2tJHvvyUOMHCYJbbxeVoz2FsgyGIzVq8PSV8wUR_WFQYv5buMZZKOlOExq2cPZQUrD7wBzPJT182Fluke-A0X5nY9q2oidYmSmdh_anFu3cFh2w8mdbyMawZacunfzyho5Jnj-Dh3HHvKAx7SB2suRNEXEHKkOUHluwxMBMmw2qjhYPcg9wVS_VNO-2");'></div>
+      <div class="leading-tight">
+        <p class="text-sm font-semibold text-muted">Hey, Shaswat 👋</p>
+        <p class="font-display text-lg font-600 text-ink -mt-0.5">Good evening!</p>
+      </div>
+    </div>
+    <button class="press flex size-11 items-center justify-center rounded-2xl bg-white text-ink shadow-soft">
+      <span class="ms text-[22px]">search</span>
+    </button>
+  </header>
+
+  <main class="relative z-10 flex-1 overflow-y-auto px-4 pb-32 pt-1 hide-scrollbar">
+
+    <!-- Hero balance card -->
+    <section class="floaty relative overflow-hidden rounded-4xl bg-coral p-6 text-white shadow-glow">
+      <div class="absolute -right-8 -top-10 size-40 rounded-full bg-white/15"></div>
+      <div class="absolute -bottom-12 -left-8 size-36 rounded-full bg-black/5"></div>
+      <div class="relative z-10">
+        <div class="flex items-center justify-between">
+          <p class="text-sm font-bold uppercase tracking-wide text-white/80">Family spending · Feb</p>
+          <span class="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-xs font-extrabold backdrop-blur">
+            <span class="ms text-[15px]">trending_up</span>12%
+          </span>
+        </div>
+        <h2 class="mt-3 font-display text-5xl font-700 tracking-tight">₹87,450</h2>
+        <p class="mt-1 text-sm font-semibold text-white/80">Total combined expenses this month</p>
+      </div>
+    </section>
+
+    <!-- Budget + Daily avg -->
+    <section class="mt-4 grid grid-cols-2 gap-4">
+      <div class="press relative overflow-hidden rounded-3xl bg-mint-soft p-5 shadow-soft">
+        <div class="flex size-11 items-center justify-center rounded-2xl bg-mint text-white shadow-soft">
+          <span class="ms fill text-[22px]">savings</span>
+        </div>
+        <p class="mt-4 text-sm font-bold text-mint">Budget left</p>
+        <p class="font-display text-2xl font-700 text-ink">₹12,550</p>
+        <div class="mt-3 h-2 w-full overflow-hidden rounded-full bg-white/70">
+          <div class="h-full w-3/4 rounded-full bg-mint"></div>
+        </div>
+      </div>
+      <div class="press relative overflow-hidden rounded-3xl bg-sun-soft p-5 shadow-soft">
+        <div class="flex size-11 items-center justify-center rounded-2xl bg-sun text-white shadow-soft">
+          <span class="ms fill text-[22px]">monitoring</span>
+        </div>
+        <p class="mt-4 text-sm font-bold text-sun">Daily avg</p>
+        <p class="font-display text-2xl font-700 text-ink">₹2,100</p>
+        <p class="mt-3 flex items-center gap-1 text-xs font-bold text-sun">
+          <span class="ms text-[14px]">arrow_downward</span> ₹150 vs last month
+        </p>
+      </div>
+    </section>
+
+    <!-- Category chips -->
+    <section class="mt-5 flex gap-2.5 overflow-x-auto pb-1 hide-scrollbar">
+      <button class="press flex h-10 shrink-0 items-center rounded-full bg-ink px-5 text-sm font-extrabold text-cream shadow-soft">All</button>
+      <button class="press flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-white px-4 text-sm font-bold text-ink shadow-soft"><span class="ms text-[18px] text-mint">eco</span>Groceries</button>
+      <button class="press flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-white px-4 text-sm font-bold text-ink shadow-soft"><span class="ms text-[18px] text-coral">restaurant</span>Food</button>
+      <button class="press flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-white px-4 text-sm font-bold text-ink shadow-soft"><span class="ms text-[18px] text-sky">directions_bus</span>Transport</button>
+      <button class="press flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-white px-4 text-sm font-bold text-ink shadow-soft"><span class="ms text-[18px] text-grape">shopping_bag</span>Shopping</button>
+    </section>
+
+    <!-- AI nudge -->
+    <section class="mt-5 flex items-center gap-3 rounded-3xl bg-grape-soft p-4 shadow-soft">
+      <div class="floaty flex size-12 shrink-0 items-center justify-center rounded-2xl bg-grape text-white shadow-soft">
+        <span class="ms fill text-[24px]">auto_awesome</span>
+      </div>
+      <div class="flex-1">
+        <p class="text-[11px] font-extrabold uppercase tracking-wide text-grape">Xpenzo AI</p>
+        <p class="text-sm font-bold leading-snug text-ink">That ‘Tea Shop’ again? ☕ You’ve spent ₹400 this week.</p>
+      </div>
+      <button class="press flex size-9 items-center justify-center rounded-full bg-white text-grape shadow-soft">
+        <span class="ms text-[20px]">chevron_right</span>
+      </button>
+    </section>
+
+    <!-- Family -->
+    <section class="mt-6">
+      <div class="mb-3 flex items-center justify-between px-1">
+        <h3 class="font-display text-xl font-600 text-ink">Family</h3>
+        <a href="#" class="text-sm font-extrabold text-coral">View all</a>
+      </div>
+      <div class="flex justify-between gap-2">
+        <!-- Dad (active) -->
+        <div class="flex flex-1 flex-col items-center gap-2">
+          <div class="relative">
+            <div class="rounded-3xl border-[3px] border-coral p-0.5">
+              <img class="size-16 rounded-[1.25rem] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRDS0jbH5mL8otX-xiQvSQ0vWLPsL63cL5aKmRBS0Rs3jSRu9dGmaHtZ66KQ-F62sN2UJdrWLt4Nu2zH2ZRfrVYp0k5KPN8b90WAFDWMagEU9RVLzMCaqVFqfAeFYKK5YlXpEaeo4saeDY3RZZIz6uf81NxKoUaC26oC3frg2y5iyDKEq8bFJvRgm43KxL5ipSLWNhEo4Eldute9iJKzsEYAw70_1FwEhX65AjNnQFCe_9fFa_KWlh4XdqO_KVomAHFzA6TVMPYWQv" alt="Dad"/>
+            </div>
+            <span class="absolute -bottom-1 -right-1 flex size-6 items-center justify-center rounded-full border-2 border-cream bg-sun text-white"><span class="ms text-[13px] fill">star</span></span>
+          </div>
+          <div class="text-center leading-tight"><p class="text-sm font-extrabold text-ink">Dad</p><p class="text-xs font-bold text-muted">₹40k</p></div>
+        </div>
+        <!-- Mom -->
+        <div class="flex flex-1 flex-col items-center gap-2">
+          <div class="rounded-3xl border-[3px] border-transparent p-0.5">
+            <img class="size-16 rounded-[1.25rem] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs8hcrEchn1lJ-LVcWL5-0NlIY6hrIiFyvj1ydHSvX5Jyao41YSlyrh3Mo-RLG72PxcFwUdo52DCooWE6SDqlkFxI_sUKUycOXCyiJ7TfsB8gcbzysuq547dnpOODG3UdcsCmLNFFduGRcA68GEkIlHY6rHkdgioYbREz3T9wle5NizVK8ovc4XRyhPV0YbQx2XaiuhoUFi_R9bkjByOKFxO9hjS399dhTnWI3U07GHj_khEVhlB4SvveDVuuN1D9AHYzivxNi234F" alt="Mom"/>
+          </div>
+          <div class="text-center leading-tight"><p class="text-sm font-extrabold text-ink">Mom</p><p class="text-xs font-bold text-muted">₹35k</p></div>
+        </div>
+        <!-- Sis -->
+        <div class="flex flex-1 flex-col items-center gap-2">
+          <div class="rounded-3xl border-[3px] border-transparent p-0.5">
+            <img class="size-16 rounded-[1.25rem] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSrAkTKGv9cjesgUW5lM57KGGAWYNa_LYUWQSbqrttWO1DAbah5vHslFWWWz85BfNkjXvppJLXDsxW_njBp3vbrhTrJulXyVRdp85SdTvTambthdD5xx7tk--zCUcdeC75f2l_CZpWheGStEEa9U3rwoUEohnXz9XAV-zGEZ5KFt8zLHGwBQsEhMoRjpukJMRYwgszinswufmq417kyQKSmla9Bet_kuE_RH_eaH6M-vm0RPOo2g2SrFel68VYojVb6XI8Vr5BY9Ac" alt="Sis"/>
+          </div>
+          <div class="text-center leading-tight"><p class="text-sm font-extrabold text-ink">Sis</p><p class="text-xs font-bold text-muted">₹8k</p></div>
+        </div>
+        <!-- Bro -->
+        <div class="flex flex-1 flex-col items-center gap-2">
+          <div class="rounded-3xl border-[3px] border-transparent p-0.5">
+            <img class="size-16 rounded-[1.25rem] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB5X0tl6zNp4SCYlnrYoT_4lXMHIdNE0VqQswZZSanvNr6FshPzjdqGnTSMzqa4_RxGjgbYyZtulRJWZPTye-ra3zhFZ0tbxcOmMGHhPYbesDNev8EDp7aLB_xzJIcAr_hkHXixlxQKK8m49mNy7KQ0qm134UBkHyQLMo06lbh4vmPCQDpQ5h0zEz9wfHioxPSQxROx8yxohrL6rU-qcnvfutvkquO-_CYhGS31IpkIq982UeBuFAeyMFU8WzvUoPOF3PPfEK2FO2O" alt="Bro"/>
+          </div>
+          <div class="text-center leading-tight"><p class="text-sm font-extrabold text-ink">Bro</p><p class="text-xs font-bold text-muted">₹4k</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Today -->
+    <section class="mt-6">
+      <div class="mb-3 flex items-center justify-between px-1">
+        <h3 class="font-display text-xl font-600 text-ink">Today</h3>
+        <span class="rounded-full bg-coral-soft px-3 py-1 text-xs font-extrabold text-coral">₹2,010</span>
+      </div>
+      <div class="flex flex-col gap-3">
+        <!-- row -->
+        <div class="row-press flex items-center justify-between rounded-3xl bg-white p-3.5 shadow-soft">
+          <div class="flex items-center gap-3.5">
+            <div class="flex size-13 items-center justify-center rounded-2xl bg-mint-soft text-mint" style="width:3.25rem;height:3.25rem;">
+              <span class="ms fill text-[26px]">shopping_cart</span>
+            </div>
+            <div><p class="font-display text-base font-600 text-ink">Big Bazaar</p><p class="text-xs font-bold text-muted">Groceries · 5:30 PM</p></div>
+          </div>
+          <p class="font-display text-base font-700 text-ink">₹1,240</p>
+        </div>
+        <!-- row -->
+        <div class="row-press flex items-center justify-between rounded-3xl bg-white p-3.5 shadow-soft">
+          <div class="flex items-center gap-3.5">
+            <div class="flex items-center justify-center rounded-2xl bg-sky-soft text-sky" style="width:3.25rem;height:3.25rem;">
+              <span class="ms fill text-[26px]">local_taxi</span>
+            </div>
+            <div><p class="font-display text-base font-600 text-ink">Uber</p><p class="text-xs font-bold text-muted">Transport · 2:15 PM</p></div>
+          </div>
+          <p class="font-display text-base font-700 text-ink">₹350</p>
+        </div>
+        <!-- row -->
+        <div class="row-press flex items-center justify-between rounded-3xl bg-white p-3.5 shadow-soft">
+          <div class="flex items-center gap-3.5">
+            <div class="flex items-center justify-center rounded-2xl bg-coral-soft text-coral" style="width:3.25rem;height:3.25rem;">
+              <span class="ms fill text-[26px]">lunch_dining</span>
+            </div>
+            <div><p class="font-display text-base font-600 text-ink">McDonald's</p><p class="text-xs font-bold text-muted">Food · 1:00 PM</p></div>
+          </div>
+          <p class="font-display text-base font-700 text-ink">₹420</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom nav -->
+  <nav class="absolute inset-x-0 bottom-0 z-30 px-4 pb-5">
+    <div class="relative mx-auto flex max-w-md items-center justify-between rounded-full bg-ink px-7 py-3.5 shadow-lift">
+      <a href="#" class="flex flex-col items-center gap-0.5 text-cream">
+        <span class="ms fill text-[26px]">home</span><span class="text-[10px] font-extrabold">Home</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-0.5 text-cream/45">
+        <span class="ms text-[26px]">pie_chart</span><span class="text-[10px] font-bold">Analysis</span>
+      </a>
+      <div class="w-12"></div>
+      <a href="#" class="flex flex-col items-center gap-0.5 text-cream/45">
+        <span class="ms text-[26px]">account_balance_wallet</span><span class="text-[10px] font-bold">Budget</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-0.5 text-cream/45">
+        <span class="ms text-[26px]">person</span><span class="text-[10px] font-bold">Profile</span>
+      </a>
+      <!-- center FAB -->
+      <button class="press absolute left-1/2 -top-7 flex size-16 -translate-x-1/2 items-center justify-center rounded-full border-4 border-cream bg-coral text-white shadow-glow">
+        <span class="ms text-[30px]">add</span>
+      </button>
+    </div>
+  </nav>
+</div>
+</body>
+</html>
