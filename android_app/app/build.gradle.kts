@@ -50,6 +50,12 @@ android {
                 keyAlias = project.findProperty("XPENZO_KEY_ALIAS") as String? ?: "xpenzo"
                 keyPassword = project.findProperty("XPENZO_KEY_PASSWORD") as String?
             }
+            // Enable v1 (JAR) signing in addition to v2/v3. Some OEM ROMs (notably
+            // OnePlus/Oppo ColorOS) reject sideloaded APKs that lack a v1 signature
+            // with a generic "App not installed" error.
+            enableV1Signing = true
+            enableV2Signing = true
+            enableV3Signing = true
         }
     }
 
