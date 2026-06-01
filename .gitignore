@@ -57,3 +57,22 @@ Thumbs.db
 # IDE (may contain local secrets/tokens)
 .vscode/
 .idea/
+
+# ------------------------- AI agent / tool configs (keep local) --
+.claude/
+.codex/
+.cursor/
+.gemini/
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+
+# ------------------------- Editor / type-checker -----------------
+.idea/
+*.code-workspace
+pyrightconfig.json
+typings/
+
+# ------------------------- graphify scratch (regeneratable) ------
+.graphify_*
+check_detect.py
