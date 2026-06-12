@@ -97,7 +97,10 @@ fun PrivacySecurityScreen(
                     LinkRow(
                         Icons.Rounded.Policy, Sky, SkySoft, "Privacy policy", "Read how we handle your data",
                         onClick = {
-                            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_POLICY_URL)))
+                            // Guarded: a device with no browser throws ActivityNotFoundException
+                            runCatching {
+                                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_POLICY_URL)))
+                            }
                         },
                     )
                     RowDivider()

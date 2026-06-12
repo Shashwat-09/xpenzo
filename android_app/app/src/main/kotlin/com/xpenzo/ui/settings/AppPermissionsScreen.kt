@@ -116,10 +116,13 @@ fun AppPermissionsScreen(onBack: () -> Unit) {
                     "notifications instead of SMS.",
                 granted = notifGranted,
                 onOpenSettings = {
-                    context.startActivity(
-                        Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS)
-                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
-                    )
+                    // Guarded: some OEM ROMs hide this settings screen
+                    runCatching {
+                        context.startActivity(
+                            Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS)
+                                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+                        )
+                    }
                 },
             )
         }
@@ -196,5 +199,5 @@ private fun openAppDetails(context: android.content.Context) {
         data = Uri.fromParts("package", context.packageName, null)
         addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
     }
-    context.startActivity(intent)
+    runCatching { context.startActivity(intent) }
 }

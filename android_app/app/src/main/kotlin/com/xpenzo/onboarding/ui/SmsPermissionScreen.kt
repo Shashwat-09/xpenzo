@@ -123,10 +123,13 @@ fun SmsPermissionScreen(
                 "instead of SMS.",
             granted = notifAccessGranted,
             onRequest = {
-                context.startActivity(
-                    Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
-                )
+                // Guarded: some OEM ROMs hide this settings screen
+                runCatching {
+                    context.startActivity(
+                        Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS)
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+                    )
+                }
                 // Re-check on resume
                 notifAccessGranted = isNotificationAccessGranted(context)
             },
