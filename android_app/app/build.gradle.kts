@@ -118,6 +118,16 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    // Brand the built APK file so the downloaded file is "Xpenzo.apk", not the
+    // default "app-release.apk". Release -> Xpenzo.apk; debug -> Xpenzo-debug.apk.
+    applicationVariants.all {
+        val variantName = name
+        outputs.all {
+            (this as com.android.build.gradle.internal.api.BaseVariantOutputImpl).outputFileName =
+                if (variantName == "release") "Xpenzo.apk" else "Xpenzo-$variantName.apk"
+        }
+    }
 }
 
 // Export Room schema JSON for migration auditing
