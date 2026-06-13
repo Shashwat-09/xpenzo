@@ -18,9 +18,12 @@
     <!-- Budget alerts / weekly digest notifications (runtime-requested on Android 13+) -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
+    <!-- allowBackup=false: the Room DB holds SMS-derived financial transactions;
+         device/cloud backup extraction must not be possible. Firestore sync is the
+         sanctioned backup path. -->
     <application
         android:name=".XpenzoApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:label="Xpenzo"

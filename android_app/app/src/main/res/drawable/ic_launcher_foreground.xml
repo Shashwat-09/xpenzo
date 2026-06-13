@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Xpenzo launcher icon foreground.
-    A bold rupee sign ₹ centered in the safe zone (66×66 dp at 108×108 dp canvas).
-    The path data renders the rupee symbol as a single filled vector.
+    Xpenzo launcher icon foreground — the brand "X" crossmark (redesign).
+    Two crossing strokes centered in the safe zone of the 108x108 canvas:
+      • main stroke  : warm cream  (#F4F0E6)
+      • accent stroke: moss lime   (#C8D683)
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
@@ -10,8 +11,17 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Rupee symbol ₹ - bold sans, centered, ~50dp tall -->
+    <!-- main stroke: top-left → bottom-right -->
     <path
-        android:fillColor="@color/ic_launcher_foreground"
-        android:pathData="M40,30 L72,30 L72,38 L60,38 C66,40 69,44 70,49 L72,49 L72,57 L70,57 C68,67 60,73 50,73 L46,73 L70,93 L57,93 L40,76 L40,68 L48,68 C54,68 58,64 60,57 L40,57 L40,49 L60,49 C58,42 54,38 48,38 L40,38 Z" />
+        android:strokeColor="#F4F0E6"
+        android:strokeWidth="13"
+        android:strokeLineCap="round"
+        android:pathData="M34,34 L74,74" />
+
+    <!-- accent stroke: top-right → bottom-left -->
+    <path
+        android:strokeColor="#C8D683"
+        android:strokeWidth="13"
+        android:strokeLineCap="round"
+        android:pathData="M74,34 L34,74" />
 </vector>

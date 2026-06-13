@@ -50,6 +50,12 @@ android {
                 keyAlias = project.findProperty("XPENZO_KEY_ALIAS") as String? ?: "xpenzo"
                 keyPassword = project.findProperty("XPENZO_KEY_PASSWORD") as String?
             }
+            // Enable v1 (JAR) signing in addition to v2/v3. Some OEM ROMs (notably
+            // OnePlus/Oppo ColorOS) reject sideloaded APKs that lack a v1 signature
+            // with a generic "App not installed" error.
+            enableV1Signing = true
+            enableV2Signing = true
+            enableV3Signing = true
         }
     }
 
@@ -60,8 +66,12 @@ android {
             versionNameSuffix = "-debug"
         }
         release {
-            isMinifyEnabled = true
-            isShrinkResources = true
+            // R8/resource shrinking disabled: a release-only "crash on any interaction"
+            // is the classic signature of minification stripping a reflectively-used class.
+            // For sideloaded distribution the size saving isn't worth the risk; re-enable
+            // with verified keep-rules before a Play Store submission.
+            isMinifyEnabled = false
+            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
@@ -108,6 +118,16 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    // Brand the built APK file so the downloaded file is "Xpenzo.apk", not the
+    // default "app-release.apk". Release -> Xpenzo.apk; debug -> Xpenzo-debug.apk.
+    applicationVariants.all {
+        val variantName = name
+        outputs.all {
+            (this as com.android.build.gradle.internal.api.BaseVariantOutputImpl).outputFileName =
+                if (variantName == "release") "Xpenzo.apk" else "Xpenzo-$variantName.apk"
+        }
+    }
 }
 
 // Export Room schema JSON for migration auditing
@@ -127,10 +147,14 @@ dependencies {
     // Material Components — provides the XML Theme.Material3.* themes referenced by
     // res/values/themes.xml (Compose material3 does NOT ship the XML themes).
     implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
+    // Lifecycle MUST stay on 2.7.x while Compose UI is 1.6.x: lifecycle 2.8.0's
+    // lifecycle-runtime-compose is binary-incompatible with Compose 1.6 and throws
+    // NoSuchMethodError (LocalLifecycleOwner) at first composition on-device —
+    // compiles fine, passes JVM tests, crashes instantly at app open.
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.work:work-runtime-ktx:2.9.0")
 

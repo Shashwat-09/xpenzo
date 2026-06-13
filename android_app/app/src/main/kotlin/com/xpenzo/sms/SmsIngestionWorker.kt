@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.hilt.work.HiltWorker
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
+import com.xpenzo.BuildConfig
 import com.xpenzo.data.db.entity.TransactionEntity
 import com.xpenzo.data.repository.TransactionRepository
 import com.xpenzo.ml.core.ClassifierInput
@@ -51,7 +52,10 @@ class SmsIngestionWorker @AssistedInject constructor(
             val windowStart = receivedAtMs - DEDUP_WINDOW_MS
             // (Simple check — just count recent transactions from the same merchant+amount)
             // Full dedup via DB query would require a dedicated index; this is sufficient for v1.
-            Log.d(TAG, "Processing SMS: sender=$sender amount=${parsed.amountPaise} vpa=${parsed.vpa}")
+            // Transaction details are sensitive — never log them in release builds
+            if (BuildConfig.DEBUG) {
+                Log.d(TAG, "Processing SMS: sender=$sender amount=${parsed.amountPaise} vpa=${parsed.vpa}")
+            }
 
             // Build ClassifierInput using the canonical contract:
             // textField = merchantNormalized (ONE field, digits→#, lowercase)
@@ -95,7 +99,9 @@ class SmsIngestionWorker @AssistedInject constructor(
                 )
             }
 
-            Log.i(TAG, "Ingested: ${parsed.merchant} ₹${parsed.amountPaise / 100} → ${result.l1Category}")
+            if (BuildConfig.DEBUG) {
+                Log.i(TAG, "Ingested: ${parsed.merchant} ₹${parsed.amountPaise / 100} → ${result.l1Category}")
+            }
             Result.success()
         } catch (e: Exception) {
             Log.e(TAG, "SMS ingestion failed for sender=$sender", e)
